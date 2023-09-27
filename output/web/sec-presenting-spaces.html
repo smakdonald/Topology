@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Presenting spaces and the 2-way Street Theorem</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Topology">
+<meta property="book:author" content="Sam Macdonald">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'color', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+  },
+  chtml: {
+    scale: 0.98,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/color', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="https://unpkg.com/lunr/lunr.js"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.2/pretext_search.js"></script><link href="https://pretextbook.org/css/0.6/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.2</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.2/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.2/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.2/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link href="https://pretextbook.org/css/0.6/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/colors_ruby_emerald.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.6/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="book-topology.html"><span class="title">Topology</span></a></h1>
+<p class="byline">Sam Macdonald</p>
+</div>
+<div id="searchresultsplaceholder" style="display: none">
+<button id="closesearchresults" onclick="document.getElementById('searchresultsplaceholder').style.display = 'none'; return false;">x</button><h2>Search Results: <span id="searchterms"></span>
+</h2>
+<div id="searchempty"><span>No results.</span></div>
+<ol id="searchresults"></ol>
+</div>
+</div></header><nav id="ptx-navbar" class="navbar"><button class="toc-toggle button" aria-label="Show or hide table of contents"><span class="icon">☰</span><span class="name">Contents</span></button><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="theavatarbutton" class="name">You!</span><div id="preferences_menu_holder" class="hidden"><ol id="preferences_menu" style="font-family: 'Roboto Serif', serif;">
+<li data-env="avatar" tabindex="-1">Choose avatar<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden avatar">
+<li data-val="You!" tabindex="-1">
+<span id="theYou!" class="avatarcheck">✔️</span>You!</li>
+<li data-val="😺" tabindex="-1">
+<span id="the😺" class="avatarcheck"></span>😺</li>
+<li data-val="👤" tabindex="-1">
+<span id="the👤" class="avatarcheck"></span>👤</li>
+<li data-val="👽" tabindex="-1">
+<span id="the👽" class="avatarcheck"></span>👽</li>
+<li data-val="🐶" tabindex="-1">
+<span id="the🐶" class="avatarcheck"></span>🐶</li>
+<li data-val="🐼" tabindex="-1">
+<span id="the🐼" class="avatarcheck"></span>🐼</li>
+<li data-val="🌈" tabindex="-1">
+<span id="the🌈" class="avatarcheck"></span>🌈</li>
+</ol>
+</li>
+<li data-env="fontfamily" tabindex="-1">Font family<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fontfamily">
+<li data-val="face" data-change="OS" tabindex="-1" style="font-family: 'Open Sans'">
+<span id="theOS" class="ffcheck">✔️</span><span class="name">Open Sans</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+<li data-val="face" data-change="RS" tabindex="-1" style="font-family: 'Roboto Serif'">
+<span id="theRS" class="ffcheck"></span><span class="name">Roboto Serif</span><span class="sample">AaBbCc 123 PreTeXt</span>
+</li>
+</ol>
+</li>
+<li data-env="font" tabindex="-1">Adjust font<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden fonts">
+<li>Size</li>
+<li><span id="thesize">12</span></li>
+<li data-val="size" data-change="-1" tabindex="-1" style="font-size: 80%">Smaller</li>
+<li data-val="size" data-change="1" tabindex="-1" style="font-size: 110%">Larger</li>
+<li>Width</li>
+<li><span id="thewdth">100</span></li>
+<li data-val="wdth" data-change="-5" tabindex="-1" style="font-variation-settings: 'wdth' 60">narrower</li>
+<li data-val="wdth" data-change="5" tabindex="-1" style="font-variation-settings: 'wdth' 150">wider</li>
+<li>Weight</li>
+<li><span id="thewght">400</span></li>
+<li data-val="wght" data-change="-50" tabindex="-1" style="font-weight: 200">thinner</li>
+<li data-val="wght" data-change="50" tabindex="-1" style="font-weight: 700">heavier</li>
+<li>Letter spacing</li>
+<li>
+<span id="thelspace">0</span><span class="byunits">/200</span>
+</li>
+<li data-val="lspace" data-change="-1" tabindex="-1">closer</li>
+<li data-val="lspace" data-change="1" tabindex="-1">f a r t h e r</li>
+<li>Word spacing</li>
+<li>
+<span id="thewspace">0</span><span class="byunits">/50</span>
+</li>
+<li data-val="wspace" data-change="-1" tabindex="-1">smaller gap </li>
+<li data-val="wspace" data-change="1" tabindex="-1">larger gap</li>
+<li>Line Spacing</li>
+<li>
+<span id="theheight">135</span><span class="byunits">/100</span>
+</li>
+<li data-val="height" data-change="-5" tabindex="-1" style="line-height: 1">closer<br>together</li>
+<li data-val="height" data-change="5" tabindex="-1" style="line-height: 1.75">further<br>apart</li>
+</ol>
+</li>
+<li data-env="atmosphere" tabindex="-1">Light/dark mode<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden atmosphere">
+<li data-val="default" tabindex="-1">
+<span id="thedefault" class="atmospherecheck">✔️</span>default</li>
+<li data-val="pastel" tabindex="-1">
+<span id="thepastel" class="atmospherecheck"></span>pastel</li>
+<li data-val="darktwilight" tabindex="-1">
+<span id="thedarktwilight" class="atmospherecheck"></span>twilight</li>
+<li data-val="dark" tabindex="-1">
+<span id="thedark" class="atmospherecheck"></span>dark</li>
+<li data-val="darkmidnight" tabindex="-1">
+<span id="thedarkmidnight" class="atmospherecheck"></span>midnight</li>
+</ol>
+</li>
+<li data-env="ruler" tabindex="-1">Reading ruler<div class="wrap_to_submenu"><span class="to_submenu">▻</span></div>
+<ol class="hidden ruler">
+<li data-val="none" tabindex="-1">
+<span id="thenone" class="rulercheck">✔️</span>none</li>
+<li data-val="underline" tabindex="-1">
+<span id="theunderline" class="rulercheck"></span>underline</li>
+<li data-val="lunderline" tabindex="-1">
+<span id="thelunderline" class="rulercheck"></span>L-underline</li>
+<li data-val="greybar" tabindex="-1">
+<span id="thegreybar" class="rulercheck"></span>grey bar</li>
+<li data-val="lightbox" tabindex="-1">
+<span id="thelightbox" class="rulercheck"></span>light box</li>
+<li data-val="sunrise" tabindex="-1">
+<span id="thesunrise" class="rulercheck"></span>sunrise</li>
+<li data-val="sunriseunderline" tabindex="-1">
+<span id="thesunriseunderline" class="rulercheck"></span>sunrise underline</li>
+<li class="moveQ">Motion by:</li>
+<li data-val="mouse" tabindex="-1">
+<span id="themouse" class="motioncheck">✔️</span>follow the mouse</li>
+<li data-val="arrow" tabindex="-1">
+<span id="thearrow" class="motioncheck"></span>up/down arrows - not yet</li>
+<li data-val="eye" tabindex="-1">
+<span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
+</ol>
+</li>
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-svk.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-fundamental.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="ch-covering.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+<input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
+</div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
+\newcommand{\Ass}{\operatorname{Ass}}
+\def\Aut{\operatorname{Aut}}
+\def\can{{\mathrm {can}}}
+\def\char{\operatorname{char}}
+\def\cp{\operatorname{CharPoly}}
+\def\codim{\operatorname{codim}} 
+\def\coker{\operatorname{coker}}
+\DeclareMathOperator*{\colim}{colim} 
+\def\cont{\operatorname{cont}} 
+\def\diam{\operatorname{diam}} 
+\def\dm{\operatorname{dim}} 
+\DeclareMathOperator{\edim}{embdim} 
+\def\End{\operatorname{End}} 
+\def\eval{\operatorname{eval}} 
+\def\Ext{\operatorname{Ext}} 
+\def\Frac{\operatorname{Frac}}
+\def\Fun{\operatorname{Fun}}
+\def\Gal{\operatorname{Gal}}
+\def\gcd{\operatorname{gcd}}
+\newcommand{\GL}{\operatorname{GL}} 
+\newcommand{\ht}{\operatorname{height}} 
+\def\Hom{\operatorname{Hom}} 
+\def\id{\operatorname{id}} 
+\def\im{\operatorname{im}} 
+\def\Inn{\operatorname{Inn}}
+\def\ker{\operatorname{ker}}
+\def\lcm{\operatorname{lcm}} 
+\def\Mat{\operatorname{Mat}}
+\newcommand{\Min}{\operatorname{Min}}
+\def\mp{\operatorname{MinPoly}}
+\def\mSpec{\operatorname{mSpec}}
+\def\MSpec{\operatorname{MSpec}}
+\def\null{\operatorname{Nul}}
+\DeclareMathOperator{\ns}{nullspace}
+\newcommand{\opp}{\operatorname{opp}}
+\def\Orb{\operatorname{Orb}} 
+\def\Out{\operatorname{Out}}
+\def\Perm{\operatorname{Perm}}
+\def\ptstab{\operatorname{PtStab}} 
+\def\rad{\operatorname{rad}}
+\DeclareMathOperator{\range}{range}
+\def\rank{\operatorname{rank}}
+\def\res{\operatorname{res}}
+\def\setstab{\operatorname{SetStab}}
+\def\sign{{\operatorname{sign}}}
+\newcommand{\SL}{\operatorname{SL}}
+\def\Span{\operatorname{Span}}
+\def\Spec{\operatorname{Spec}}
+\def\Stab{\operatorname{Stab}} 
+\DeclareMathOperator{\Supp}{Supp}
+\def\Syl{\operatorname{Syl}}
+\def\Tor{\operatorname{Tor}}
+\def\trace{\operatorname{trace}}
+\def\uSpec{\operatorname{\underline{Spec}}}
+
+\newcommand{\Ob}{\mathrm{Ob}}
+\newcommand{\Set}{\mathbf{Set}}
+\newcommand{\Grp}{\mathbf{Grp}}
+\newcommand{\Ab}{\mathbf{Ab}}
+\newcommand{\Sgrp}{\mathbf{Sgrp}}
+\newcommand{\Ring}{\mathbf{Ring}} 
+\newcommand{\Fld}{\mathbf{Fld}}
+\newcommand{\cRing}{\mathbf{cRing}}
+\newcommand{\Mod}[1]{#1-\mathbf{Mod}} 
+\newcommand{\Cx}[1]{#1-\mathbf{Comp}} 
+\newcommand{\vs}[1]{#1-\mathbf{vect}}
+\newcommand{\Vs}[1]{#1-\mathbf{Vect}}
+\newcommand{\vsp}[1]{#1-\mathbf{vect}^+} 
+\newcommand{\Top}{\mathbf{Top}} 
+\newcommand{\Setp}{\mathbf{Set}_*} 
+\newcommand{\Alg}[1]{#1-\mathbf{Alg}} 
+\newcommand{\cAlg}[1]{#1-\mathbf{cAlg}} 
+\newcommand{\PO}{\mathbf{PO}}
+\newcommand{\Cont}{\mathrm{Cont}}
+\newcommand{\MaT}[1]{\mathbf{Mat}_{#1}}
+\newcommand{\Rep}[2]{\mathbf{Rep}_{#1}(#2)}
+
+\def\l{\lambda}
+\def\lx{\lambda_x}
+\newcommand{\a}{\alpha}
+\def\b{\beta}
+\def\d{\delta}
+\def\e{\varepsilon}
+\def\g{\gamma}
+\def\t{\theta}
+\def\s{\sigma}
+\def\z{\zeta}
+\def\vp{\varphi}
+
+
+\newcommand{\A}{\mathbb{A}}
+\newcommand{\B}{\mathbb{B}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{\mathbb{D}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\G}{\mathbb{G}}
+\newcommand{\H}{\mathbb{H}}
+\newcommand{\I}{\mathbb{I}}
+\newcommand{\J}{\mathbb{J}}
+\newcommand{\K}{\mathbb{K}}
+\newcommand{\L}{\mathbb{L}} 
+\newcommand{\M}{\mathbb{M}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\O}{\mathbb{O}}
+\newcommand{\P}{\mathbb{P}}
+\newcommand{\Q}{\mathbb{Q}} 
+\newcommand{\R}{\mathbb{R}} 
+\newcommand{\S}{\mathbb{S}}
+\newcommand{\T}{\mathbb{T}}
+\newcommand{\U}{\mathbb{U}}
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\W}{\mathbb{W}}
+\newcommand{\X}{\mathbb{X}}
+\newcommand{\Y}{\mathbb{Y}}
+\newcommand{\Z}{\mathbb{Z}} 
+\newcommand{\ON}{\mathbb{ON}}
+
+\def\cA{\mathcal A} 
+\def\cB{\mathcal B} 
+\def\cC{\mathcal C} 
+\def\cD{\mathcal D} 
+\def\cE{\mathcal E} 
+\def\cF{\mathcal F} 
+\def\cG{\mathcal G} 
+\def\cH{\mathcal H} 
+\def\cI{\mathcal I} 
+\def\cJ{\mathcal J} 
+\def\cK{\mathcal K} 
+\def\cL{\mathcal L}
+\def\cM{\mathcal M} 
+\def\cN{\mathcal N} 
+\def\cO{\mathcal O} 
+\def\cP{\mathcal P} 
+\def\cQ{\mathcal Q} 
+\def\cR{\mathcal R} 
+\def\cS{\mathcal S} 
+\def\cT{\mathcal T} 
+\def\cU{\mathcal U} 
+\def\cV{\mathcal V} 
+\def\cW{\mathcal W} 
+\def\cX{\mathcal X} 
+\def\cY{\mathcal Y} 
+\def\cZ{\mathcal Z} 
+
+\newcommand{\fa}{{\mathfrak a}} 
+\newcommand{\fb}{{\mathfrak b}} 
+\newcommand{\fc}{{\mathfrak c}} 
+\newcommand{\fd}{{\mathfrak d}} 
+\newcommand{\fe}{{\mathfrak e}}
+\newcommand{\fm}{{\mathfrak m}} 
+\newcommand{\fp}{{\mathfrak p}} 
+\newcommand{\fq}{{\mathfrak q}} 
+\newcommand{\fK}{{\mathfrak K}} 
+\newcommand{\fR}{{\mathfrak R}} 
+
+\def\sA{\mathscr A} 
+\def\sB{\mathscr B} 
+\def\sC{\mathscr C} 
+\def\sD{\mathscr D} 
+\def\sE{\mathscr E} 
+\def\sF{\mathscr F} 
+\def\sG{\mathscr G} 
+\def\sH{\mathscr H} 
+\def\sI{\mathscr I} 
+\def\sJ{\mathscr J} 
+\def\sK{\mathscr K} 
+\def\sL{\mathscr L}
+\def\sM{\mathscr M}
+\def\sN{\mathscr N}
+\def\sO{\mathscr O}
+\def\sP{\mathscr P}
+\def\sQ{\mathscr Q}
+\def\sR{\mathscr R}
+\def\sS{\mathscr S}
+\def\sT{\mathscr T}
+\def\sU{\mathscr U}
+\def\sV{\mathscr V}
+\def\sW{\mathscr W}
+\def\sX{\mathscr X}
+\def\sY{\mathscr Y}
+\def\sZ{\mathscr Z}
+
+\def\tS{\tilde{S}}
+
+\def\sdp{\rtimes}
+\newcommand{\tensor}{\otimes} 
+\newcommand{\igen}[1]{\langle #1 \rangle} 
+\def\nsg{\unlhd} 
+\def\kval{{k-\mathrm{valued}}} 
+\def\kalg{{k-\mathrm{alg}}}
+\newcommand\GG[2]{\Gal(#1/#2)}
+
+\newcommand{\MF}[3]{\Mat_{#1\times #2}(#3)}
+\newcommand{\vectwo}[2]{\begin{bmatrix} #1 \\ #2 \end{bmatrix}} 
+\newcommand{\vecthree}[3]{\begin{bmatrix} #1 \\ #2 \\ #3\end{bmatrix}} 
+\def\ob{{\mathfrak{ob}} }
+
+\def\qed{\square}
+\def\sse{\subseteq}
+\def\ss{\subset} 
+\def\ssne{\subsetneq}
+\def\sm{\setminus}
+\def\inv{^{-1}} 
+\newcommand{\es}{\emptyset} 
+\newcommand{\Zm}[1]{\Z/({#1})} 
+\def\ov#1{\overline{#1}} 
+\def\xdots{x_1, \dots, x_n} 
+\def\adots{a_1, \dots, a_n} 
+\def\bdots{b_1, \dots, b_n} 
+\def\udots{u_1, \dots, u_n} 
+\newcommand{\leg}[2]{\left(\frac{{#1}}{{#2}}\right)} 
+\def\th{^{th}} 
+\def\htpy{\simeq_{\mathrm{htpc}}} 
+
+\def\textand{ \, \text{and} \, } 
+\def\textor{ \, \text{or} \, } 
+\def\textfor{ \, \text{for} \, } 
+\def\textfa{ \, \text{for all} \, } 
+\def\textst{ \, \text{such that} \, } 
+\def\textin{ \, \text{in} \, } 
+\def\fg{ \, \text{finitely generated} \, }
+\newcommand{\op}{\mathrm{op}}
+
+\newcommand{\xra}[1]{\xrightarrow{#1}} 
+\newcommand{\xora}[1]{\xtwoheadrightarrow{#1}} 
+\newcommand{\xira}[1]{\xhookrightarrow{#1}} 
+\newcommand{\xla}[1]{\xleftarrow{#1}} 
+\def\lra{\longrightarrow}
+\def\into{\hookrightarrow}
+\def\onto{\twoheadrightarrow}
+
+\newcommand{\vv}[1]{\mathbf{#1}}
+\newcommand{\lm}[2]{{#1}\,\l + {#2}\,\mu} 
+\renewcommand{\v}{\vv{v}}
+\renewcommand{\u}{\vv{u}}
+\newcommand{\w}{\vv{w}}
+\newcommand{\x}{\vv{x}}
+\renewcommand{\k}{\vv{k}}
+\newcommand{\0}{\vv{0}}
+\newcommand{\1}{\vv{1}}
+\newcommand{\vecs}[2]{#1_1,#1_2,\dots,#1_{#2}}
+\newcommand{\us}[1][n]{\vecs{\u}{#1}}
+\newcommand{\vs}[1][n]{\vecs{\v}{#1}}
+\newcommand{\ws}[1][n]{\vecs{\w}{#1}}
+\newcommand{\vps}[1][n']{\vecs{\v'}{#1}}
+\newcommand{\ls}[1][n]{\vecs{\l}{#1}}
+\newcommand{\mus}[1][n]{\vecs{\mu}{#1}} 
+\newcommand{\lps}[1][n]{\vecs{\l'}{#1}}
+\def\td{\tilde{\delta}}
+\def\oo{\overline{\omega}}
+\def\ctJ{\tilde{\mathcal J}}
+\def\tPhi{\tilde{\Phi}}
+\def\te{\tilde{e}}
+\def\M{\operatorname{M}}
+\newcommand{\homotopic}{\simeq}
+\newcommand{\homeq}{\cong}
+\newcommand{\iso}{\approx}
+\newcommand{\dual}{\vee} 
+\DeclarePairedDelimiter{\abs}{|}{|}
+\newcommand{\bv}{{\bar{v}}}
+\newcommand{\bu}{{\bar{u}}}
+\newcommand{\bw}{{\bar{w}}}
+\newcommand{\by}{{\bar{y}}}
+\newcommand{\ba}{{\bar{a}}}
+\newcommand{\bb}{{\bar{b}}}
+\newcommand{\bx}{{\bar{x}}}
+\DeclarePairedDelimiterX\setof[2]{\{}{\}}{#1\,|\,#2}
+\newcommand{\vx}{\underline{x}}
+\renewcommand{mod}[1]{\text{(mod }{#1})}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar"><nav id="ptx-toc" class="depth2"><ul class="structural">
+<li>
+<div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="colophon-1.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li><div class="toc-item"><a href="preface-1.html" class="internal"><span class="title">How to Use This Book (*)</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-preliminaries.html" class="internal"><span class="codenumber">1</span> <span class="title">Preliminaries</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-overview.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Overview of the course</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-sets-functions.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Useful tools on sets and functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsec-sets" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Properties of Sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsec-functions" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Properties of functions</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-sets-functions.html#subsec-constructions" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Constructions of new sets from old ones, and the associated functions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsubsec-subsets" class="internal"><span class="title">Subsets</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsubsec-products" class="internal"><span class="title">Product sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsubsec-quotients" class="internal"><span class="title">Quotient sets and equivalence relations</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsec-cardinality" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Cardinality</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sets-functions.html#subsec-bounds" class="internal"><span class="codenumber">1.2.5</span> <span class="title">Upper and lower bound properties of ℕ and ℝ</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-spaces.html" class="internal"><span class="codenumber">2</span> <span class="title">Topological Spaces and Continuous Functions</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-topology.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Topology and continuity</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-topology.html#subsec-topology" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Topology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-topology.html#subsec-continuoty" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Continuity</span></a></div></li>
+<li><div class="toc-item"><a href="sec-topology.html#subsec-bases" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Bases</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-constructions.html" class="internal"><span class="codenumber">2.2</span> <span class="title">Constructing new spaces and continuous functions from old ones</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-constructions.html#subsec-subspaces" class="internal"><span class="codenumber">2.2.1</span> <span class="title">Subspaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-constructions.html#subsec-product" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Product spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-constructions.html#subsec-quotient-spaces" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Quotient = identification spaces</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-closed.html" class="internal"><span class="codenumber">2.3</span> <span class="title">Closed sets, boundaries, and continuity</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-closed.html#subsec-closed" class="internal"><span class="codenumber">2.3.1</span> <span class="title">Closed sets</span></a></div></li>
+<li><div class="toc-item"><a href="sec-closed.html#subsec-closures" class="internal"><span class="codenumber">2.3.2</span> <span class="title">Closures, interiors, boundaries, and limit points</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-invariants.html" class="internal"><span class="codenumber">3</span> <span class="title">Homeomorphism Invariants</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-motivation.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Motivation and Hausdorff</span></a></div></li>
+<li><div class="toc-item"><a href="sec-metric.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Metrizability</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Connectedness</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-.html#subsec-connected" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Connected</span></a></div></li>
+<li><div class="toc-item"><a href="sec-.html#subsec-path-connected" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Path connected</span></a></div></li>
+<li><div class="toc-item"><a href="sec-.html#subsec-components" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Components</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-compactness.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Compactness</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-separation.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Separation and countable basis properties</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-separation.html#subsec-countable-basis" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Countable Basis</span></a></div></li>
+<li><div class="toc-item"><a href="sec-separation.html#subsec-separation" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Separation properties</span></a></div></li>
+<li><div class="toc-item"><a href="sec-separation.html#subsec-separation-interactions" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Interactions among homeomorphism invariants</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-homotopy.html" class="internal"><span class="codenumber">4</span> <span class="title">Homotopy</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-homotopy-overview.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Overview of algebraic topology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-retracts.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Retracts</span></a></div></li>
+<li><div class="toc-item"><a href="sec-homotopy-equiv.html" class="internal"><span class="codenumber">4.3</span> <span class="title">Homotopy and homotopy equivalence</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-fundamental.html" class="internal"><span class="codenumber">5</span> <span class="title">Fundamental Groups</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of π1</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-group-homs.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Group homomorphisms</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-group-homs.html#subsec-cob" class="internal"><span class="codenumber">5.2.1</span> <span class="title">Change of basepoint and PC spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-group-homs.html#subsec-induced-homs" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Homomorphisms induced by continuous maps</span></a></div></li>
+<li><div class="toc-item"><a href="sec-group-homs.html#subsec-filler" class="internal"><span class="codenumber">5.2.3</span> <span class="title"></span></a></div></li>
+<li><div class="toc-item"><a href="sec-group-homs.html#subsec-hom-interactions" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Interactions with constructions</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-pi1s1.html" class="internal"><span class="codenumber">5.3</span> <span class="title">π1(S1)</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-present.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Presenting and decomposing groups</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-present.html#subsec-presentations" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Review and presentations</span></a></div></li>
+<li>
+<div class="toc-item"><a href="sec-present.html#subsec-decomposing-groups" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Building new groups from old -- or decomposing groups</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-present.html#subsubsec-abelianization" class="internal"><span class="title">Abelianization</span></a></div></li>
+<li><div class="toc-item"><a href="sec-present.html#subsubsec-direct-products" class="internal"><span class="title">Direct products</span></a></div></li>
+<li><div class="toc-item"><a href="sec-present.html#subsec-free-products" class="internal"><span class="title">Free Products</span></a></div></li>
+<li><div class="toc-item"><a href="sec-present.html#subsubsec-amalgamation" class="internal"><span class="title">Free products with amalgamation</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-svk.html" class="internal"><span class="codenumber">5.5</span> <span class="title">SVK</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-svk.html#subsec-svk" class="internal"><span class="codenumber">5.5.1</span> <span class="title">SVK Theorem statement and first examples</span></a></div></li>
+<li><div class="toc-item"><a href="sec-svk.html#subsec-suraces" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Classification of surfaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-svk.html#subsec-svk2" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Proof and corollaries of the Seifert-Van Kampen Theorem</span></a></div></li>
+</ul>
+</li>
+<li class="active">
+<div class="toc-item"><a href="sec-presenting-spaces.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Presenting spaces and the 2-way Street Theorem</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-presenting-spaces.html#subsec-cw" class="internal"><span class="codenumber">5.6.1</span> <span class="title">CW complexes</span></a></div></li>
+<li><div class="toc-item"><a href="sec-presenting-spaces.html#subsec-fund-cw" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Fundamental groups of CW complexes</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-covering.html" class="internal"><span class="codenumber">6</span> <span class="title">Covering Spaces</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-liting.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Definitions and Lifting</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-liting.html#subsec-lift-defs" class="internal"><span class="codenumber">6.1.1</span> <span class="title">Definition</span></a></div></li>
+<li><div class="toc-item"><a href="sec-liting.html#subsec-lift-thms" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Lifting Theorems</span></a></div></li>
+<li><div class="toc-item"><a href="sec-liting.html#subsec-group-apps" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Application to group theory</span></a></div></li>
+<li><div class="toc-item"><a href="sec-liting.html#subsec-shhets" class="internal"><span class="codenumber">6.1.4</span> <span class="title">The number of sheets</span></a></div></li>
+<li><div class="toc-item"><a href="sec-liting.html#subsec-lift-int" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Interactions with functions and constructions:</span></a></div></li>
+<li><div class="toc-item"><a href="sec-liting.html#subsec-lift-inv" class="internal"><span class="codenumber">6.1.6</span> <span class="title">Interactions with homeomorphism invariants:</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-actions.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Building Covering Spaces Using Group Actions</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-actions.html#subsec-csga" class="internal"><span class="codenumber">6.2.1</span> <span class="title">Covering space group actions</span></a></div></li>
+<li><div class="toc-item"><a href="sec-actions.html#subsec-building-cs" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Building SC covering spaces from group presentations</span></a></div></li>
+<li><div class="toc-item"><a href="sec-actions.html#subsec-existence" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Existence of covering spaces</span></a></div></li>
+<li><div class="toc-item"><a href="sec-actions.html#subsec-build-pres" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Building covering spaces for subgroups from group presentations</span></a></div></li>
+<li><div class="toc-item"><a href="sec-actions.html#subsec-apps" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Applications to group theory</span></a></div></li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="sec-galois-cor.html" class="internal"><span class="codenumber">6.3</span> <span class="title">The Universal Covering and Galois correspondence</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-homology.html" class="internal"><span class="codenumber">7</span> <span class="title">Homology</span></a></div>
+<ul class="structural">
+<li>
+<div class="toc-item"><a href="sec-simplicial.html" class="internal"><span class="codenumber">7.1</span> <span class="title">Simplicial homology</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-simplicial.html#subsec-hom-overview" class="internal"><span class="codenumber">7.1.1</span> <span class="title">Overview of Homotopy and Homology</span></a></div></li>
+<li><div class="toc-item"><a href="sec-simplicial.html#subsec-delta" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Δ-Complexes</span></a></div></li>
+<li><div class="toc-item"><a href="sec-simplicial.html#subsec-simp" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Simplicial Homology</span></a></div></li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="sec-sing-hom.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Singular Homology</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="sec-sing-hom.html#subsec-induced-hom" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Definitions and Induced Homomorphisms</span></a></div></li>
+<li><div class="toc-item"><a href="sec-sing-hom.html#subsec-decomp" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Decomposing Spaces and Homology Groups</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-presenting-spaces"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">5.6</span> <span class="title">Presenting spaces and the 2-way Street Theorem</span>
+</h2>
+<section class="subsection" id="subsec-cw"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.6.1</span> <span class="title">CW complexes</span>
+</h3>
+<article class="definition definition-like" id="def-5.170"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-501">Let X(0) be a set of points with the discrete topology. For each n ≥ 1, form the space X(n) from X(n-1) by: For each α in an index set Jn, let Dαn be a copy of the closed unit disk Dn in ℝn (with Euclidean topology), and let φα: Sαn-1 → X(n-1) be a continuous function. Let Zn := X(n-1) ∐ (∐α ∈ Jn Dαn) have the disjoint union topology, and let ∼ be the minimal equivalence relation on this space such that d ∼ φα(d) for all d ∈ Sαn-1 and α ∈ Jn. Define X(n) be the quotient space and let qn be the quotient map. Let X := ∪n ∈ ℕ X(n) (where each X(n) is identified with its image in X(n+1)). If there is no n such that X = X(n), then a subset A of X is defined to be open in X if and only if A ∩ X(n) is open in X(n) for all n. The space X is a CW complex, and the topology on X is the CW topology or weak topology. The subspace X(n) of X is the n-skeleton of X. The procedure of building X(n) from X(n-1) is called gluing on n-disks. For each n ≥ 1 and each α ∈ Jn, let Φα : Dαn → X be the composition Φα := iX(n)X ∘ qn ∘ iDαnZn (where iX(n)X: X(n) → X and iDαnZn: Dαn → Zn are the inclusion maps). For n = 0, let J0 be a set in bijection with X(0), and for each α ∈ J0, let Dα0 = Bα0 := {∗} be a singleton space and let Φα : Dα0 → X be defined by Φα(p) := vα, the vertex in X corresponding to α. For all n ≥ 0; and α ∈ Jn, the map Φα is the characteristic map, or gluing map, or attaching map associated to α. The image eαn := Φα(Bαn) is the open n-cell of X corresponding to α. If there is an n ∈ ℕ such that there is an open n-cell but there are no open k-cells for any k &gt; n, then X = X(n) is n-dimensional. If there is no such n, then X is infinite dimensional.</div></article><article class="proposition theorem-like" id="prop-5.172"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-502">
+<div class="para">Let X be a CW complex, let n ≥ 1, and let α ∈ Jn.</div>
+<ol class="decimal">
+<li id="li-142"><div class="para" id="p-503">The map qn|X(n-1) is an embedding of X(n-1) into X(n).</div></li>
+<li id="li-143"><div class="para" id="p-504">As a set, X(n) is the disjoint union X(n-1) ∐ (∐α ∈ Jn eαn).</div></li>
+<li id="li-144"><div class="para" id="p-505">Φα|Sαn-1X(n-1) = φα.</div></li>
+<li id="li-145"><div class="para" id="p-506">The open n-cell eαn is an open set of X and Φα|Bαneαn: Bαn → eαn is a homeomorphism.</div></li>
+</ol>
+</div></article><article class="example example-like" id="example-35"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-507">Examples</div></article><article class="theorem theorem-like" id="thm-5.173"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-508">Let X be a CW complex and let A be a subset of X. The set A is open in X if and only if for all n ≥ 1 and all α ∈ Jn, Φα-1(A) is open in Dαn.</div></article><article class="proposition theorem-like" id="prop-5.174"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.6.5</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-509">
+<div class="para">Let X be a CW complex.</div>
+<ol class="decimal">
+<li id="li-146"><div class="para" id="p-510">A subset B of X is closed in X if and only if B ∩ X(n) is closed in X(n) for all n.</div></li>
+<li id="li-147"><div class="para" id="p-511">If n ≥ 0 and β ∈ Jn, then ClX(eβn) has nonempty intersection with at most finitely many open cell of X.</div></li>
+<li id="li-148"><div class="para" id="p-512">A subset B of X is closed in X if and only if B ∩ ClX(eβn) is closed in ClX(eβn) for all open cells eβn.</div></li>
+</ol>
+</div></article><article class="remark remark-like" id="remark-22"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.6.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-513">To prove properties of a CW complex X, a standard method is to use induction (on n).</div></article><article class="lemma theorem-like" id="lem-5.175"><h4 class="heading">
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.6.7</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-514">A graph is a 1-dimensional CW complex.</div></article><article class="definition definition-like" id="def-5.177"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-515">For a CW complex X, the closed n-cell associated to an open n-cell eβn is ClX(eβn). A vertex, or 0-cell, of X is an element of X(0). An edge of X is a closed 1-cell, and a face of X is a closed 2-cell.</div></article><article class="theorem theorem-like" id="thm-5.185"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.9</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="p-516">
+<div class="para">Let X be a CW complex with associated index sets Jn for the n-cells and characterstic maps Φα for each α ∈ Jn and each n, and let Y be a topological space.</div>
+<ol class="decimal">
+<li id="li-149">
+<span class="heading"><span class="title">CW-CFBT = "CW-Continuous Function Building Thm".</span></span><div class="para" id="p-517">Suppose that for all n ≥ 0 and α ∈ Jn, gα: Dn → Y is a continuous function. Suppose also that for all α ∈ Jm and β ∈ Jn with α ≠ β, whenever p ∈ Dαm, q ∈ Dβn, and Φα(p) = Φβ(q), then gα(p) = gβ(q). Then the collection {gα} induces a unique continuous function g: X → Y with g ∘ Φα = gα for all n ≥ 0 and α ∈ Jn.</div>
+</li>
+<li id="li-150">
+<span class="heading"><span class="title">CW-CFCT = "CW-Continuous Function Checking Thm".</span></span><div class="para" id="p-518">If f:X → Y is a function, then f is continuous iff every composition f ∘ Φα of f with an attaching map is continuous.</div>
+</li>
+</ol>
+</div></article><article class="theorem theorem-like" id="thm-5.190"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.10</span><span class="period">.</span><span class="space"> </span><span class="title">CW-HBT = "CW-Homeomorphism Building Thm".</span>
+</h4>
+<div class="para" id="p-519">Let X be a compact CW complex with associated index sets Jn for the n-cells and characterstic maps Φα for each α ∈ Jn and each n, and let Y be a T2 topological space. Suppose that for all n ≥ 0 and α ∈ Jn, gα: Dn → Y is a continuous function such that gα|Bn is injective. Suppose also that for all α ∈ Jm and β ∈ Jn with α ≠ β, (i) whenever p ∈ Dαm, q ∈ Dβn, and Φα(p) = Φβ(q), then gα(p) = gβ(q), and (ii) gα(Bαm) ∩ gβ(Bβn) = ∅. If Y = ∪n ≥ 0, α ∈ Jn gα(Bn), then the collection {gα} induces a unique homeomorphism g: X → Y with g ∘ Φα = gα for all n ≥ 0 and α ∈ Jn.</div></article><section class="paragraphs" id="paragraphs-14"><h4 class="heading"><span class="title">Interactions with homeomorphism invariants.</span></h4> <article class="theorem theorem-like" id="thm-5.200"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.11</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-520">CW complexes are T2.</div></article> <article class="theorem theorem-like" id="thm-5.202"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.12</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-521">A CW complex X is compact if and only if X has only finitely many cells.</div></article> <article class="theorem theorem-like" id="thm-5.205"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.13</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-522">A CW complex X is PC if and only if the 1-skeleton X(1) is PC.</div></article> <article class="definition definition-like" id="def-5.207"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.14</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-523">A space X locally deforms to each point if each point p of X is contained in an open subset Up of X such that there is a deformation retraction from the subspace Up onto {p}.</div></article> <article class="theorem theorem-like" id="thm-5.208"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.15</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-524">Every CW complex locally deforms to each point.</div></article> <article class="corollary theorem-like" id="cor-5.209"><h5 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.16</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-525">If X and Y are PC CW complexes, then X ∨ Y is a CW complex and π1(X ∨ Y) ≅ π1(X) ∗ π1(Y).</div></article> <article class="definition definition-like" id="def-5.212"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.17</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-526">A topological space X is defined to be locally path-connected, or LPC, if for every point p ∈ X and every open set U of X containing p, there is an open set V of X such that p ∈ V ⊆ U and (as a subspace of X) V is path-connected.</div></article> <article class="corollary theorem-like" id="cor-5.213"><h5 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.18</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-527">CW complexes are LPC.</div></article> <article class="definition definition-like" id="def-5.215"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.19</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-528">A topological space X is simply-connected, or SC, if X is PC and π1(X) = 1.</div></article> <article class="definition definition-like" id="def-5.216"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.20</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-529">A space X is semi-locally simply connected, or SLSC if for each point p of X there is an open set Up of X containing p such that the inclusion map Up → X induces the constant homomorphism π1(Up,p) → π1(X,p) to the identity element of π1(X,p).</div></article> <article class="corollary theorem-like" id="cor-5.217"><h5 class="heading">
+<span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.21</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-530">CW complexes are SLSC.</div></article></section><section class="paragraphs" id="paragraphs-15"><h4 class="heading"><span class="title">Interactions with constructions:.</span></h4> <article class="definition definition-like" id="def-5.220"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.22</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-531">Let X be a CW complex. A subcomplex of X is a closed subspace A in X satisfying the property that whenever eα is an open cell of X and eα ∩ A is nonempty, then ClX(eα) ⊆ A.</div></article> <article class="theorem theorem-like" id="thm-5.222"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.23</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-532">If A is a subcomplex of a CW complex X, then A is a CW complex.</div></article> <article class="theorem theorem-like" id="thm-5.224"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.24</span><span class="period">.</span>
+</h5>
+<div class="para" id="p-533">If X and Y are compact CW complexes, then X × Y is also a compact CW complex.</div></article></section></section><section class="subsection" id="subsec-fund-cw"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">5.6.2</span> <span class="title">Fundamental groups of CW complexes</span>
+</h3>
+<article class="theorem theorem-like" id="thm-5.230"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.25</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-534">Let X be a 2-dimensional PC CW complex and let p ∈ X be the basepoint. The inclusion map X(1) → X(2) induces a surjective homomorphism of fundamental groups whose kernel is generated by loops based at p in bijection with the 2-cells of X. More precisely: For each face f = eα2 of X define θα: I → X by θα := iX(1)X ∘ φα ∘ ω, where iX(1)X: X(1) → X is the inclusion map and ω:I → Sα1 is defined by ω(t) := (cos(2πt),sin(2πt)) for all t ∈ I. Let γα:I → X be a path from p to θα(0), and let wf := γα ∗ θα ∗ γαrev. Then π1(X,p) ≅ π1(X(1),p) / \langle{[wf]}\rangle^N.</div></article><article class="theorem theorem-like" id="thm-5.231"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.26</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-535">For any PC CW complex X, π1(X) ≅ π1(X(2)).</div></article><article class="theorem theorem-like" id="thm-5.233"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.27</span><span class="period">.</span><span class="space"> </span><span class="title">Algorithm to present π1(CW).</span>
+</h4>
+<div class="para" id="p-536">Let X be a PC CW complex and let p ∈ X(0) be the basepoint. Let ω:I → Sα1 be defined by ω(t) := (cos(2πt),sin(2πt)) and let ρ:I → D1 be defined by ρ(t) := 2t - 1 for all t ∈ I. Suppose that for each face (2-cell) f = eα2 of X, the map sf: I → X defined by sf := iX(1)X ∘ φα ∘ ω satisfies sf(0) ∈ X(0) and sf follows an edge path in X(1). Then a presentation for π1(X,p) can be computed as follows: Step 0: Choose a maximal tree T in the 1-skeleton X(1). For each vertex v of X, let tv: I → X be the (shortest) path in T from p to v. Step 1: For each edge e = eαe1 of X(1) outside of T, let ae be the loop in X at p defined by ae' := tΦαe(-1) ∗ be ∗ tΦαe(1)rev, where be := Φαe ∘ ρ is the path in X from Φαe(-1) to Φαe(1) that traverses the edge e. Let ae := [ae']. Then π1(X(1),p) = F({ae | e is an edge of X outside of T}). Step 2: For each face f = eαf2 of X(2), let rf'' := tsf(0) ∗ sf ∗ tsf(1)rev. By inserting and/or deleting path products with paths of the form e ∗ erev and erev ∗ e for edges e in T into rf'', create a path rf' that is a path product of paths of the form ae' or (ae')rev for edges e outside of T; that is, [rf'] =π1(X(1),p) rf for some word rf = ae1j1 ··· aemjm with m ≥ 0 and each ji ∈ {± 1}. Then π1(X,p) = π1(X(2),p) = \langle {ae | e is an edge of X outside of T} | {rf = 1 | f is a face of X}  \rangle.</div></article><article class="definition definition-like" id="def-5.235"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.28</span><span class="period">.</span>
+</h4>
+<div class="para" id="p-537">The presentation complex associated to a presentation \langle A | R \rangle of a group G is a CW complex with one vertex v, an edge ea for each a ∈ A (with attaching maps gluing both endpoints of ea to v), and a face fr for each r ∈ R with attaching map determined by following the edges according to the word r.</div></article><article class="theorem theorem-like" id="thm-5.236"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.29</span><span class="period">.</span><span class="space"> </span><span class="title">"2-Way Street Thm".</span>
+</h4>
+<div class="para" id="p-538">For every group G, there is a 2-dimensional PC CW complex X with π1(X) ≅ G. Moreover, if \langle A | R \rangle is a presentation of G and Y is the associated presentation complex, then π1(Y) ≅ G.</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-svk.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-covering.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer">
+<a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

@@ -4,6 +4,8 @@
 
 # don't track unpublished builds
 
+holding
+
 # don't track assets generated from source
 generated-assets
 
