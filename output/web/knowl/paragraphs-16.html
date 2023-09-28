@@ -14,27 +14,27 @@
 <section class="paragraphs"><h4 class="heading"><span class="title">Excursion into homological algebra.</span></h4> <article class="definition definition-like"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.10</span><span class="period">.</span>
 </h5>
-<div class="para">A chain complex, denoted C•, is a sequence ⋯ → Cn+1 → Cn → Cn-1 → ⋯ C0 → 0 with group homomorphisms ∂nC = ∂n: Cn → Cn-1 and ∂0C = ∂0: C0 → 0 satisfying Im ∂n+1 ⊆ Ker ∂n for all n. An element of Ker ∂n is called an n-cycle and an element of Im ∂n+1 is an n-boundary. For n ≥ 0, the n-th homology group of C• is Hn(C•) := Ker ∂nC / Im ∂n+1C.</div></article> <article class="definition definition-like"><h5 class="heading">
+<div class="para">A chain complex, denoted C•, is a sequence ⋯ \to Cn+1 \to Cn \to Cn-1 \to ⋯ C0 \to 0 with group homomorphisms ∂nC = ∂n: Cn \to Cn-1 and ∂0C = ∂0: C0 \to 0 satisfying Im ∂n+1 \sse Ker ∂n for all n. An element of Ker ∂n is called an n-cycle and an element of Im ∂n+1 is an n-boundary. For n ≥ 0, the n-th homology group of C• is Hn(C•) := Ker ∂nC / Im ∂n+1C.</div></article> <article class="definition definition-like"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.11</span><span class="period">.</span>
 </h5>
-<div class="para">A chain map from a chain complex C• to a chain complex D•, written f♯:C• → D•, is a collection of group homomorphisms fn♯: Cn → Dn for all n ≥ 0 satisfying ∂nD ∘ fn♯ = fn-1♯ ∘ ∂nC for all n.</div></article> <article class="definition definition-like"><h5 class="heading">
+<div class="para">A chain map from a chain complex C• to a chain complex D•, written f♯:C• \to D•, is a collection of group homomorphisms fn♯: Cn \to Dn for all n ≥ 0 satisfying ∂nD \circ fn♯ = fn-1♯ \circ ∂nC for all n.</div></article> <article class="definition definition-like"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.12</span><span class="period">.</span>
 </h5>
-<div class="para">Let f♯:C• → D• be a chain map. The n-th homology homomorphism induced by f♯ is the function fn∗: Hn(C•) → Hn(D•) defined by fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D.</div></article> <article class="lemma theorem-like"><h5 class="heading">
+<div class="para">Let f♯:C• \to D• be a chain map. The n-th homology homomorphism induced by f♯ is the function fn∗: Hn(C•) \to Hn(D•) defined by fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D.</div></article> <article class="lemma theorem-like"><h5 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.13</span><span class="period">.</span>
 </h5>
-<div class="para">If f♯:C• → D• is a chain map, then the n-th homology homomorphism fn∗ induced by f♯ is a well-defined group homomorphism.</div></article> <article class="definition definition-like"><h5 class="heading">
+<div class="para">If f♯:C• \to D• is a chain map, then the n-th homology homomorphism fn∗ induced by f♯ is a well-defined group homomorphism.</div></article> <article class="definition definition-like"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.14</span><span class="period">.</span>
 </h5>
-<div class="para">Two chain maps f♯,g♯: C• → D• are chain homotopic, written f♯ ≃ g♯, if there is a collection of group homomorphisms hn: Cn → Dn+1 satisfying gn - fn = ∂n+1D ∘ hn + hn-1 ∘ ∂nC for all n. The collection of functions {hn} is called a chain homotopy from f♯ to g♯.</div></article> <article class="proposition theorem-like"><h5 class="heading">
+<div class="para">Two chain maps f♯,g♯: C• \to D• are chain homotopic, written f♯ \simeq g♯, if there is a collection of group homomorphisms hn: Cn \to Dn+1 satisfying gn - fn = ∂n+1D \circ hn + hn-1 \circ ∂nC for all n. The collection of functions {hn} is called a chain homotopy from f♯ to g♯.</div></article> <article class="proposition theorem-like"><h5 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.15</span><span class="period">.</span>
 </h5>
-<div class="para">If f♯,g♯: C• → D• are chain homotopic chain maps, then fn∗ = gn∗ for all n.</div></article> <article class="definition definition-like"><h5 class="heading">
+<div class="para">If f♯,g♯: C• \to D• are chain homotopic chain maps, then fn∗ = gn∗ for all n.</div></article> <article class="definition definition-like"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.16</span><span class="period">.</span>
 </h5>
-<div class="para">A chain map f♯: C• → D• is a chain homotopy equivalence if there is a chain map g♯: D• → C• such that f♯ ∘ g♯ ≃ 1D• and g♯ ∘ f♯ ≃ 1C•.</div></article> <article class="proposition theorem-like"><h5 class="heading">
+<div class="para">A chain map f♯: C• \to D• is a chain homotopy equivalence if there is a chain map g♯: D• \to C• such that f♯ \circ g♯ \simeq 1D• and g♯ \circ f♯ \simeq 1C•.</div></article> <article class="proposition theorem-like"><h5 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.17</span><span class="period">.</span>
 </h5>
-<div class="para">If f♯: C• → D• is a chain homotopy equivalence, then fn∗: Hn(C•) → Hn(D•) is an isomorphism for all n.</div></article></section><span class="incontext"><a href="sec-sing-hom.html#paragraphs-16" class="internal">in-context</a></span>
+<div class="para">If f♯: C• \to D• is a chain homotopy equivalence, then fn∗: Hn(C•) \to Hn(D•) is an isomorphism for all n.</div></article></section><span class="incontext"><a href="sec-sing-hom.html#paragraphs-16" class="internal">in-context</a></span>
 </body>
 </html>
