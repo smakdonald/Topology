@@ -12,7 +12,16 @@
 </head>
 <body class="ignore-math">
 <h4 class="heading"><span class="type">Paragraph</span></h4>
-<div class="para">Let X and Y be topological spaces and let f:X \to Y be a continuous map. Let (X \times I) ∐ Y have the disjoint union topology (where X \times I has the product topology), and let \sim be the minimal equivalence relation on (X \times I) ∐ Y such that (p,1) \sim f(p) for all p \in X. The mapping cylinder of f is the quotient space Xf := ((X \times I) ∐ Y)/\sim.</div>
+<div class="para logical">
+<div class="para">Let Y be a subspace of a topological space X. A deformation retraction of X onto Y is a family of maps ft: X \to X for all t \in I such that:</div>
+<ol class="decimal">
+<li><div class="para">f0 = 1X,</div></li>
+<li><div class="para">f1(X) = Y,</div></li>
+<li><div class="para">ft|Y = 1Y for all t \in I, and</div></li>
+<li><div class="para">the function H: X \times I \to X defined by H(p,t) := ft(p), for all p \in X and t \in I, is continuous.</div></li>
+</ol>
+<div class="para">The function H is also called a deformation retraction from X to Y. The space Y is called a deformation retract of X, written X ⇝ Y.</div>
+</div>
 <span class="incontext"><a href="sec-retracts.html#p-416" class="internal">in-context</a></span>
 </body>
 </html>

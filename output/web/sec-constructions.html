@@ -561,7 +561,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-group-homs.html#subsec-hom-interactions" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Interactions with constructions</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sec-pi1s1.html" class="internal"><span class="codenumber">5.3</span> <span class="title">\pi_1(S1)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-pi1S1.html" class="internal"><span class="codenumber">5.3</span> <span class="title"><span class="process-math">\(\pi_1(S^1)\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-present.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Presenting and Decomposing Groups</span></a></div>
 <ul class="structural">
@@ -646,7 +646,7 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-constructions"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">2.2</span> <span class="title">Constructing New Spaces and Continuous Functions from Old Ones</span>
 </h2>
-<section class="introduction" id="introduction-1"><blockquote class="blockquote" id="blockquote-4">
+<section class="introduction" id="introduction-3"><blockquote class="blockquote" id="blockquote-4">
 <div class="para" id="p-173">“Construction is a matter of optimism; it's a matter of facing the future with confidence.”</div> <cite class="attribution">―Cesar Pelli</cite>
 </blockquote></section><section class="subsection" id="subsec-subspaces"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.1</span> <span class="title">Subspaces</span>
@@ -654,7 +654,7 @@ window.MathJax = {
 <article class="definition definition-like" id="def-2.50"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-174">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> The subspace topology on <span class="process-math">\(A\)</span> is <span class="process-math">\(\cT sub := \{U \cap A | U is an open set in X\}\text{.}\)</span> The set <span class="process-math">\(A\)</span> with the subspace topology is called a subspace of <span class="process-math">\(X\text{.}\)</span> An element <span class="process-math">\(V\)</span> of the subspace topology on <span class="process-math">\(A\)</span> is called open in <span class="process-math">\(A\)</span> or open set relative to <span class="process-math">\(A\)</span> or open rel <span class="process-math">\(A\text{.}\)</span>
+<div class="para" id="p-174">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(X\text{.}\)</span> The subspace topology on <span class="process-math">\(A\)</span> is <span class="process-math">\(\cT_{\text{sub}} := \{U \cap A | U is an open set in X\}\text{.}\)</span> The set <span class="process-math">\(A\)</span> with the subspace topology is called a subspace of <span class="process-math">\(X\text{.}\)</span> An element <span class="process-math">\(V\)</span> of the subspace topology on <span class="process-math">\(A\)</span> is called open in <span class="process-math">\(A\)</span> or open set relative to <span class="process-math">\(A\)</span> or open rel <span class="process-math">\(A\text{.}\)</span>
 </div></article><article class="remark remark-like" id="remark-2"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
 </h4>
@@ -783,104 +783,134 @@ window.MathJax = {
 </div></article><article class="theorem theorem-like" id="thm-2.87"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.24</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-213">Let A_\alpha be a subspace of a space X_\alpha for all \alpha. Let \cT_{\text{prod}} be the product topology on \prod_\alpha A_\alpha. Let \cT sub be the subspace topology on \prod_\alpha A_\alpha induced by the product topology on \prod_\alpha X_\alpha. Then \cT_{\text{prod}} = \cT sub.</div></article></section><section class="subsection" id="subsec-quotient-spaces"><h3 class="heading hide-type">
+<div class="para" id="p-213">Let <span class="process-math">\(A_\alpha\)</span> be a subspace of a space <span class="process-math">\(X_\alpha\)</span> for all <span class="process-math">\(\alpha\text{.}\)</span> Let <span class="process-math">\(\cT_{\text{prod}}\)</span> be the product topology on <span class="process-math">\(\prod_\alpha A_\alpha\text{.}\)</span> Let <span class="process-math">\(\cT_{\text{sub}}\)</span> be the subspace topology on <span class="process-math">\(\prod_\alpha A_\alpha\)</span> induced by the product topology on <span class="process-math">\(\prod_\alpha X_\alpha\text{.}\)</span> Then \<span class="process-math">\(cT_{\text{prod}} = \cT_{\text{sub}}\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-quotient-spaces"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.2.3</span> <span class="title">Quotient = identification spaces</span>
 </h3>
 <article class="definition definition-like" id="def-2.90"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.25</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-214">Let X be a topological space and let \sim be an equivalence relation on X. Let X/\sim be the set of equivalence classes and let q: X \to X/\sim be the equivalence map (defined by q(p) := [p] for all p in X). The quotient topology, or identification topology on X/\sim induced by \sim, is the topology \cT \sim = \cT quo:= \{U \sse X/\sim | q -1(U) is open in X\}. The set X/\sim together with the quotient topology is called a quotient space of X, and the equivalence map q is called the quotient map induced by \sim.</div></article><article class="proposition theorem-like" id="prop-2.92"><h4 class="heading">
+<div class="para" id="p-214">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(\sim\)</span> be an equivalence relation on <span class="process-math">\(X\text{.}\)</span> Let <span class="process-math">\(X/\sim\)</span> be the set of equivalence classes and let <span class="process-math">\(q: X \to X/\sim\)</span> be the equivalence map (defined by <span class="process-math">\(q(p) := [p]\)</span> for all <span class="process-math">\(p\)</span> in <span class="process-math">\(X\)</span>). The quotient topology, or identification topology on <span class="process-math">\(X/\sim\)</span> induced by <span class="process-math">\(\sim\text{,}\)</span> is the topology <span class="process-math">\(\cT \sim = \cT quo:= \{U \sse X/\sim | q\inv(U) \text{ is open in }X\}\text{.}\)</span> The set <span class="process-math">\(X/\sim\)</span> together with the quotient topology is called a quotient space of <span class="process-math">\(X\text{,}\)</span> and the equivalence map <span class="process-math">\(q\)</span> is called the quotient map induced by <span class="process-math">\(\sim\text{.}\)</span>
+</div></article><article class="proposition theorem-like" id="prop-2.92"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.26</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-215">The quotient topology is a topology.</div></article><article class="proposition theorem-like" id="prop-2.93"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.27</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-216">(CC12-i) If X/\sim is a quotient space of X and q: X \to X/\sim is the equivalence map (defined by q(p) := [p] for all p in X), then q is a continuous surjection. (b) The quotient topology induced by an equivalence relation is the largest topology on the set of equivalence classes for which the equivalence map is continuous.</div></article><article class="definition definition-like" id="def-2.95"><h4 class="heading">
+<div class="para logical" id="p-216"><ol class="decimal">
+<li id="li-111">
+<span class="heading"><span class="title">CC12-i.</span></span><div class="para" id="p-217">If <span class="process-math">\(X/\sim\)</span> is a quotient space of <span class="process-math">\(X\)</span> and <span class="process-math">\(q: X \to X/\sim\)</span> is the equivalence map (defined by <span class="process-math">\(q(p) := [p]\)</span> for all <span class="process-math">\(p \in X\)</span>), then <span class="process-math">\(q\)</span> is a continuous surjection.</div>
+</li>
+<li id="li-112"><div class="para" id="p-218">The quotient topology induced by an equivalence relation is the largest topology on the set of equivalence classes for which the equivalence map is continuous.</div></li>
+</ol></div></article><article class="definition definition-like" id="def-2.95"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.28</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-217">Let (X,\cT X) be a topological space, let Y be a set, and let f:X \to Y be a surjective function. The quotient topology on Y induced by f is \cT q := \{V \sse Y | f\inv(V) \in \cT X\}. If Y has the quotient topology induced by f then f is called a quotient map.</div></article><article class="proposition theorem-like" id="prop-2.97"><h4 class="heading">
+<div class="para" id="p-219">Let <span class="process-math">\((X,\cT_X)\)</span> be a topological space, let <span class="process-math">\(Y\)</span> be a set, and let <span class="process-math">\(f:X \to Y\)</span> be a surjective function. The quotient topology on <span class="process-math">\(Y\)</span> induced by <span class="process-math">\(f\)</span> is <span class="process-math">\(\cT_q := \{V \sse Y | f\inv(V) \in \cT_X\}\text{.}\)</span> If <span class="process-math">\(Y\)</span> has the quotient topology induced by <span class="process-math">\(f\)</span> then <span class="process-math">\(f\)</span> is called a quotient map.</div></article><article class="proposition theorem-like" id="prop-2.97"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.29</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-218">The quotient topology induced by a function f is a topology.</div></article><article class="proposition theorem-like" id="prop-2.98"><h4 class="heading">
+<div class="para" id="p-220">The quotient topology induced by a function <span class="process-math">\(f\)</span> is a topology.</div></article><article class="proposition theorem-like" id="prop-2.98"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.30</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-219">(CC12-ii) If f is a quotient map, then f is a continuous surjection. (b) The quotient topology induced by a map f is the largest topology on the codomain of f for which the map f is continuous.</div></article><article class="proposition theorem-like" id="prop-2.100"><h4 class="heading">
+<div class="para logical" id="p-221"><ol class="decimal">
+<li id="li-113">
+<span class="heading"><span class="title">CC12-ii.</span></span><div class="para" id="p-222">If <span class="process-math">\(f\)</span> is a quotient map, then <span class="process-math">\(f\)</span> is a continuous surjection.</div>
+</li>
+<li id="li-114"><div class="para" id="p-223">The quotient topology induced by a map <span class="process-math">\(f\)</span> is the largest topology on the codomain of <span class="process-math">\(f\)</span> for which the map <span class="process-math">\(f\)</span> is continuous.</div></li>
+</ol></div></article><article class="proposition theorem-like" id="prop-2.100"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.31</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-220">Let X be a topological space. (a) If \sim is an equivalence relation on X, then the quotient topology on X/\sim induced by \sim equals the quotient topology on X/\sim induced by the equivalence map q:X \to X/\sim (defined by q(p) := [p] for all p in X). (b) If f:X \to Y is a surjection, then the quotient space (Y,\cT f) is homeomorphic to the quotient space (X/\sim,\cT \sim ) induced by the equivalence relation on X defined by x \sim x' if and only if f(x) = f(x') for all x,x' \in X; moreover, the homeomorphism g:X/\sim \to Y satisfies g \circ q = f, where q is the equivalence map.</div></article><article class="example example-like" id="example-13"><h4 class="heading">
+<div class="para logical" id="p-224">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space.</div>
+<ol class="decimal">
+<li id="li-115"><div class="para" id="p-225">If <span class="process-math">\(\sim\)</span> is an equivalence relation on <span class="process-math">\(X\text{,}\)</span> then the quotient topology on <span class="process-math">\(X/\sim\)</span> induced by <span class="process-math">\(\sim\)</span> equals the quotient topology on <span class="process-math">\(X/\sim\)</span> induced by the equivalence map <span class="process-math">\(q:X \to X/\sim\)</span> (defined by <span class="process-math">\(q(p) := [p]\)</span> for all <span class="process-math">\(p \in X\)</span>).</div></li>
+<li id="li-116"><div class="para" id="p-226">If <span class="process-math">\(f:X \to Y\)</span> is a surjection, then the quotient space <span class="process-math">\((Y,\cT f)\)</span> is homeomorphic to the quotient space <span class="process-math">\((X/\sim,\cT \sim )\)</span> induced by the equivalence relation on <span class="process-math">\(X\)</span> defined by <span class="process-math">\(x \sim x'\)</span> if and only if <span class="process-math">\(f(x) = f(x')\)</span> for all <span class="process-math">\(x,x' \in X\text{;}\)</span> moreover, the homeomorphism <span class="process-math">\(g:X/\sim \to Y\)</span> satisfies <span class="process-math">\(g \circ q = f\text{,}\)</span> where <span class="process-math">\(q\)</span> is the equivalence map.</div></li>
+</ol>
+</div></article><article class="example example-like" id="example-13"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.2.32</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-221">Examples</div>
+<div class="para" id="p-227">Examples</div>
 <div class="solutions">
-<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><div class="para" id="p-222"></div></div></div>
-</div></article><div class="para" id="p-223">1-dimensional examples: Quotients of a line segment [0,1]:</div>
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><div class="para" id="p-228"></div></div></div>
+</div></article><div class="para" id="p-229">
+<span class="process-math">\(1\)</span>-dimensional examples: Quotients of a line segment <span class="process-math">\([0,1]\text{:}\)</span>
+</div>
 <article class="theorem theorem-like" id="thm-2.104"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.33</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-224">Let X = [0,1] have the Euclidean subspace topology, and let \sim be the equivalence relation on X defined by p \sim q if and only if either [p=q] or [\{p,q\} = \{0,1\}]. Then the quotient space X/\sim is isomorphic to S1.</div></article><div class="para" id="p-225">2-dimensional (surface) examples: Quotients of the square [0,1] \times [0,1]:</div>
+<div class="para" id="p-230">Let <span class="process-math">\(X = [0,1]\)</span> have the Euclidean subspace topology, and let <span class="process-math">\(\sim\)</span> be the equivalence relation on <span class="process-math">\(X\)</span> defined by <span class="process-math">\(p \sim q\)</span> if and only if either <span class="process-math">\([p=q]\)</span> or <span class="process-math">\([\{p,q\} = \{0,1\}]\text{.}\)</span> Then the quotient space <span class="process-math">\(X/\sim\)</span> is isomorphic to <span class="process-math">\(S^1\text{.}\)</span>
+</div></article><div class="para" id="p-231">
+<span class="process-math">\(2\)</span>-dimensional (surface) examples: Quotients of the square <span class="process-math">\([0,1] \times [0,1]\text{:}\)</span>
+</div>
 <article class="definition definition-like" id="def-2.106"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.34</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-226">
-<div class="para">Let X = [0,1] \times [0,1] have the product topology (where each [0,1] has the Euclidean subspace topology).</div>
-<ol class="decimal"><li id="li-111"><div class="para" id="p-227">The torus T2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (r,1) and (0,s) \sim (1,s) for all r,s \in [0,1].</div></li></ol>
-<ol class="decimal"><li id="li-112"><div class="para" id="p-228">The Klein bottle K2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (r,1) and (0,s) \sim (1,1-s) for all r,s \in [0,1].</div></li></ol>
-<ol class="decimal"><li id="li-113"><div class="para" id="p-229">The Mobius band M2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (0,s) \sim (1,1-s) for all s \in [0,1].</div></li></ol>
+<div class="para logical" id="p-232">
+<div class="para">Let <span class="process-math">\(X = [0,1] \times [0,1]\)</span> have the product topology (where each <span class="process-math">\([0,1]\)</span> has the Euclidean subspace topology).</div>
+<ol class="decimal"><li id="li-117"><div class="para" id="p-233">The torus <span class="process-math">\(T^2\)</span> is the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((r,0) \sim (r,1)\)</span> and <span class="process-math">\((0,s) \sim (1,s)\)</span> for all <span class="process-math">\(r,s \in [0,1]\text{.}\)</span>
+</div></li></ol>
+<ol class="decimal"><li id="li-118"><div class="para" id="p-234">The Klein bottle <span class="process-math">\(K^2\)</span> is the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((r,0) \sim (r,1)\)</span> and <span class="process-math">\((0,s) \sim (1,1-s)\)</span> for all <span class="process-math">\(r,s \in [0,1]\text{.}\)</span>
+</div></li></ol>
+<ol class="decimal"><li id="li-119"><div class="para" id="p-235">The Mobius band <span class="process-math">\(M^2\)</span> is the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((0,s) \sim (1,1-s)\)</span> for all <span class="process-math">\(s \in [0,1]\text{.}\)</span>
+</div></li></ol>
 </div></article><article class="definition definition-like" id="def-2.108"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.35</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-230">The projective plane P2 is the quotient space P2 := S2/\sim where S2 := \{(x,y,z) \in \R 3 | x2 + y2 + z2 = 1\} is the 2-sphere (with the Euclidean subspace topology) and \sim is the equivalence relation generated by (x,y,z) \sim (-x,-y,-z) for all (x,y,z) \in S2.</div></article><article class="theorem theorem-like" id="thm-2.110"><h4 class="heading">
+<div class="para" id="p-236">The projective plane <span class="process-math">\(P^2\)</span> is the quotient space <span class="process-math">\(P^2 := S^2/\sim\)</span> where <span class="process-math">\(S^2 := \{(x,y,z) \in \R^3 | x^2 + y^2 + z^2 = 1\}\)</span> is the <span class="process-math">\(2\)</span>-sphere (with the Euclidean subspace topology) and <span class="process-math">\(\sim\)</span> is the equivalence relation generated by <span class="process-math">\((x,y,z) \sim (-x,-y,-z\)</span>) for all <span class="process-math">\((x,y,z) \in S^2\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.110"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.36</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-231">
-<div class="para">Let X = [0,1] \times [0,1] have the product topology (where each [0,1] has the Euclidean subspace topology).</div>
+<div class="para logical" id="p-237">
+<div class="para">Let <span class="process-math">\(X = [0,1] \times [0,1]\)</span> have the product topology (where each <span class="process-math">\([0,1]\)</span> has the Euclidean subspace topology).</div>
 <ol class="decimal">
-<li id="li-114"><div class="para" id="p-232">The cylinder S1 \times [0,1] is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (1,r) for all r \in [0,1].</div></li>
-<li id="li-115"><div class="para" id="p-233">The projective plane P2 is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (1-r,1) and (0,1-s) \sim (1,s) for all r,s \in [0,1].</div></li>
-<li id="li-116"><div class="para" id="p-234">The 2-sphere S2 is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (0,r) and (s,1) \sim (1,s) for all r,s \in [0,1].</div></li>
-<li id="li-117"><div class="para" id="p-235">The torus T2 is homeomorphic to the product space S1 \times S1 where each S1 has the Euclidean subspace topology.</div></li>
+<li id="li-120"><div class="para" id="p-238">The cylinder <span class="process-math">\(S^1 \times [0,1]\)</span> is homeomorphic to the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((r,0) \sim (1,r)\)</span> for all <span class="process-math">\(r \in [0,1]\text{.}\)</span>
+</div></li>
+<li id="li-121"><div class="para" id="p-239">The projective plane <span class="process-math">\(P^2\)</span> is homeomorphic to the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((r,0) \sim (1-r,1)\)</span> and <span class="process-math">\((0,1-s) \sim (1,s)\)</span> for all <span class="process-math">\(r,s \in [0,1]\text{.}\)</span>
+</div></li>
+<li id="li-122"><div class="para" id="p-240">The <span class="process-math">\(2\)</span>-sphere <span class="process-math">\(S^2\)</span> is homeomorphic to the quotient space <span class="process-math">\(X/\sim\)</span> where <span class="process-math">\(\sim\)</span> is the equivalence relation on <span class="process-math">\(X\)</span> generated by <span class="process-math">\((r,0) \sim (0,r)\)</span> and <span class="process-math">\((s,1) \sim (1,s)\)</span> for all <span class="process-math">\(r,s \in [0,1]\text{.}\)</span>
+</div></li>
+<li id="li-123"><div class="para" id="p-241">The torus <span class="process-math">\(T^2\)</span> is homeomorphic to the product space <span class="process-math">\(S^1 \times S^1\)</span> where each <span class="process-math">\(S^1\)</span> has the Euclidean subspace topology.</div></li>
 </ol>
 </div></article><article class="theorem theorem-like" id="thm-2.120"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.37</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-236">(CC13 and CQ1) (CFBT = "Continuous Function Building Theorem for quotient spaces"): Let X and Z be topological spaces, let \sim be an equivalence relation on X, let q: X \to X/\sim be the equivalence map, and let X/\sim have the quotient topology. Suppose that f: X \to Z is a continuous function that is constant on equivalence classes. Then: (1) The map f induces a continuous function g: X/\sim \to Z with g \circ q = f. (2) If f is onto then g is onto. (2') If f is a quotient map, then g is a quotient map. (3) If [ f(x)=f(x') implies q(x)=q(x') for all x,x' \in X] then g is one-to-one. (4) If f is a quotient map and (3) holds then g is a homeomorphism.</div></article><article class="definition definition-like" id="def-2.123"><h4 class="heading">
+<div class="para" id="p-242">(CC13 and CQ1) (CFBT = "Continuous Function Building Theorem for quotient spaces"): Let X and Z be topological spaces, let \sim be an equivalence relation on X, let q: X \to X/\sim be the equivalence map, and let X/\sim have the quotient topology. Suppose that f: X \to Z is a continuous function that is constant on equivalence classes. Then: (1) The map f induces a continuous function g: X/\sim \to Z with g \circ q = f. (2) If f is onto then g is onto. (2') If f is a quotient map, then g is a quotient map. (3) If [ f(x)=f(x') implies q(x)=q(x') for all x,x' \in X] then g is one-to-one. (4) If f is a quotient map and (3) holds then g is a homeomorphism.</div></article><article class="definition definition-like" id="def-2.123"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.38</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-237">Let X and Y be topological spaces. An <em class="emphasis">open map</em> from X to Y is a function f:X \to Y such that for every open set V in X, the image f(V) is open in Y.</div></article><article class="proposition theorem-like" id="prop-2.124"><h4 class="heading">
+<div class="para" id="p-243">Let X and Y be topological spaces. An <em class="emphasis">open map</em> from X to Y is a function f:X \to Y such that for every open set V in X, the image f(V) is open in Y.</div></article><article class="proposition theorem-like" id="prop-2.124"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.39</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-238">(CO1) (a) A composition of open functions is open. (b) (CO2) If X_\alpha has the topology T\alpha for each \alpha \in J, and \prod_{\alpha \in J} X_\alpha has the product topology, then the projection map p_\beta  : (\prod_{\alpha \in J} X_\alpha ) \to X\beta  is open. (c) If f:X \to Y is an open function and if B is a subspace of Y satisfying f(X) \sse B \sse Y, then f|B is an open map. (d) (CO3) A finite product of open maps is open.</div></article><article class="theorem theorem-like" id="thm-2.126"><h4 class="heading">
+<div class="para" id="p-244">(CO1) (a) A composition of open functions is open. (b) (CO2) If X_\alpha has the topology T\alpha for each \alpha \in J, and \prod_{\alpha \in J} X_\alpha has the product topology, then the projection map p_\beta  : (\prod_{\alpha \in J} X_\alpha ) \to X\beta  is open. (c) If f:X \to Y is an open function and if B is a subspace of Y satisfying f(X) \sse B \sse Y, then f|B is an open map. (d) (CO3) A finite product of open maps is open.</div></article><article class="theorem theorem-like" id="thm-2.126"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.40</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-239">(CQ2) If f: X \to Z is continuous, onto, and open, then f is a quotient map.</div></article><article class="proposition theorem-like" id="prop-2.127"><h4 class="heading">
+<div class="para" id="p-245">(CQ2) If f: X \to Z is continuous, onto, and open, then f is a quotient map.</div></article><article class="proposition theorem-like" id="prop-2.127"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.2.41</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-240">There exist quotient maps that are not open maps.</div></article><article class="definition definition-like" id="def-2.130"><h4 class="heading">
+<div class="para" id="p-246">There exist quotient maps that are not open maps.</div></article><article class="definition definition-like" id="def-2.130"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.42</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-241">A <em class="emphasis">retraction</em> of a topological space X to a subspace A is a continuous function r:X \to A satisfying r(a) = a for all a \in A.</div></article><article class="theorem theorem-like" id="thm-2.131"><h4 class="heading">
+<div class="para" id="p-247">A <em class="emphasis">retraction</em> of a topological space X to a subspace A is a continuous function r:X \to A satisfying r(a) = a for all a \in A.</div></article><article class="theorem theorem-like" id="thm-2.131"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.43</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-242">(CQ3) Every retraction is a quotient map.</div></article><article class="definition definition-like" id="def-2.134"><h4 class="heading">
+<div class="para" id="p-248">(CQ3) Every retraction is a quotient map.</div></article><article class="definition definition-like" id="def-2.134"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.44</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-243">Let (X,\cT X) and (Y,\cT_Y) be topological spaces with X \cap Y = \es. The <em class="emphasis">disjoint union topology</em> on X \cup Y is \cT ∐ = \{ U \cup V | U \in \cT X and V \in \cT_Y \}.</div></article><article class="definition definition-like" id="def-2.136"><h4 class="heading">
+<div class="para" id="p-249">Let (X,\cT_X) and (Y,\cT_Y) be topological spaces with X \cap Y = \es. The <em class="emphasis">disjoint union topology</em> on X \cup Y is \cT ∐ = \{ U \cup V | U \in \cT_X and V \in \cT_Y \}.</div></article><article class="definition definition-like" id="def-2.136"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.2.45</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-244">Let X1 and X2 be disjoint topological spaces, let Ai be a subspace of Xi for each i, and let f : A1 \to A2 be a continuous function. The <em class="emphasis">disjoint union</em> of X1 and X2 glued along f, denoted X1 ∐f X2 is defined to be the quotient of the disjoint union space X1 \cup X2 associated to the the smallest equivalence relation \sim such that a \sim f(a) for all a in A1.</div></article><article class="theorem theorem-like" id="thm-2.137"><h4 class="heading">
+<div class="para" id="p-250">Let X1 and X2 be disjoint topological spaces, let Ai be a subspace of Xi for each i, and let f : A1 \to A2 be a continuous function. The <em class="emphasis">disjoint union</em> of X1 and X2 glued along f, denoted X1 ∐f X2 is defined to be the quotient of the disjoint union space X1 \cup X2 associated to the the smallest equivalence relation \sim such that a \sim f(a) for all a in A1.</div></article><article class="theorem theorem-like" id="thm-2.137"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.46</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-245">If Ai is a subspace of Xi for i = 1,2 and f : A1 \to A2 is continuous, then the function g: X2 \to X1 ∐f X2 defined by g(p) := [p] (for all p in X2) is an embedding.</div></article><article class="theorem theorem-like" id="thm-2.139"><h4 class="heading">
+<div class="para" id="p-251">If Ai is a subspace of Xi for i = 1,2 and f : A1 \to A2 is continuous, then the function g: X2 \to X1 ∐f X2 defined by g(p) := [p] (for all p in X2) is an embedding.</div></article><article class="theorem theorem-like" id="thm-2.139"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.47</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-246">Let Z be a topological space, let A be an open set in Z, and let \sim be an equivalence relation on Z satisfying the property that for each a \in A, the equivalence class of a satisfies [a] = \{a\}. If A has the subspace topology and Z/\sim has the quotient topology, then the function g: A \to Z/\sim defined by g(a) := [a] for all a \in A is an embedding.</div></article><article class="theorem theorem-like" id="thm-2.142"><h4 class="heading">
+<div class="para" id="p-252">Let Z be a topological space, let A be an open set in Z, and let \sim be an equivalence relation on Z satisfying the property that for each a \in A, the equivalence class of a satisfies [a] = \{a\}. If A has the subspace topology and Z/\sim has the quotient topology, then the function g: A \to Z/\sim defined by g(a) := [a] for all a \in A is an embedding.</div></article><article class="theorem theorem-like" id="thm-2.142"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.2.48</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-247">
+<div class="para logical" id="p-253">
 <div class="para">Let X be a topological space, let \sim be an equivalence relation on X, and let q:X \to X/\sim be the quotient map. Let A be a subspace of X and let q(A) have the subspace topology in X/\sim.</div>
 <ol class="decimal">
-<li id="li-118"><div class="para" id="p-248">The relation \approx on A defined by [a \approx a' if and only if a \sim a' for all a,a' \in A] is an equivalence relation on A.</div></li>
-<li id="li-119"><div class="para" id="p-249">If A = q\inv(q(A)) and A is either an open or closed subset of X, then the the function q|Aq(A):A \to q(A) is a quotient map and the function h: A/\approx \to q(A) defined by h([a]) := [h(a)] for all [a] \in A/\approx is a homeomorphism.</div></li>
+<li id="li-124"><div class="para" id="p-254">The relation \approx on A defined by [a \approx a' if and only if a \sim a' for all a,a' \in A] is an equivalence relation on A.</div></li>
+<li id="li-125"><div class="para" id="p-255">If A = q\inv(q(A)) and A is either an open or closed subset of X, then the the function q|Aq(A):A \to q(A) is a quotient map and the function h: A/\approx \to q(A) defined by h([a]) := [h(a)] for all [a] \in A/\approx is a homeomorphism.</div></li>
 </ol>
 </div></article></section></section></div>
 <div class="ptx-content-footer">

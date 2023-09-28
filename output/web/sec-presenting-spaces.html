@@ -561,7 +561,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-group-homs.html#subsec-hom-interactions" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Interactions with constructions</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sec-pi1s1.html" class="internal"><span class="codenumber">5.3</span> <span class="title">\pi_1(S1)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-pi1S1.html" class="internal"><span class="codenumber">5.3</span> <span class="title"><span class="process-math">\(\pi_1(S^1)\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-present.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Presenting and Decomposing Groups</span></a></div>
 <ul class="structural">
@@ -652,119 +652,119 @@ window.MathJax = {
 <article class="definition definition-like" id="def-5.170"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-550">Let X(0) be a set of points with the discrete topology. For each n ≥ 1, form the space X(n) from X(n-1) by: For each \alpha in an index set Jn, let D\alpha n be a copy of the closed unit disk Dn in \R^n (with Euclidean topology), and let φ\alpha : S\alpha n-1 \to X(n-1) be a continuous function. Let Zn := X(n-1) ∐ (∐\alpha \in Jn D\alpha n) have the disjoint union topology, and let \sim be the minimal equivalence relation on this space such that d \sim φ\alpha (d) for all d \in S\alpha n-1 and \alpha \in Jn. Define X(n) be the quotient space and let qn be the quotient map. Let X := \cup n \in \N  X(n) (where each X(n) is identified with its image in X(n+1)). If there is no n such that X = X(n), then a subset A of X is defined to be open in X if and only if A \cap X(n) is open in X(n) for all n. The space X is a CW complex, and the topology on X is the CW topology or weak topology. The subspace X(n) of X is the n-skeleton of X. The procedure of building X(n) from X(n-1) is called gluing on n-disks. For each n ≥ 1 and each \alpha \in Jn, let Φ\alpha : D\alpha n \to X be the composition Φ\alpha := iX(n)X \circ qn \circ iD\alpha nZn (where iX(n)X: X(n) \to X and iD\alpha nZn: D\alpha n \to Zn are the inclusion maps). For n = 0, let J0 be a set in bijection with X(0), and for each \alpha \in J0, let D\alpha 0 = B_\alpha 0 := {∗} be a singleton space and let Φ\alpha : D\alpha 0 \to X be defined by Φ\alpha (p) := v\alpha, the vertex in X corresponding to \alpha. For all n ≥ 0; and \alpha \in Jn, the map Φ\alpha is the characteristic map, or gluing map, or attaching map associated to \alpha. The image e\alpha n := Φ\alpha (B_\alpha n) is the open n-cell of X corresponding to \alpha. If there is an n \in \N  such that there is an open n-cell but there are no open k-cells for any k &gt; n, then X = X(n) is n-dimensional. If there is no such n, then X is infinite dimensional.</div></article><article class="proposition theorem-like" id="prop-5.172"><h4 class="heading">
+<div class="para" id="p-556">Let X(0) be a set of points with the discrete topology. For each n ≥ 1, form the space X(n) from X(n-1) by: For each \alpha in an index set Jn, let D\alpha n be a copy of the closed unit disk Dn in \R^n (with Euclidean topology), and let φ\alpha : S\alpha n-1 \to X(n-1) be a continuous function. Let Zn := X(n-1) ∐ (∐\alpha \in Jn D\alpha n) have the disjoint union topology, and let \sim be the minimal equivalence relation on this space such that d \sim φ\alpha (d) for all d \in S\alpha n-1 and \alpha \in Jn. Define X(n) be the quotient space and let qn be the quotient map. Let X := \cup n \in \N  X(n) (where each X(n) is identified with its image in X(n+1)). If there is no n such that X = X(n), then a subset A of X is defined to be open in X if and only if A \cap X(n) is open in X(n) for all n. The space X is a CW complex, and the topology on X is the CW topology or weak topology. The subspace X(n) of X is the n-skeleton of X. The procedure of building X(n) from X(n-1) is called gluing on n-disks. For each n ≥ 1 and each \alpha \in Jn, let Φ\alpha : D\alpha n \to X be the composition Φ\alpha := iX(n)X \circ qn \circ iD\alpha nZn (where iX(n)X: X(n) \to X and iD\alpha nZn: D\alpha n \to Zn are the inclusion maps). For n = 0, let J0 be a set in bijection with X(0), and for each \alpha \in J0, let D\alpha 0 = B_\alpha 0 := {∗} be a singleton space and let Φ\alpha : D\alpha 0 \to X be defined by Φ\alpha (p) := v\alpha, the vertex in X corresponding to \alpha. For all n ≥ 0; and \alpha \in Jn, the map Φ\alpha is the characteristic map, or gluing map, or attaching map associated to \alpha. The image e\alpha n := Φ\alpha (B_\alpha n) is the open n-cell of X corresponding to \alpha. If there is an n \in \N  such that there is an open n-cell but there are no open k-cells for any k &gt; n, then X = X(n) is n-dimensional. If there is no such n, then X is infinite dimensional.</div></article><article class="proposition theorem-like" id="prop-5.172"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.6.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-551">
+<div class="para logical" id="p-557">
 <div class="para">Let X be a CW complex, let n ≥ 1, and let \alpha \in Jn.</div>
 <ol class="decimal">
-<li id="li-181"><div class="para" id="p-552">The map qn|X(n-1) is an embedding of X(n-1) into X(n).</div></li>
-<li id="li-182"><div class="para" id="p-553">As a set, X(n) is the disjoint union X(n-1) ∐ (∐\alpha \in Jn e\alpha n).</div></li>
-<li id="li-183"><div class="para" id="p-554">Φ\alpha |S\alpha n-1X(n-1) = φ\alpha.</div></li>
-<li id="li-184"><div class="para" id="p-555">The open n-cell e\alpha n is an open set of X and Φ\alpha |B_\alpha ne\alpha n: B_\alpha n \to e\alpha n is a homeomorphism.</div></li>
+<li id="li-187"><div class="para" id="p-558">The map qn|X(n-1) is an embedding of X(n-1) into X(n).</div></li>
+<li id="li-188"><div class="para" id="p-559">As a set, X(n) is the disjoint union X(n-1) ∐ (∐\alpha \in Jn e\alpha n).</div></li>
+<li id="li-189"><div class="para" id="p-560">Φ\alpha |S\alpha n-1X(n-1) = φ\alpha.</div></li>
+<li id="li-190"><div class="para" id="p-561">The open n-cell e\alpha n is an open set of X and Φ\alpha |B_\alpha ne\alpha n: B_\alpha n \to e\alpha n is a homeomorphism.</div></li>
 </ol>
 </div></article><article class="example example-like" id="example-35"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.6.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-556">Examples</div></article><article class="theorem theorem-like" id="thm-5.173"><h4 class="heading">
+<div class="para" id="p-562">Examples</div></article><article class="theorem theorem-like" id="thm-5.173"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-557">Let X be a CW complex and let A be a subset of X. The set A is open in X if and only if for all n ≥ 1 and all \alpha \in Jn, Φ\alpha -1(A) is open in D\alpha n.</div></article><article class="proposition theorem-like" id="prop-5.174"><h4 class="heading">
+<div class="para" id="p-563">Let X be a CW complex and let A be a subset of X. The set A is open in X if and only if for all n ≥ 1 and all \alpha \in Jn, Φ\alpha -1(A) is open in D\alpha n.</div></article><article class="proposition theorem-like" id="prop-5.174"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.6.5</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-558">
+<div class="para logical" id="p-564">
 <div class="para">Let X be a CW complex.</div>
 <ol class="decimal">
-<li id="li-185"><div class="para" id="p-559">A subset B of X is closed in X if and only if B \cap X(n) is closed in X(n) for all n.</div></li>
-<li id="li-186"><div class="para" id="p-560">If n ≥ 0 and \beta \in Jn, then ClX(e\beta n) has nonempty intersection with at most finitely many open cell of X.</div></li>
-<li id="li-187"><div class="para" id="p-561">A subset B of X is closed in X if and only if B \cap ClX(e\beta n) is closed in ClX(e\beta n) for all open cells e\beta n.</div></li>
+<li id="li-191"><div class="para" id="p-565">A subset B of X is closed in X if and only if B \cap X(n) is closed in X(n) for all n.</div></li>
+<li id="li-192"><div class="para" id="p-566">If n ≥ 0 and \beta \in Jn, then ClX(e\beta n) has nonempty intersection with at most finitely many open cell of X.</div></li>
+<li id="li-193"><div class="para" id="p-567">A subset B of X is closed in X if and only if B \cap ClX(e\beta n) is closed in ClX(e\beta n) for all open cells e\beta n.</div></li>
 </ol>
 </div></article><article class="remark remark-like" id="remark-22"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.6.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-562">To prove properties of a CW complex X, a standard method is to use induction (on n).</div></article><article class="lemma theorem-like" id="lem-5.175"><h4 class="heading">
+<div class="para" id="p-568">To prove properties of a CW complex X, a standard method is to use induction (on n).</div></article><article class="lemma theorem-like" id="lem-5.175"><h4 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.6.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-563">A graph is a 1-dimensional CW complex.</div></article><article class="definition definition-like" id="def-5.177"><h4 class="heading">
+<div class="para" id="p-569">A graph is a 1-dimensional CW complex.</div></article><article class="definition definition-like" id="def-5.177"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-564">For a CW complex X, the closed n-cell associated to an open n-cell e\beta n is ClX(e\beta n). A vertex, or 0-cell, of X is an element of X(0). An edge of X is a closed 1-cell, and a face of X is a closed 2-cell.</div></article><article class="theorem theorem-like" id="thm-5.185"><h4 class="heading">
+<div class="para" id="p-570">For a CW complex X, the closed n-cell associated to an open n-cell e\beta n is ClX(e\beta n). A vertex, or 0-cell, of X is an element of X(0). An edge of X is a closed 1-cell, and a face of X is a closed 2-cell.</div></article><article class="theorem theorem-like" id="thm-5.185"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.9</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-565">
+<div class="para logical" id="p-571">
 <div class="para">Let X be a CW complex with associated index sets Jn for the n-cells and characterstic maps Φ\alpha for each \alpha \in Jn and each n, and let Y be a topological space.</div>
 <ol class="decimal">
-<li id="li-188">
-<span class="heading"><span class="title">CW-CFBT = "CW-Continuous Function Building Thm".</span></span><div class="para" id="p-566">Suppose that for all n ≥ 0 and \alpha \in Jn, g_\alpha : Dn \to Y is a continuous function. Suppose also that for all \alpha \in Jm and \beta \in Jn with \alpha \ne \beta, whenever p \in D\alpha m, q \in D\beta n, and Φ\alpha (p) = Φ\beta (q), then g_\alpha (p) = g\beta (q). Then the collection {g_\alpha } induces a unique continuous function g: X \to Y with g \circ Φ\alpha = g_\alpha for all n ≥ 0 and \alpha \in Jn.</div>
+<li id="li-194">
+<span class="heading"><span class="title">CW-CFBT = "CW-Continuous Function Building Thm".</span></span><div class="para" id="p-572">Suppose that for all n ≥ 0 and \alpha \in Jn, g_\alpha : Dn \to Y is a continuous function. Suppose also that for all \alpha \in Jm and \beta \in Jn with \alpha \ne \beta, whenever p \in D\alpha m, q \in D\beta n, and Φ\alpha (p) = Φ\beta (q), then g_\alpha (p) = g\beta (q). Then the collection {g_\alpha } induces a unique continuous function g: X \to Y with g \circ Φ\alpha = g_\alpha for all n ≥ 0 and \alpha \in Jn.</div>
 </li>
-<li id="li-189">
-<span class="heading"><span class="title">CW-CFCT = "CW-Continuous Function Checking Thm".</span></span><div class="para" id="p-567">If f:X \to Y is a function, then f is continuous iff every composition f \circ Φ\alpha of f with an attaching map is continuous.</div>
+<li id="li-195">
+<span class="heading"><span class="title">CW-CFCT = "CW-Continuous Function Checking Thm".</span></span><div class="para" id="p-573">If f:X \to Y is a function, then f is continuous iff every composition f \circ Φ\alpha of f with an attaching map is continuous.</div>
 </li>
 </ol>
 </div></article><article class="theorem theorem-like" id="thm-5.190"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.10</span><span class="period">.</span><span class="space"> </span><span class="title">CW-HBT = "CW-Homeomorphism Building Thm".</span>
 </h4>
-<div class="para" id="p-568">Let X be a compact CW complex with associated index sets Jn for the n-cells and characterstic maps Φ\alpha for each \alpha \in Jn and each n, and let Y be a T2 topological space. Suppose that for all n ≥ 0 and \alpha \in Jn, g_\alpha : Dn \to Y is a continuous function such that g_\alpha |Bn is injective. Suppose also that for all \alpha \in Jm and \beta \in Jn with \alpha \ne \beta, (i) whenever p \in D\alpha m, q \in D\beta n, and Φ\alpha (p) = Φ\beta (q), then g_\alpha (p) = g\beta (q), and (ii) g_\alpha (B_\alpha m) \cap g\beta (B\beta n) = \es. If Y = \cup n ≥ 0, \alpha \in Jn g_\alpha (Bn), then the collection {g_\alpha } induces a unique homeomorphism g: X \to Y with g \circ Φ\alpha = g_\alpha for all n ≥ 0 and \alpha \in Jn.</div></article><section class="paragraphs" id="paragraphs-14"><h4 class="heading"><span class="title">Interactions with homeomorphism invariants.</span></h4> <article class="theorem theorem-like" id="thm-5.200"><h5 class="heading">
+<div class="para" id="p-574">Let X be a compact CW complex with associated index sets Jn for the n-cells and characterstic maps Φ\alpha for each \alpha \in Jn and each n, and let Y be a T2 topological space. Suppose that for all n ≥ 0 and \alpha \in Jn, g_\alpha : Dn \to Y is a continuous function such that g_\alpha |Bn is injective. Suppose also that for all \alpha \in Jm and \beta \in Jn with \alpha \ne \beta, (i) whenever p \in D\alpha m, q \in D\beta n, and Φ\alpha (p) = Φ\beta (q), then g_\alpha (p) = g\beta (q), and (ii) g_\alpha (B_\alpha m) \cap g\beta (B\beta n) = \es. If Y = \cup n ≥ 0, \alpha \in Jn g_\alpha (Bn), then the collection {g_\alpha } induces a unique homeomorphism g: X \to Y with g \circ Φ\alpha = g_\alpha for all n ≥ 0 and \alpha \in Jn.</div></article><section class="paragraphs" id="paragraphs-14"><h4 class="heading"><span class="title">Interactions with homeomorphism invariants.</span></h4> <article class="theorem theorem-like" id="thm-5.200"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.11</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-569">CW complexes are T2.</div></article> <article class="theorem theorem-like" id="thm-5.202"><h5 class="heading">
+<div class="para" id="p-575">CW complexes are T2.</div></article> <article class="theorem theorem-like" id="thm-5.202"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.12</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-570">A CW complex X is compact if and only if X has only finitely many cells.</div></article> <article class="theorem theorem-like" id="thm-5.205"><h5 class="heading">
+<div class="para" id="p-576">A CW complex X is compact if and only if X has only finitely many cells.</div></article> <article class="theorem theorem-like" id="thm-5.205"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.13</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-571">A CW complex X is PC if and only if the 1-skeleton X(1) is PC.</div></article> <article class="definition definition-like" id="def-5.207"><h5 class="heading">
+<div class="para" id="p-577">A CW complex X is PC if and only if the 1-skeleton X(1) is PC.</div></article> <article class="definition definition-like" id="def-5.207"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.14</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-572">A space X locally deforms to each point if each point p of X is contained in an open subset Up of X such that there is a deformation retraction from the subspace Up onto {p}.</div></article> <article class="theorem theorem-like" id="thm-5.208"><h5 class="heading">
+<div class="para" id="p-578">A space X locally deforms to each point if each point p of X is contained in an open subset Up of X such that there is a deformation retraction from the subspace Up onto {p}.</div></article> <article class="theorem theorem-like" id="thm-5.208"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.15</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-573">Every CW complex locally deforms to each point.</div></article> <article class="corollary theorem-like" id="cor-5.209"><h5 class="heading">
+<div class="para" id="p-579">Every CW complex locally deforms to each point.</div></article> <article class="corollary theorem-like" id="cor-5.209"><h5 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.16</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-574">If X and Y are PC CW complexes, then X ∨ Y is a CW complex and \pi_1(X ∨ Y) \cong \pi_1(X) ∗ \pi_1(Y).</div></article> <article class="definition definition-like" id="def-5.212"><h5 class="heading">
+<div class="para" id="p-580">If X and Y are PC CW complexes, then X ∨ Y is a CW complex and \pi_1(X ∨ Y) \cong \pi_1(X) ∗ \pi_1(Y).</div></article> <article class="definition definition-like" id="def-5.212"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.17</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-575">A topological space X is defined to be locally path-connected, or LPC, if for every point p \in X and every open set U of X containing p, there is an open set V of X such that p \in V \sse U and (as a subspace of X) V is path-connected.</div></article> <article class="corollary theorem-like" id="cor-5.213"><h5 class="heading">
+<div class="para" id="p-581">A topological space X is defined to be locally path-connected, or LPC, if for every point p \in X and every open set U of X containing p, there is an open set V of X such that p \in V \sse U and (as a subspace of X) V is path-connected.</div></article> <article class="corollary theorem-like" id="cor-5.213"><h5 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.18</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-576">CW complexes are LPC.</div></article> <article class="definition definition-like" id="def-5.215"><h5 class="heading">
+<div class="para" id="p-582">CW complexes are LPC.</div></article> <article class="definition definition-like" id="def-5.215"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.19</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-577">A topological space X is simply-connected, or SC, if X is PC and \pi_1(X) = 1.</div></article> <article class="definition definition-like" id="def-5.216"><h5 class="heading">
+<div class="para" id="p-583">A topological space X is simply-connected, or SC, if X is PC and \pi_1(X) = 1.</div></article> <article class="definition definition-like" id="def-5.216"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.20</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-578">A space X is semi-locally simply connected, or SLSC if for each point p of X there is an open set Up of X containing p such that the inclusion map Up \to X induces the constant homomorphism \pi_1(Up,p) \to \pi_1(X,p) to the identity element of \pi_1(X,p).</div></article> <article class="corollary theorem-like" id="cor-5.217"><h5 class="heading">
+<div class="para" id="p-584">A space X is semi-locally simply connected, or SLSC if for each point p of X there is an open set Up of X containing p such that the inclusion map Up \to X induces the constant homomorphism \pi_1(Up,p) \to \pi_1(X,p) to the identity element of \pi_1(X,p).</div></article> <article class="corollary theorem-like" id="cor-5.217"><h5 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.6.21</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-579">CW complexes are SLSC.</div></article></section><section class="paragraphs" id="paragraphs-15"><h4 class="heading"><span class="title">Interactions with constructions:.</span></h4> <article class="definition definition-like" id="def-5.220"><h5 class="heading">
+<div class="para" id="p-585">CW complexes are SLSC.</div></article></section><section class="paragraphs" id="paragraphs-15"><h4 class="heading"><span class="title">Interactions with constructions:.</span></h4> <article class="definition definition-like" id="def-5.220"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.22</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-580">Let X be a CW complex. A subcomplex of X is a closed subspace A in X satisfying the property that whenever e\alpha is an open cell of X and e\alpha \cap A is nonempty, then ClX(e\alpha ) \sse A.</div></article> <article class="theorem theorem-like" id="thm-5.222"><h5 class="heading">
+<div class="para" id="p-586">Let X be a CW complex. A subcomplex of X is a closed subspace A in X satisfying the property that whenever e\alpha is an open cell of X and e\alpha \cap A is nonempty, then ClX(e\alpha ) \sse A.</div></article> <article class="theorem theorem-like" id="thm-5.222"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.23</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-581">If A is a subcomplex of a CW complex X, then A is a CW complex.</div></article> <article class="theorem theorem-like" id="thm-5.224"><h5 class="heading">
+<div class="para" id="p-587">If A is a subcomplex of a CW complex X, then A is a CW complex.</div></article> <article class="theorem theorem-like" id="thm-5.224"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.24</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-582">If X and Y are compact CW complexes, then X \times Y is also a compact CW complex.</div></article></section></section><section class="subsection" id="subsec-fund-cw"><h3 class="heading hide-type">
+<div class="para" id="p-588">If X and Y are compact CW complexes, then X \times Y is also a compact CW complex.</div></article></section></section><section class="subsection" id="subsec-fund-cw"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.6.2</span> <span class="title">Fundamental groups of CW complexes</span>
 </h3>
 <article class="theorem theorem-like" id="thm-5.230"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.25</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-583">Let X be a 2-dimensional PC CW complex and let p \in X be the basepoint. The inclusion map X(1) \to X(2) induces a surjective homomorphism of fundamental groups whose kernel is generated by loops based at p in bijection with the 2-cells of X. More precisely: For each face f = e\alpha 2 of X define θ\alpha : I \to X by θ\alpha := iX(1)X \circ φ\alpha \circ ω, where iX(1)X: X(1) \to X is the inclusion map and ω:I \to S\alpha 1 is defined by ω(t) := (cos(2\pi t),sin(2\pi t)) for all t \in I. Let γ\alpha :I \to X be a path from p to θ\alpha (0), and let wf := γ\alpha ∗ θ\alpha ∗ γ\alpha rev. Then \pi_1(X,p) \cong \pi_1(X(1),p) / \langle{[wf]}\rangle^N.</div></article><article class="theorem theorem-like" id="thm-5.231"><h4 class="heading">
+<div class="para" id="p-589">Let X be a 2-dimensional PC CW complex and let p \in X be the basepoint. The inclusion map X(1) \to X(2) induces a surjective homomorphism of fundamental groups whose kernel is generated by loops based at p in bijection with the 2-cells of X. More precisely: For each face f = e\alpha 2 of X define θ\alpha : I \to X by θ\alpha := iX(1)X \circ φ\alpha \circ ω, where iX(1)X: X(1) \to X is the inclusion map and ω:I \to S\alpha 1 is defined by ω(t) := (cos(2\pi t),sin(2\pi t)) for all t \in I. Let γ\alpha :I \to X be a path from p to θ\alpha (0), and let wf := γ\alpha ∗ θ\alpha ∗ γ\alpha rev. Then \pi_1(X,p) \cong \pi_1(X(1),p) / \langle{[wf]}\rangle^N.</div></article><article class="theorem theorem-like" id="thm-5.231"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.26</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-584">For any PC CW complex X, \pi_1(X) \cong \pi_1(X(2)).</div></article><article class="theorem theorem-like" id="thm-5.233"><h4 class="heading">
+<div class="para" id="p-590">For any PC CW complex X, \pi_1(X) \cong \pi_1(X(2)).</div></article><article class="theorem theorem-like" id="thm-5.233"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.27</span><span class="period">.</span><span class="space"> </span><span class="title">Algorithm to present \pi_1(CW).</span>
 </h4>
-<div class="para" id="p-585">Let X be a PC CW complex and let p \in X(0) be the basepoint. Let ω:I \to S\alpha 1 be defined by ω(t) := (cos(2\pi t),sin(2\pi t)) and let ρ:I \to D1 be defined by ρ(t) := 2t - 1 for all t \in I. Suppose that for each face (2-cell) f = e\alpha 2 of X, the map sf: I \to X defined by sf := iX(1)X \circ φ\alpha \circ ω satisfies sf(0) \in X(0) and sf follows an edge path in X(1). Then a presentation for \pi_1(X,p) can be computed as follows: Step 0: Choose a maximal tree T in the 1-skeleton X(1). For each vertex v of X, let tv: I \to X be the (shortest) path in T from p to v. Step 1: For each edge e = e\alpha e1 of X(1) outside of T, let ae be the loop in X at p defined by ae' := tΦ\alpha e(-1) ∗ be ∗ tΦ\alpha e(1)rev, where be := Φ\alpha e \circ ρ is the path in X from Φ\alpha e(-1) to Φ\alpha e(1) that traverses the edge e. Let ae := [ae']. Then \pi_1(X(1),p) = F({ae | e is an edge of X outside of T}). Step 2: For each face f = e\alpha f2 of X(2), let rf'' := tsf(0) ∗ sf ∗ tsf(1)rev. By inserting and/or deleting path products with paths of the form e ∗ erev and erev ∗ e for edges e in T into rf'', create a path rf' that is a path product of paths of the form ae' or (ae')rev for edges e outside of T; that is, [rf'] =\pi_1(X(1),p) rf for some word rf = ae1j1 ··· aemjm with m ≥ 0 and each ji \in {± 1}. Then \pi_1(X,p) = \pi_1(X(2),p) = \langle {ae | e is an edge of X outside of T} | {rf = 1 | f is a face of X} \rangle.</div></article><article class="definition definition-like" id="def-5.235"><h4 class="heading">
+<div class="para" id="p-591">Let X be a PC CW complex and let p \in X(0) be the basepoint. Let ω:I \to S\alpha 1 be defined by ω(t) := (cos(2\pi t),sin(2\pi t)) and let ρ:I \to D1 be defined by ρ(t) := 2t - 1 for all t \in I. Suppose that for each face (2-cell) f = e\alpha 2 of X, the map sf: I \to X defined by sf := iX(1)X \circ φ\alpha \circ ω satisfies sf(0) \in X(0) and sf follows an edge path in X(1). Then a presentation for \pi_1(X,p) can be computed as follows: Step 0: Choose a maximal tree T in the 1-skeleton X(1). For each vertex v of X, let tv: I \to X be the (shortest) path in T from p to v. Step 1: For each edge e = e\alpha e1 of X(1) outside of T, let ae be the loop in X at p defined by ae' := tΦ\alpha e(-1) ∗ be ∗ tΦ\alpha e(1)rev, where be := Φ\alpha e \circ ρ is the path in X from Φ\alpha e(-1) to Φ\alpha e(1) that traverses the edge e. Let ae := [ae']. Then \pi_1(X(1),p) = F({ae | e is an edge of X outside of T}). Step 2: For each face f = e\alpha f2 of X(2), let rf'' := tsf(0) ∗ sf ∗ tsf(1)rev. By inserting and/or deleting path products with paths of the form e ∗ erev and erev ∗ e for edges e in T into rf'', create a path rf' that is a path product of paths of the form ae' or (ae')rev for edges e outside of T; that is, [rf'] =\pi_1(X(1),p) rf for some word rf = ae1j1 ··· aemjm with m ≥ 0 and each ji \in {± 1}. Then \pi_1(X,p) = \pi_1(X(2),p) = \langle {ae | e is an edge of X outside of T} | {rf = 1 | f is a face of X} \rangle.</div></article><article class="definition definition-like" id="def-5.235"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.6.28</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-586">The presentation complex associated to a presentation \langle A | R \rangle of a group G is a CW complex with one vertex v, an edge ea for each a \in A (with attaching maps gluing both endpoints of ea to v), and a face fr for each r \in R with attaching map determined by following the edges according to the word r.</div></article><article class="theorem theorem-like" id="thm-5.236"><h4 class="heading">
+<div class="para" id="p-592">The presentation complex associated to a presentation \langle A | R \rangle of a group G is a CW complex with one vertex v, an edge ea for each a \in A (with attaching maps gluing both endpoints of ea to v), and a face fr for each r \in R with attaching map determined by following the edges according to the word r.</div></article><article class="theorem theorem-like" id="thm-5.236"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.6.29</span><span class="period">.</span><span class="space"> </span><span class="title">"2-Way Street Thm".</span>
 </h4>
-<div class="para" id="p-587">For every group G, there is a 2-dimensional PC CW complex X with \pi_1(X) \cong G. Moreover, if \langle A | R \rangle is a presentation of G and Y is the associated presentation complex, then \pi_1(Y) \cong G.</div></article></section></section></div>
+<div class="para" id="p-593">For every group G, there is a 2-dimensional PC CW complex X with \pi_1(X) \cong G. Moreover, if \langle A | R \rangle is a presentation of G and Y is the associated presentation complex, then \pi_1(Y) \cong G.</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-svk.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-covering.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

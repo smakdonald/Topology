@@ -177,7 +177,7 @@ window.MathJax = {
 <span id="theeye" class="motioncheck"></span>eye tracking - not yet</li>
 </ol>
 </li>
-</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-pi1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-fundamental.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-pi1s1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
+</ol></div></button><span class="treebuttons"><a class="previous-button button" href="sec-pi1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-fundamental.html" title="Up"><span class="icon">^</span><span class="name">Up</span></a><a class="next-button button" href="sec-pi1S1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" type="button" onclick="doSearch()">🔍</button>
 </div></div></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\def\ann{\operatorname{ann}}
 \newcommand{\Ass}{\operatorname{Ass}}
@@ -561,7 +561,7 @@ window.MathJax = {
 <li><div class="toc-item"><a href="sec-group-homs.html#subsec-hom-interactions" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Interactions with constructions</span></a></div></li>
 </ul>
 </li>
-<li><div class="toc-item"><a href="sec-pi1s1.html" class="internal"><span class="codenumber">5.3</span> <span class="title">\pi_1(S1)</span></a></div></li>
+<li><div class="toc-item"><a href="sec-pi1S1.html" class="internal"><span class="codenumber">5.3</span> <span class="title"><span class="process-math">\(\pi_1(S^1)\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-present.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Presenting and Decomposing Groups</span></a></div>
 <ul class="structural">
@@ -652,73 +652,73 @@ window.MathJax = {
 <article class="definition definition-like" id="def-5.17"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-468">Let p:I \to X be a path in a space X from x0 to x1. The change of basepoint homomorphism induced by p is the function \beta p: \pi_1(X,x0) \to \pi_1(X,x1) defined by \beta p([f]) := [prev∗f∗p] for all [f] \in \pi_1(X,x0).</div></article><article class="theorem theorem-like" id="thm-5.18"><h4 class="heading">
+<div class="para" id="p-474">Let p:I \to X be a path in a space X from x0 to x1. The change of basepoint homomorphism induced by p is the function \beta p: \pi_1(X,x0) \to \pi_1(X,x1) defined by \beta p([f]) := [prev∗f∗p] for all [f] \in \pi_1(X,x0).</div></article><article class="theorem theorem-like" id="thm-5.18"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-469">If p is a path in X from x0 to x1, then \beta p: \pi_1(X,x0) \to \pi_1(X,x1) is an isomorphism of groups.</div></article><article class="corollary theorem-like" id="cor-5.20"><h4 class="heading">
+<div class="para" id="p-475">If p is a path in X from x0 to x1, then \beta p: \pi_1(X,x0) \to \pi_1(X,x1) is an isomorphism of groups.</div></article><article class="corollary theorem-like" id="cor-5.20"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-470">If X is a path-connected space, then \pi_1(X) is independent of basepoint, up to isomorphism.</div></article><article class="definition definition-like" id="def-5.22"><h4 class="heading">
+<div class="para" id="p-476">If X is a path-connected space, then \pi_1(X) is independent of basepoint, up to isomorphism.</div></article><article class="definition definition-like" id="def-5.22"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-471">A space X is 0-connected if X is path-connected. A space X is 1-connected, or simply connected, if X is path-connected and \pi_1(X) = 1.</div></article></section><section class="subsection" id="subsec-induced-homs"><h3 class="heading hide-type">
+<div class="para" id="p-477">A space X is 0-connected if X is path-connected. A space X is 1-connected, or simply connected, if X is path-connected and \pi_1(X) = 1.</div></article></section><section class="subsection" id="subsec-induced-homs"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.2.2</span> <span class="title">Homomorphisms induced by continuous maps</span>
 </h3>
 <article class="definition definition-like" id="def-5.24"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-472">A pointed space is a pair (X,x0) in which X is a topological space and x0 \in X. A function h:X \to Y with h(x0) = y0 is a map of pointed spaces h:(X,x0) \to (Y,y0).</div></article><article class="definition definition-like" id="def-5.25"><h4 class="heading">
+<div class="para" id="p-478">A pointed space is a pair (X,x0) in which X is a topological space and x0 \in X. A function h:X \to Y with h(x0) = y0 is a map of pointed spaces h:(X,x0) \to (Y,y0).</div></article><article class="definition definition-like" id="def-5.25"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.2.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-473">Let h:(X,x0) \to (Y,y0) be a continuous map of pointed spaces. The induced homomomorphism associated to h is the function h∗: \pi_1(X,x0) \to \pi_1(Y,y0) defined by h∗([f]) := [h \circ f] for all [f] \in \pi_1(X,x0).</div></article><article class="remark remark-like" id="remark-15"><h4 class="heading">
+<div class="para" id="p-479">Let h:(X,x0) \to (Y,y0) be a continuous map of pointed spaces. The induced homomomorphism associated to h is the function h∗: \pi_1(X,x0) \to \pi_1(Y,y0) defined by h∗([f]) := [h \circ f] for all [f] \in \pi_1(X,x0).</div></article><article class="remark remark-like" id="remark-15"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.2.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-474">The function h∗ is also sometimes written \pi_1(h).</div></article><article class="proposition theorem-like" id="prop-5.28"><h4 class="heading">
+<div class="para" id="p-480">The function h∗ is also sometimes written \pi_1(h).</div></article><article class="proposition theorem-like" id="prop-5.28"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">5.2.8</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-475"><ol class="decimal">
-<li id="li-165"><div class="para" id="p-476">If h:(X,x0) \to (Y,y0) is a continuous map of pointed spaces, then h∗ is a (well-defined) group homomorphism.</div></li>
-<li id="li-166"><div class="para" id="p-477">If h:(X,x0) \to (Y,y0) and k:(Y,y0) \to (Z,z0) are continuous maps of pointed spaces, then (k \circ h)∗ = k∗ \circ h∗.</div></li>
-<li id="li-167"><div class="para" id="p-478">For any pointed space (X,x0), (1(X,x0))∗ = 1\pi_1(X,x0).</div></li>
+<div class="para logical" id="p-481"><ol class="decimal">
+<li id="li-171"><div class="para" id="p-482">If h:(X,x0) \to (Y,y0) is a continuous map of pointed spaces, then h∗ is a (well-defined) group homomorphism.</div></li>
+<li id="li-172"><div class="para" id="p-483">If h:(X,x0) \to (Y,y0) and k:(Y,y0) \to (Z,z0) are continuous maps of pointed spaces, then (k \circ h)∗ = k∗ \circ h∗.</div></li>
+<li id="li-173"><div class="para" id="p-484">For any pointed space (X,x0), (1(X,x0))∗ = 1\pi_1(X,x0).</div></li>
 </ol></div></article></section><section class="subsection" id="subsec-filler"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.2.3</span> <span class="title"></span>
 </h3>
 <article class="theorem theorem-like" id="thm-5.30"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-479">Let X be a topological space and let x0,x1 \in X. Let h:X \to Y be a continuous function, and let h0:(X,x0) \to (Y,h(x0)) and h1:(X,x1) \to (Y,h(x1)) be the corresponding maps of pointed spaces. If p:I \to X is a path from x0 to x1, then \beta h \circ p \circ (h0)∗ = (h1)∗ \circ \beta p.</div></article><article class="theorem theorem-like" id="thm-5.32"><h4 class="heading">
+<div class="para" id="p-485">Let X be a topological space and let x0,x1 \in X. Let h:X \to Y be a continuous function, and let h0:(X,x0) \to (Y,h(x0)) and h1:(X,x1) \to (Y,h(x1)) be the corresponding maps of pointed spaces. If p:I \to X is a path from x0 to x1, then \beta h \circ p \circ (h0)∗ = (h1)∗ \circ \beta p.</div></article><article class="theorem theorem-like" id="thm-5.32"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-480">If X and Y are path-connected spaces and X \simeq Y, then \pi_1(X) \cong \pi_1(Y).</div></article><article class="corollary theorem-like" id="cor-5.33"><h4 class="heading">
+<div class="para" id="p-486">If X and Y are path-connected spaces and X \simeq Y, then \pi_1(X) \cong \pi_1(Y).</div></article><article class="corollary theorem-like" id="cor-5.33"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.2.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-481">The isomorphism class of the fundamental group is a homotopy type invariant for PC spaces.</div></article><article class="corollary theorem-like" id="cor-5.35"><h4 class="heading">
+<div class="para" id="p-487">The isomorphism class of the fundamental group is a homotopy type invariant for PC spaces.</div></article><article class="corollary theorem-like" id="cor-5.35"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.2.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-482">If X is a contractible space then \pi_1(X) = 1.</div></article><article class="corollary theorem-like" id="cor-5.37"><h4 class="heading">
+<div class="para" id="p-488">If X is a contractible space then \pi_1(X) = 1.</div></article><article class="corollary theorem-like" id="cor-5.37"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">5.2.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-483">If X and Y are homotopy equivalent path-connected spaces, then \pi_1(X) is abelian [respectively, finite] if and only if \pi_1(Y) is abelian [respectively, finite].</div></article></section><section class="subsection" id="subsec-hom-interactions"><h3 class="heading hide-type">
+<div class="para" id="p-489">If X and Y are homotopy equivalent path-connected spaces, then \pi_1(X) is abelian [respectively, finite] if and only if \pi_1(Y) is abelian [respectively, finite].</div></article></section><section class="subsection" id="subsec-hom-interactions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">5.2.4</span> <span class="title">Interactions with constructions</span>
 </h3>
 <article class="theorem theorem-like" id="thm-5.40"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.14</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-484">If X and Y are PC topological spaces and X \times Y has the product topology, then \pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y).</div></article><article class="remark remark-like" id="remark-16"><h4 class="heading">
+<div class="para" id="p-490">If X and Y are PC topological spaces and X \times Y has the product topology, then \pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y).</div></article><article class="remark remark-like" id="remark-16"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">5.2.15</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-485"><ol class="decimal">
-<li id="li-168"><div class="para" id="p-486">If A is a subspace of X, then \pi_1(A) might not be a subgroup of \pi_1(X).</div></li>
-<li id="li-169"><div class="para" id="p-487">For equivalence relation \sim on a space X, \pi_1(X/\sim ) might not be a quotient (group) of \pi_1(X).</div></li>
+<div class="para logical" id="p-491"><ol class="decimal">
+<li id="li-174"><div class="para" id="p-492">If A is a subspace of X, then \pi_1(A) might not be a subgroup of \pi_1(X).</div></li>
+<li id="li-175"><div class="para" id="p-493">For equivalence relation \sim on a space X, \pi_1(X/\sim ) might not be a quotient (group) of \pi_1(X).</div></li>
 </ol></div></article><article class="theorem theorem-like" id="thm-5.43"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.16</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-488">If r:X \to A is a retraction and i:A \to X is the inclusion, then r∗ is onto and i∗ is one-to-one.</div></article><article class="theorem theorem-like" id="thm-5.44"><h4 class="heading">
+<div class="para" id="p-494">If r:X \to A is a retraction and i:A \to X is the inclusion, then r∗ is onto and i∗ is one-to-one.</div></article><article class="theorem theorem-like" id="thm-5.44"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.2.17</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-489">Let A be a PC subspace of a PC topological space X, and let a0 \in A. Let i: A \to X be the inclusion map, and let i∗: \pi_1(A,a0) \to \pi_1(A,a0) be the induced homomorphism. Then i∗ is onto if and only if every path in X with endpoints in A is path homotopic to a path in A.</div></article></section></section></div>
+<div class="para" id="p-495">Let A be a PC subspace of a PC topological space X, and let a0 \in A. Let i: A \to X be the inclusion map, and let i∗: \pi_1(A,a0) \to \pi_1(A,a0) be the induced homomorphism. Then i∗ is onto if and only if every path in X with endpoints in A is path homotopic to a path in A.</div></article></section></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="sec-pi1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-pi1s1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
+<a class="previous-button button" href="sec-pi1.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-pi1S1.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer">

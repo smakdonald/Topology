@@ -487,14 +487,18 @@
 
       <section xml:id="sec-sets-functions"><title>Useful Tools on Sets and Functions</title>
 
-        <blockquote>
-          <p>
-            <q>
-              The excellence of a thing related to its proper function.
-            </q>
-          </p>
-          <attribution>Aristotle</attribution>
-        </blockquote>
+        <introduction>
+          <blockquote>
+            <p>
+              <q>
+                The excellence of a thing related to its proper function.
+              </q>
+            </p>
+            <attribution>Aristotle</attribution>
+          </blockquote>
+        </introduction>
+
+        
 
         <subsection xml:id="subsec-sets"><title>Properties of Sets</title>
 
@@ -1195,14 +1199,18 @@
 
       <section xml:id="sec-topology"><title>Topology and Continuity</title>
 
-        <blockquote>
-          <p>
-            <q>
-              Topology is precicely the mathematical discipline that allows passage from local to global.
-            </q>
-          </p>
-          <attribution>Rene Thom</attribution>
-        </blockquote>
+        <introduction>
+          <blockquote>
+            <p>
+              <q>
+                Topology is precicely the mathematical discipline that allows passage from local to global.
+              </q>
+            </p>
+            <attribution>Rene Thom</attribution>
+          </blockquote>
+        </introduction>
+
+        
 
         <subsection xml:id="subsec-topology"><title>Topology</title>
           
@@ -1554,7 +1562,7 @@
             <statement>
               <p>
                 Let <m>\cB Y</m> be a basis on a set <m>Y</m>. 
-                A function <m>f: (X,\cT X) \to (Y,\cT (\cB Y))</m> is continuous if and only if for every basis element <m>N \in \cB Y</m>, the preimage <m>f\inv(N)</m> is open in <m>X</m>.
+                A function <m>f: (X,\cT_X) \to (Y,\cT (\cB Y))</m> is continuous if and only if for every basis element <m>N \in \cB Y</m>, the preimage <m>f\inv(N)</m> is open in <m>X</m>.
               </p>
             </statement>
           </theorem>
@@ -1598,7 +1606,7 @@
 
                   <li>
                     <p>
-                      A function <m>f: (X,\cT X) \to (Y,\cT (\cS_Y))</m> is continuous if and only if for every subbasis element <m>V \in \cS_Y</m>, the preimage <m>f\inv(V)</m> is open in <m>X</m>.
+                      A function <m>f: (X,\cT_X) \to (Y,\cT (\cS_Y))</m> is continuous if and only if for every subbasis element <m>V \in \cS_Y</m>, the preimage <m>f\inv(V)</m> is open in <m>X</m>.
                     </p>
                   </li>
                 </ol> 
@@ -1629,7 +1637,7 @@
             <statement>
               <p>
                 Let <m>X</m> be a topological space and let <m>A</m> be a subset of <m>X</m>. 
-                The subspace topology on <m>A</m> is <m>\cT sub := \{U \cap A | U is an open set in X\}</m>. 
+                The subspace topology on <m>A</m> is <m>\cT_{\text{sub}} := \{U \cap A | U is an open set in X\}</m>. 
                 The set <m>A</m> with the subspace topology is called a subspace of <m>X</m>. 
                 An element <m>V</m> of the subspace topology on <m>A</m> is called open in <m>A</m> or open set relative to <m>A</m> or open rel <m>A</m>.
               </p>
@@ -1932,10 +1940,10 @@
           <theorem xml:id="thm-2.87">
             <statement>
               <p>
-                Let A_\alpha be a subspace of a space X_\alpha for all \alpha. 
-                Let \cT_{\text{prod}} be the product topology on \prod_\alpha A_\alpha. 
-                Let \cT sub be the subspace topology on \prod_\alpha A_\alpha induced by the product topology on \prod_\alpha X_\alpha. 
-                Then \cT_{\text{prod}} = \cT sub.
+                Let <m>A_\alpha</m> be a subspace of a space <m>X_\alpha</m> for all <m>\alpha</m>. 
+                Let <m>\cT_{\text{prod}}</m> be the product topology on <m>\prod_\alpha A_\alpha</m>. 
+                Let <m>\cT_{\text{sub}}</m> be the subspace topology on <m>\prod_\alpha A_\alpha</m> induced by the product topology on <m>\prod_\alpha X_\alpha</m>. 
+                Then \<m>cT_{\text{prod}} = \cT_{\text{sub}}</m>.
               </p>
             </statement>
           </theorem>
@@ -1947,10 +1955,10 @@
           <definition xml:id="def-2.90">
             <statement>
               <p>
-                Let X be a topological space and let \sim be an equivalence relation on X. 
-                Let X/\sim be the set of equivalence classes and let q: X \to X/\sim be the equivalence map (defined by q(p) := [p] for all p in X). 
-                The quotient topology, or identification topology on X/\sim induced by \sim, is the topology \cT \sim = \cT quo:= \{U \sse X/\sim | q -1(U) is open in X\}. 
-                The set X/\sim together with the quotient topology is called a quotient space of X, and the equivalence map q is called the quotient map induced by \sim.
+                Let <m>X</m> be a topological space and let <m>\sim</m> be an equivalence relation on <m>X</m>. 
+                Let <m>X/\sim</m> be the set of equivalence classes and let <m>q: X \to X/\sim</m> be the equivalence map (defined by <m>q(p) := [p]</m> for all <m>p</m> in <m>X</m>). 
+                The quotient topology, or identification topology on <m>X/\sim</m> induced by <m>\sim</m>, is the topology <m>\cT \sim = \cT quo:= \{U \sse X/\sim | q\inv(U) \text{ is open in }X\}</m>. 
+                The set <m>X/\sim</m> together with the quotient topology is called a quotient space of <m>X</m>, and the equivalence map <m>q</m> is called the quotient map induced by <m>\sim</m>.
               </p>
             </statement>
           </definition>
@@ -1966,10 +1974,19 @@
           <proposition xml:id="prop-2.93">
             <statement>
               <p>
-                (CC12-i) 
-                If X/\sim is a quotient space of X and q: X \to X/\sim is the equivalence map (defined by q(p) := [p] for all p in X), then q is a continuous surjection.
-                (b) 
-                The quotient topology induced by an equivalence relation is the largest topology on the set of equivalence classes for which the equivalence map is continuous.
+                <ol>
+                  <li><title>CC12-i</title>
+                    <p>
+                      If <m>X/\sim</m> is a quotient space of <m>X</m> and <m>q: X \to X/\sim</m> is the equivalence map (defined by <m>q(p) := [p]</m> for all <m>p \in X</m>), then <m>q</m> is a continuous surjection.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      The quotient topology induced by an equivalence relation is the largest topology on the set of equivalence classes for which the equivalence map is continuous.
+                    </p>
+                  </li>
+                </ol>
               </p>
             </statement>
           </proposition>
@@ -1977,9 +1994,9 @@
           <definition xml:id="def-2.95">
             <statement>
               <p>
-                Let (X,\cT X) be a topological space, let Y be a set, and let f:X \to Y be a surjective function. 
-                The quotient topology on Y induced by f is \cT q := \{V \sse Y | f\inv(V) \in \cT X\}. 
-                If Y has the quotient topology induced by f then f is called a quotient map.
+                Let <m>(X,\cT_X)</m> be a topological space, let <m>Y</m> be a set, and let <m>f:X \to Y</m> be a surjective function. 
+                The quotient topology on <m>Y</m> induced by <m>f</m> is <m>\cT_q := \{V \sse Y | f\inv(V) \in \cT_X\}</m>. 
+                If <m>Y</m> has the quotient topology induced by <m>f</m> then <m>f</m> is called a quotient map.
               </p>
             </statement>
           </definition>
@@ -1987,7 +2004,7 @@
           <proposition xml:id="prop-2.97">
             <statement>
               <p>
-                The quotient topology induced by a function f is a topology.
+                The quotient topology induced by a function <m>f</m> is a topology.
               </p>
             </statement>
           </proposition>
@@ -1995,8 +2012,19 @@
           <proposition xml:id="prop-2.98">
             <statement>
               <p>
-                (CC12-ii) If f is a quotient map, then f is a continuous surjection.
-                (b) The quotient topology induced by a map f is the largest topology on the codomain of f for which the map f is continuous.
+                <ol>
+                  <li><title>CC12-ii</title>
+                    <p>
+                      If <m>f</m> is a quotient map, then <m>f</m> is a continuous surjection.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      The quotient topology induced by a map <m>f</m> is the largest topology on the codomain of <m>f</m> for which the map <m>f</m> is continuous.
+                    </p>
+                  </li>
+                </ol>
               </p>
             </statement>
           </proposition>
@@ -2004,11 +2032,20 @@
           <proposition xml:id="prop-2.100">
             <statement>
               <p>
-                Let X be a topological space.
-                (a) 
-                If \sim is an equivalence relation on X, then the quotient topology on X/\sim induced by \sim equals the quotient topology on X/\sim induced by the equivalence map q:X \to X/\sim (defined by q(p) := [p] for all p in X).
-                (b) 
-                If f:X \to Y is a surjection, then the quotient space (Y,\cT f) is homeomorphic to the quotient space (X/\sim,\cT \sim ) induced by the equivalence relation on X defined by x \sim x' if and only if f(x) = f(x') for all x,x' \in X; moreover, the homeomorphism g:X/\sim \to Y satisfies g \circ q = f, where q is the equivalence map.
+                Let <m>X</m> be a topological space.
+                <ol>
+                  <li>
+                    <p>
+                      If <m>\sim</m> is an equivalence relation on <m>X</m>, then the quotient topology on <m>X/\sim</m> induced by <m>\sim</m> equals the quotient topology on <m>X/\sim</m> induced by the equivalence map <m>q:X \to X/\sim</m> (defined by <m>q(p) := [p]</m> for all <m>p \in X</m>).
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      If <m>f:X \to Y</m> is a surjection, then the quotient space <m>(Y,\cT f)</m> is homeomorphic to the quotient space <m>(X/\sim,\cT \sim )</m> induced by the equivalence relation on <m>X</m> defined by <m>x \sim x'</m> if and only if <m>f(x) = f(x')</m> for all <m>x,x' \in X</m>; moreover, the homeomorphism <m>g:X/\sim \to Y</m> satisfies <m>g \circ q = f</m>, where <m>q</m> is the equivalence map.
+                    </p>
+                  </li>
+                </ol>
               </p>
             </statement>
           </proposition>
@@ -2027,29 +2064,30 @@
           </example>
 
           <p>
-            1-dimensional examples: Quotients of a line segment [0,1]:
+            <m>1</m>-dimensional examples: Quotients of a line segment <m>[0,1]</m>:
           </p>
 
           <theorem xml:id="thm-2.104">
             <statement>
               <p>
-                Let X = [0,1] have the Euclidean subspace topology, and let \sim be the equivalence relation on X defined by p \sim q if and only if either [p=q] or [\{p,q\} = \{0,1\}]. Then the quotient space X/\sim is isomorphic to S1.
+                Let <m>X = [0,1]</m> have the Euclidean subspace topology, and let <m>\sim</m> be the equivalence relation on <m>X</m> defined by <m>p \sim q</m> if and only if either <m>[p=q]</m> or <m>[\{p,q\} = \{0,1\}]</m>. 
+                Then the quotient space <m>X/\sim</m> is isomorphic to <m>S^1</m>.
               </p>
             </statement>
           </theorem>
 
           <p>
-            2-dimensional (surface) examples: Quotients of the square [0,1] \times [0,1]:
+            <m>2</m>-dimensional (surface) examples: Quotients of the square <m>[0,1] \times [0,1]</m>:
           </p>
 
           <definition xml:id="def-2.106">
             <statement>
               <p>
-                Let X = [0,1] \times [0,1] have the product topology (where each [0,1] has the Euclidean subspace topology).
+                Let <m>X = [0,1] \times [0,1]</m> have the product topology (where each <m>[0,1]</m> has the Euclidean subspace topology).
                 <ol>
                   <li>
                     <p>
-                      The torus T2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (r,1) and (0,s) \sim (1,s) for all r,s \in [0,1].
+                      The torus <m>T^2</m> is the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(r,0) \sim (r,1)</m> and <m>(0,s) \sim (1,s)</m> for all <m>r,s \in [0,1]</m>.
                     </p>
                   </li>
                 </ol>
@@ -2057,7 +2095,7 @@
                 <ol>
                   <li>
                     <p>
-                      The Klein bottle K2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (r,1) and (0,s) \sim (1,1-s) for all r,s \in [0,1].
+                      The Klein bottle <m>K^2</m> is the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(r,0) \sim (r,1)</m> and <m>(0,s) \sim (1,1-s)</m> for all <m>r,s \in [0,1]</m>.
                     </p>
                   </li>
                 </ol>
@@ -2065,7 +2103,7 @@
                 <ol>
                   <li>
                     <p>
-                      The Mobius band M2 is the quotient space X/\sim where \sim is the equivalence relation on X generated by (0,s) \sim (1,1-s) for all s \in [0,1].
+                      The Mobius band <m>M^2</m> is the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(0,s) \sim (1,1-s)</m> for all <m>s \in [0,1]</m>.
                     </p>
                   </li>
                 </ol>
@@ -2076,7 +2114,7 @@
           <definition xml:id="def-2.108">
             <statement>
               <p>
-                The projective plane P2 is the quotient space P2 := S2/\sim where S2 := \{(x,y,z) \in \R 3 | x2 + y2 + z2 = 1\} is the 2-sphere (with the Euclidean subspace topology) and \sim is the equivalence relation generated by (x,y,z) \sim (-x,-y,-z) for all (x,y,z) \in S2.
+                The projective plane <m>P^2</m> is the quotient space <m>P^2 := S^2/\sim</m> where <m>S^2 := \{(x,y,z) \in \R^3 | x^2 + y^2 + z^2 = 1\}</m> is the <m>2</m>-sphere (with the Euclidean subspace topology) and <m>\sim</m> is the equivalence relation generated by <m>(x,y,z) \sim (-x,-y,-z</m>) for all <m>(x,y,z) \in S^2</m>.
               </p>
             </statement>
           </definition>
@@ -2084,29 +2122,29 @@
           <theorem xml:id="thm-2.110">
             <statement>
               <p>
-                Let X = [0,1] \times [0,1] have the product topology (where each [0,1] has the Euclidean subspace topology).
+                Let <m>X = [0,1] \times [0,1]</m> have the product topology (where each <m>[0,1]</m> has the Euclidean subspace topology).
                 <ol>
                   <li>
                     <p>
-                      The cylinder S1 \times [0,1] is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (1,r) for all r \in [0,1].
+                      The cylinder <m>S^1 \times [0,1]</m> is homeomorphic to the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(r,0) \sim (1,r)</m> for all <m>r \in [0,1]</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      The projective plane P2 is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (1-r,1) and (0,1-s) \sim (1,s) for all r,s \in [0,1].
+                      The projective plane <m>P^2</m> is homeomorphic to the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(r,0) \sim (1-r,1)</m> and <m>(0,1-s) \sim (1,s)</m> for all <m>r,s \in [0,1]</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      The 2-sphere S2 is homeomorphic to the quotient space X/\sim where \sim is the equivalence relation on X generated by (r,0) \sim (0,r) and (s,1) \sim (1,s) for all r,s \in [0,1].
+                      The <m>2</m>-sphere <m>S^2</m> is homeomorphic to the quotient space <m>X/\sim</m> where <m>\sim</m> is the equivalence relation on <m>X</m> generated by <m>(r,0) \sim (0,r)</m> and <m>(s,1) \sim (1,s)</m> for all <m>r,s \in [0,1]</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      The torus T2 is homeomorphic to the product space S1 \times S1 where each S1 has the Euclidean subspace topology.
+                      The torus <m>T^2</m> is homeomorphic to the product space <m>S^1 \times S^1</m> where each <m>S^1</m> has the Euclidean subspace topology.
                     </p>
                   </li>
                 </ol>
@@ -2192,7 +2230,7 @@
           <definition xml:id="def-2.134">
             <statement>
               <p>
-                Let (X,\cT X) and (Y,\cT_Y) be topological spaces with X \cap Y = \es. The <em>disjoint union topology</em> on X \cup Y is \cT ∐ = \{ U \cup V | U \in \cT X and V \in \cT_Y \}.
+                Let (X,\cT_X) and (Y,\cT_Y) be topological spaces with X \cap Y = \es. The <em>disjoint union topology</em> on X \cup Y is \cT ∐ = \{ U \cup V | U \in \cT_X and V \in \cT_Y \}.
               </p>
             </statement>
           </definition>
@@ -2482,7 +2520,7 @@
         <definition xml:id="def-3.6">
           <statement>
             <p>
-              A space (X,\cT X) is a finite topological space if the set X is finite.
+              A space (X,\cT_X) is a finite topological space if the set X is finite.
             </p>
           </statement>
         </definition>
@@ -2624,7 +2662,7 @@
         <definition xml:id="def-3.27">
           <statement>
             <p>
-              A topological space (X,\cT X) is metrizable if there is a metric d on X such that \cT X = \cT d (where \cT d is the metric topology on X induced by d).
+              A topological space (X,\cT_X) is metrizable if there is a metric d on X such that \cT_X = \cT d (where \cT d is the metric topology on X induced by d).
             </p>
           </statement>
         </definition>
@@ -2687,7 +2725,7 @@
           <blockquote>
             <p>
               <q>
-                Connected gives purpose and meaning to our lives.
+                Connection gives purpose and meaning to our lives.
               </q>
             </p>
             <attribution>Brené Brown</attribution>
@@ -3076,7 +3114,7 @@
           <theorem xml:id="thm-3.128">
             <statement>
               <p>
-                Let A be a subspace of a topological space (X,\cT X). The space A is compact if and only if for every collection \cC of open sets in X satisfying A \sse \cup C \in \cC C, there is a finite subcollection 𝒟 \sse \cC such that A \sse \cup D \in 𝒟 D.
+                Let A be a subspace of a topological space (X,\cT_X). The space A is compact if and only if for every collection \cC of open sets in X satisfying A \sse \cup C \in \cC C, there is a finite subcollection 𝒟 \sse \cC such that A \sse \cup D \in 𝒟 D.
               </p>
             </statement>
           </theorem>
@@ -3216,7 +3254,7 @@
               <ol>
                 <li>
                   <p>
-                    If \approx is the smallest equivalence relation on I such that 0 \approx 1, then I/\approx \cong S1, with a homeomorphism that maps the equivalence class [s] to the point ( cos(2 \pi s), sin(2 \pi s) ) for all s \in I.
+                    If \approx is the smallest equivalence relation on I such that 0 \approx 1, then I/\approx \cong S^1, with a homeomorphism that maps the equivalence class [s] to the point ( cos(2 \pi s), sin(2 \pi s) ) for all s \in I.
                   </p>
                 </li>
 
@@ -3291,7 +3329,7 @@
           <definition xml:id="def-3.170">
             <statement>
               <p>
-                A space (X,\cT X) has a countable basis if the topology \cT X is generated by a basis that is a countable set.
+                A space (X,\cT_X) has a countable basis if the topology \cT_X is generated by a basis that is a countable set.
               </p>
             </statement>
           </definition>
@@ -3324,7 +3362,7 @@
                 <ol>
                   <li>
                     <p>
-                      If (X,\cT X) is a compact and metrizable space, then \cT X is generated by a countable basis. 
+                      If (X,\cT_X) is a compact and metrizable space, then \cT_X is generated by a countable basis. 
                     </p>
                   </li>
 
@@ -3997,7 +4035,7 @@
         <theorem xml:id="thm-5.13">
           <statement>
             <p>
-              \pi_1(X,x0) = 1 for all x0 in X iff every continuous map S1 \to X extends to a continuous map D2 \to X.
+              \pi_1(X,x0) = 1 for all x0 in X iff every continuous map S^1 \to X extends to a continuous map D2 \to X.
             </p>
           </statement>
         </theorem>
@@ -4188,30 +4226,30 @@
         
       </section>
 
-      <section xml:id="sec-pi1s1"><title>\pi_1(S1)</title>
+      <section xml:id="sec-pi1S1"><title><m>\pi_1(S^1)</m></title>
 
         <proposition xml:id="prop-5.49">
           <statement>
             <p>
-              For each integer n, let ωn be the loop in S1 defined by ωn(s) := ( cos(2 \pi n s), sin(2 \pi n s) ) for all s \in I. Then [ωm][ωn] = [ωm+n] in \pi_1(S1,(1,0)).
+              For each integer n, let ωn be the loop in S^1 defined by ωn(s) := ( cos(2 \pi n s), sin(2 \pi n s) ) for all s \in I. Then [ωm][ωn] = [ωm+n] in \pi_1(S^1,(1,0)).
             </p>
           </statement>
         </proposition>
 
-        <theorem xml:id="thm-5.50"><title>Path and Path Homotopy Lifting Theorems (PPHLT) for S1</title>
+        <theorem xml:id="thm-5.50"><title>Path and Path Homotopy Lifting Theorems (PPHLT) for S^1</title>
           <statement>
             <p>
-              Let p: R \to S1 be defined by p(t) := (cos(2\pi t), sin(2\pi t)) for all t \in R.
+              Let p: R \to S^1 be defined by p(t) := (cos(2\pi t), sin(2\pi t)) for all t \in R.
               <ul>
                 <li>
                   <p>
-                    (PLT) Given a path f: (I,0) \to (S1,(1,0)), there is a unique path f": (I,0) \to (R,0) such that p \circ f" = f.
+                    (PLT) Given a path f: (I,0) \to (S^1,(1,0)), there is a unique path f": (I,0) \to (R,0) such that p \circ f" = f.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    (PHLT) Given a path homotopy H: (I \times I,(0,0)) \to (S1,(1,0)) there is a unique path homotopy H": (I \times I,(0,0)) \to (R,0) such that p \circ H" = H. Moreover, if H is a path homotopy between two paths f,g: (I,0) \to (S1,(1,0)), then H" is a path homotopy between the "lifts" f",g": (I,0) \to (R,0) of f,g from the PLT.
+                    (PHLT) Given a path homotopy H: (I \times I,(0,0)) \to (S^1,(1,0)) there is a unique path homotopy H": (I \times I,(0,0)) \to (R,0) such that p \circ H" = H. Moreover, if H is a path homotopy between two paths f,g: (I,0) \to (S^1,(1,0)), then H" is a path homotopy between the "lifts" f",g": (I,0) \to (R,0) of f,g from the PLT.
                   </p>
                 </li>
               </ul>
@@ -4560,7 +4598,7 @@
           <definition xml:id="def-5.142">
             <statement>
               <p>
-                Let S1 and S2 be two surfaces. For 1 \leq i \leq 2, let Ci \sse Si be a closed set that, as a subspace, has a homeomorphism hi: Ci \to D2. Let Ui := hi-1(B((0,0),1)) and let Si\setminus Ui have the subspace topology from Si. Let X := (S1\setminus U1) ∐ (S2\setminus U2) have the disjoint union topology, and let \sim be the smallest equivalence relation on X for which h1-1(p) \sim h2-1(p) for all p \in S1. The quotient space X/\sim is the connected sum of S1 and S2, and is denoted S1 # S2.
+                Let S^1 and S^2 be two surfaces. For 1 \leq i \leq 2, let Ci \sse Si be a closed set that, as a subspace, has a homeomorphism hi: Ci \to D2. Let Ui := hi-1(B((0,0),1)) and let Si\setminus Ui have the subspace topology from Si. Let X := (S^1\setminus U1) ∐ (S^2\setminus U2) have the disjoint union topology, and let \sim be the smallest equivalence relation on X for which h1-1(p) \sim h2-1(p) for all p \in S^1. The quotient space X/\sim is the connected sum of S^1 and S^2, and is denoted S^1 # S^2.
               </p>
             </statement>
           </definition>
@@ -4568,7 +4606,7 @@
           <theorem xml:id="thm-5.144">
             <statement>
               <p>
-                If S1 and S2 are compact connected surfaces, then so is S1 # S2.
+                If S^1 and S^2 are compact connected surfaces, then so is S^1 # S^2.
               </p>
             </statement>
           </theorem>
@@ -4576,7 +4614,7 @@
           <proposition xml:id="prop-5.146">
             <statement>
               <p>
-                If S1 is a surface, then S1 # S2 \cong S1.
+                If S^1 is a surface, then S^1 # S^2 \cong S^1.
               </p>
             </statement>
           </proposition>
@@ -4600,13 +4638,13 @@
 
                   <li>
                     <p>
-                      Let Z := #n P2. (b-i) The space Z is homeomorphic to a quotient of a Euclidean 2n-gon with gluings labeled (counterclockwise) by a1a1 a2a2 ··· anan. (b-ii) \pi_1(Z) \cong \langle a1, \dots,an | a12 a22 ··· an2 = 1 \rangle. (b-ii) \pi_1(Z)ab \cong \Z n-1 \times \Z /2.
+                      Let Z := #n P^2. (b-i) The space Z is homeomorphic to a quotient of a Euclidean 2n-gon with gluings labeled (counterclockwise) by a1a1 a2a2 ··· anan. (b-ii) \pi_1(Z) \cong \langle a1, \dots,an | a12 a22 ··· an2 = 1 \rangle. (b-ii) \pi_1(Z)ab \cong \Z n-1 \times \Z /2.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      T2 # P2 \cong #3 P2
+                      T2 # P^2 \cong #3 P^2
                     </p>
                   </li>
                 </ol>
@@ -4617,7 +4655,7 @@
           <theorem xml:id="thm-5.152"><title>Classification of Surfaces Theorem</title>
             <statement>
               <p>
-                Every compact connected surface is homeomorphic to exactly one of S2, #n T2, or #n P2 for some natural number n.
+                Every compact connected surface is homeomorphic to exactly one of S^2, #n T2, or #n P^2 for some natural number n.
               </p>
             </statement>
           </theorem>
@@ -5144,7 +5182,7 @@
           <theorem xml:id="thm-6.21">
             <statement>
               <p>
-                Let pi:X̃i \to Xi be covering spaces for i \in {1,2}. Then q := (p1 \circ proj1,p2 \circ proj2) :X̃1 \times X̃2 \to X1 \times X2 [that is, q(s1,s2) := (p1(s1),p2(s2)) for all (s1,s2) \in X̃1 \times X̃2] is also a covering space.
+                Let pi:X̃i \to Xi be covering spaces for i \in {1,2}. Then q := (p1 \circ proj1,p2 \circ proj2) :X̃1 \times X̃2 \to X1 \times X2 [that is, q(S^1,S^2) := (p1(S^1),p2(S^2)) for all (S^1,S^2) \in X̃1 \times X̃2] is also a covering space.
               </p>
             </statement>
           </theorem>
@@ -5642,14 +5680,16 @@
 
       <section xml:id="sec-sing-hom"><title>Singular Homology</title>
 
-        <blockquote>
-          <p>
-            <q>
-              ...Commutative algebra is a lot like topology, only backwards.
-            </q>
-          </p>
-          <attribution>John Baez</attribution>
-        </blockquote>
+        <introduction>
+          <blockquote>
+            <p>
+              <q>
+                ...Commutative algebra is a lot like topology, only backwards.
+              </q>
+            </p>
+            <attribution>John Baez</attribution>
+          </blockquote>
+        </introduction>
 
         <subsection xml:id="subsec-induced-hom"><title>Definitions and Induced Homomorphisms</title>
 
