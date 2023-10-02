@@ -646,97 +646,107 @@ window.MathJax = {
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-homotopy-equiv"><h2 class="heading hide-type">
 <span class="type">Section</span> <span class="codenumber">4.3</span> <span class="title">Homotopy and Homotopy Equivalence</span>
 </h2>
-<div class="para" id="p-427">Motivation: Deformation retraction is not symmetric and so is not an equivalence relation on topological spaces; build a (smallest) equivalence relation that includes deformation retraction.</div>
+<div class="para" id="p-450">Motivation: Deformation retraction is not symmetric and so is not an equivalence relation on topological spaces; build a (smallest) equivalence relation that includes deformation retraction.</div>
 <article class="definition definition-like" id="def-4.30"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-428">
-<div class="para">Let X and Y be topological spaces and let g,h: X \to Y continuous functions. A homotopy from g to h is a family of maps ft: X \to Y for all t \in I such that</div>
+<div class="para logical" id="p-451">
+<div class="para">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and let <span class="process-math">\(g,h: X \to Y\)</span> continuous functions. A homotopy from <span class="process-math">\(g\)</span> to <span class="process-math">\(h\)</span> is a family of maps <span class="process-math">\(f_t: X \to Y\)</span> for all <span class="process-math">\(t \in I\)</span> such that</div>
 <ol class="decimal">
-<li id="li-156"><div class="para" id="p-429">f0 = g,</div></li>
-<li id="li-157"><div class="para" id="p-430">f1 = h, and</div></li>
-<li id="li-158"><div class="para" id="p-431">the function H: X \times I \to Y defined by H(p,t) := ft(p), for all p \in X and t \in I, is continuous.</div></li>
+<li id="li-187"><div class="para" id="p-452"><span class="process-math">\(f_0 = g\text{,}\)</span></div></li>
+<li id="li-188"><div class="para" id="p-453">
+<span class="process-math">\(f_1 = h\text{,}\)</span> and</div></li>
+<li id="li-189"><div class="para" id="p-454">the function <span class="process-math">\(H: X \times I \to Y\)</span> defined by <span class="process-math">\(H(p,t) := f_t(p)\text{,}\)</span> for all <span class="process-math">\(p \in X\)</span> and <span class="process-math">\(t \in I\text{,}\)</span> is continuous.</div></li>
 </ol>
-<div class="para">The function H is also called a homotopy from g to h. The function g is said to be homotopic to h, written g \simeq h.</div>
+<div class="para">The function <span class="process-math">\(H\)</span> is also called a homotopy from <span class="process-math">\(g\)</span> to <span class="process-math">\(h\text{.}\)</span> The function <span class="process-math">\(g\)</span> is said to be homotopic to <span class="process-math">\(h\text{,}\)</span> written <span class="process-math">\(g \simeq h\text{.}\)</span>
+</div>
 </div></article><article class="lemma theorem-like" id="lem-4.31"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-432">If g,h: X \to Y are continuous functions and {ft}t \in I is a homotopy from g to h, then ft: X \to X is continuous for all t \in I.</div></article><article class="lemma theorem-like" id="lem-4.32"><h3 class="heading">
+<div class="para" id="p-455">If <span class="process-math">\(g,h: X \to Y\)</span> are continuous functions and <span class="process-math">\(\{f_t\}_{t \in I}\)</span> is a homotopy from <span class="process-math">\(g\)</span> to <span class="process-math">\(h\text{,}\)</span> then <span class="process-math">\(f_t: X \to X\)</span> is continuous for all <span class="process-math">\(t \in I\text{.}\)</span>
+</div></article><article class="lemma theorem-like" id="lem-4.32"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.3.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-433">Let X and Y be topological spaces. Homotopy is an equivalence relation on the set of functions X \to Y.</div></article><article class="proposition theorem-like" id="prop-4.35"><h3 class="heading">
+<div class="para" id="p-456">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces. Homotopy is an equivalence relation on the set of functions <span class="process-math">\(X \to Y\text{.}\)</span>
+</div></article><article class="proposition theorem-like" id="prop-4.35"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">4.3.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-434">If Y is a subspace of a topological space X and {ft}t \in I is a deformation retraction from X onto Y, then {ft}t \in I is a homotopy from f0 = 1X to f1, and f1 is the composition of a retraction from X to Y with the inclusion map i: Y \into  X.</div></article><article class="example example-like" id="example-25"><h3 class="heading">
+<div class="para" id="p-457">If <span class="process-math">\(Y\)</span> is a subspace of a topological space <span class="process-math">\(X\)</span> and <span class="process-math">\(\{f_t\}_{t \in I}\)</span> is a deformation retraction from <span class="process-math">\(X\)</span> onto <span class="process-math">\(Y\text{,}\)</span> then <span class="process-math">\(\{f_t\}_{t \in I}\)</span> is a homotopy from <span class="process-math">\(f_0 = 1_X\)</span> to <span class="process-math">\(f_1\text{,}\)</span> and <span class="process-math">\(f_1\)</span> is the composition of a retraction from <span class="process-math">\(X\)</span> to <span class="process-math">\(Y\)</span> with the inclusion map <span class="process-math">\(i: Y \into  X\text{.}\)</span>
+</div></article><article class="example example-like" id="example-35"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.5</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-435">Examples</div></article><article class="definition definition-like" id="def-4.37"><h3 class="heading">
+<div class="para" id="p-458">Examples</div></article><article class="definition definition-like" id="def-4.37"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.6</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-436">If Z is a topological space and f,g: Z \to (\R^n,\cT_{\text{Eucl}}) are continuous functions, then the straight line homotopy from f to g is the function H: Z \times I \to \R^n defined by H(p,t) := (1-t)f(p) + tg(p) for all p \in X and t \in I.</div></article><article class="proposition theorem-like" id="prop-4.38"><h3 class="heading">
+<div class="para" id="p-459">If <span class="process-math">\(Z\)</span> is a topological space and <span class="process-math">\(f,g: Z \to (\R^n,\cT_{\text{Eucl}})\)</span> are continuous functions, then the straight line homotopy from <span class="process-math">\(f\)</span> to <span class="process-math">\(g\)</span> is the function <span class="process-math">\(H: Z \times I \to \R^n\)</span> defined by <span class="process-math">\(H(p,t) := (1-t)f(p) + tg(p)\)</span> for all <span class="process-math">\(p \in X\)</span> and <span class="process-math">\(t \in I\text{.}\)</span>
+</div></article><article class="proposition theorem-like" id="prop-4.38"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">4.3.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-437">If H is straight line homotopy from f to g, then H is a homotopy from f to g.</div></article><article class="definition definition-like" id="def-4.40"><h3 class="heading">
+<div class="para" id="p-460">If <span class="process-math">\(H\)</span> is straight line homotopy from <span class="process-math">\(f\)</span> to <span class="process-math">\(g\text{,}\)</span> then <span class="process-math">\(H\)</span> is a homotopy from <span class="process-math">\(f\)</span> to <span class="process-math">\(g\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-4.40"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.8</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-438">
-<div class="para">Let X and Y be topological spaces, let Z be a subspace of X, and let g,h: X \to Y continuous functions that satisfy g|Z = h|Z. A homotopy from g to h relative to Z is a family of maps ft: X \to Y for all t \in I such that</div>
+<div class="para logical" id="p-461">
+<div class="para">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, let <span class="process-math">\(Z\)</span> be a subspace of <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(g,h: X \to Y\)</span> continuous functions that satisfy <span class="process-math">\(g|_Z = h|_Z\text{.}\)</span> A homotopy from <span class="process-math">\(g\)</span> to <span class="process-math">\(h\)</span> relative to <span class="process-math">\(Z\)</span> is a family of maps <span class="process-math">\(f_t: X \to Y\)</span> for all <span class="process-math">\(t \in I\)</span> such that</div>
 <ol class="decimal">
-<li id="li-159"><div class="para" id="p-439">f0 = g,</div></li>
-<li id="li-160"><div class="para" id="p-440">f1 = h,</div></li>
-<li id="li-161"><div class="para" id="p-441">the function H: X \times I \to Y defined by H(p,t) := ft(p), for all p \in X and t \in I, is continuous, and</div></li>
-<li id="li-162"><div class="para" id="p-442">ft|Z = g|Z for all t \in I.</div></li>
+<li id="li-190"><div class="para" id="p-462"><span class="process-math">\(f_0 = g\text{,}\)</span></div></li>
+<li id="li-191"><div class="para" id="p-463"><span class="process-math">\(f_1 = h\text{,}\)</span></div></li>
+<li id="li-192"><div class="para" id="p-464">the function <span class="process-math">\(H: X \times I \to Y\)</span> defined by <span class="process-math">\(H(p,t) := ft(p)\text{,}\)</span> for all <span class="process-math">\(p \in X\)</span> and <span class="process-math">\(t \in I\text{,}\)</span> is continuous, and</div></li>
+<li id="li-193"><div class="para" id="p-465">
+<span class="process-math">\(f_t|_Z = g|_Z\)</span> for all <span class="process-math">\(t \in I\text{.}\)</span>
+</div></li>
 </ol>
-<div class="para">The function H is also called a homotopy from g to h relative to Z. The function g is said to be homotopic to h relative to Z, written g \simeq Z h.</div>
+<div class="para">The function <span class="process-math">\(H\)</span> is also called a homotopy from <span class="process-math">\(g\)</span> to <span class="process-math">\(h\)</span> relative to <span class="process-math">\(Z\text{.}\)</span> The function <span class="process-math">\(g\)</span> is said to be homotopic to <span class="process-math">\(h\)</span> relative to <span class="process-math">\(Z\text{,}\)</span> written <span class="process-math">\(g \simeq_Z h\text{.}\)</span>
+</div>
 </div></article><article class="definition definition-like" id="def-4.44"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.9</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-443">Topological spaces X and Y are homotopy equivalent, written X \simeq Y, if there are continuous functions f:X \to Y and g:Y \to X such that f \circ g \simeq 1Y and g \circ f \simeq 1X. The functions f and g are called homotopy equivalences, and each function is a homotopy inverse of the other.</div></article><article class="theorem theorem-like" id="thm-4.45"><h3 class="heading">
+<div class="para" id="p-466">Topological spaces X and Y are homotopy equivalent, written X \simeq Y, if there are continuous functions f:X \to Y and g:Y \to X such that f \circ g \simeq 1Y and g \circ f \simeq 1X. The functions f and g are called homotopy equivalences, and each function is a homotopy inverse of the other.</div></article><article class="theorem theorem-like" id="thm-4.45"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.10</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-444">Homotopy equivalence is an equivalence relation on topological spaces.</div></article><article class="lemma theorem-like" id="lem-4.47"><h3 class="heading">
+<div class="para" id="p-467">Homotopy equivalence is an equivalence relation on topological spaces.</div></article><article class="lemma theorem-like" id="lem-4.47"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">4.3.11</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-445">
+<div class="para logical" id="p-468">
 <div class="para">Let X and Y be topological spaces.</div>
 <ol class="decimal">
-<li id="li-163"><div class="para" id="p-446">If X \cong Y then X \simeq Y.</div></li>
-<li id="li-164"><div class="para" id="p-447">If f,g: X \to Y and f = g then f \simeq g. If moreover Z is any subspace of X then f \simeq Z g also.</div></li>
+<li id="li-194"><div class="para" id="p-469">If X \cong Y then X \simeq Y.</div></li>
+<li id="li-195"><div class="para" id="p-470">If f,g: X \to Y and f = g then f \simeq g. If moreover Z is any subspace of X then f \simeq Z g also.</div></li>
 </ol>
 </div></article><article class="definition definition-like" id="def-4.50"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.12</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-448">A property P of topological spaces is a homotopy invariant if whenever X \simeq Y and X has property P, then Y has property P.</div></article><article class="remark remark-like" id="remark-14"><h3 class="heading">
+<div class="para" id="p-471">A property P of topological spaces is a homotopy invariant if whenever X \simeq Y and X has property P, then Y has property P.</div></article><article class="remark remark-like" id="remark-17"><h3 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">4.3.13</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-449">Use homotopy invariants to prove two spaces are NOT homotopy equivalent.</div></article><article class="theorem theorem-like" id="thm-4.52"><h3 class="heading">
+<div class="para" id="p-472">Use homotopy invariants to prove two spaces are NOT homotopy equivalent.</div></article><article class="theorem theorem-like" id="thm-4.52"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.14</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-450">Path-connectedness is a homotopy invariant.</div></article><article class="proposition theorem-like" id="prop-4.53"><h3 class="heading">
+<div class="para" id="p-473">Path-connectedness is a homotopy invariant.</div></article><article class="proposition theorem-like" id="prop-4.53"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">4.3.15</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-451">Compactness is not a homotopy invariant.</div></article><article class="theorem theorem-like" id="thm-4.54"><h3 class="heading">
+<div class="para" id="p-474">Compactness is not a homotopy invariant.</div></article><article class="theorem theorem-like" id="thm-4.54"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.16</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-452">If Y is a deformation retract of X, then X \simeq Y.</div></article><article class="theorem theorem-like" id="thm-4.55"><h3 class="heading">
+<div class="para" id="p-475">If Y is a deformation retract of X, then X \simeq Y.</div></article><article class="theorem theorem-like" id="thm-4.55"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.17</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-453">Let X and Y be topological spaces. Then X \simeq Y if and only if there is a space Z such that X and Y are both deformation retracts of Z.</div></article><article class="corollary theorem-like" id="cor-4.56"><h3 class="heading">
+<div class="para" id="p-476">Let X and Y be topological spaces. Then X \simeq Y if and only if there is a space Z such that X and Y are both deformation retracts of Z.</div></article><article class="corollary theorem-like" id="cor-4.56"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">4.3.18</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-454">Let \approx be the smallest equivalence relation on spaces such that whenever Y is a deformation retract of X then Y \approx X. Then X \simeq Z iff X \approx Z.</div></article><article class="definition definition-like" id="def-4.60"><h3 class="heading">
+<div class="para" id="p-477">Let \approx be the smallest equivalence relation on spaces such that whenever Y is a deformation retract of X then Y \approx X. Then X \simeq Z iff X \approx Z.</div></article><article class="definition definition-like" id="def-4.60"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.19</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-455">A space X is contractible if X \simeq P, where P = {*} is the topological space with one point.</div></article><article class="definition definition-like" id="def-4.62"><h3 class="heading">
+<div class="para" id="p-478">A space X is contractible if X \simeq P, where P =\{*\} is the topological space with one point.</div></article><article class="definition definition-like" id="def-4.62"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">4.3.20</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-456">Let X and Y be topological spaces. A map f:X \to Y is null homotopic if f is homotopic to a constant function.</div></article><article class="theorem theorem-like" id="thm-4.62"><h3 class="heading">
+<div class="para" id="p-479">Let X and Y be topological spaces. A map f:X \to Y is null homotopic if f is homotopic to a constant function.</div></article><article class="theorem theorem-like" id="thm-4.62"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">4.3.21</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-457">A space X is contractible iff the identity map 1X on X is nullhomotopic.</div></article><article class="example example-like" id="example-26"><h3 class="heading">
+<div class="para" id="p-480">A space X is contractible iff the identity map 1X on X is nullhomotopic.</div></article><article class="example example-like" id="example-36"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">4.3.22</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-458">Examples</div></article></section></div>
+<div class="para" id="p-481">Examples</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-retracts.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-fundamental.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

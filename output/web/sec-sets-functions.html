@@ -665,7 +665,8 @@ window.MathJax = {
 <article class="definition definition-like" id="def-1.3"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span><span class="space"> </span><span class="title">Power Set.</span>
 </h4> <div class="para" id="p-25">The <em class="emphasis">power set</em> <span class="process-math">\(\cP (S)\)</span> of a set <span class="process-math">\(S\)</span> is the set of all subsets of <span class="process-math">\(S\text{.}\)</span>
-</div></article><div class="para" id="p-26">Discussion of standard mathematical conventions for notation Notation for indices: <span class="process-math">\(i,j,k,m,n\)</span> for finite or countably many indices, <span class="process-math">\(\alpha,\beta,\dots \)</span> for arbitrarily many indices. Notation for sets, elements of sets, and sets of sets: Small letters <span class="process-math">\(a,b,c,p,q,x,y,z\)</span> for elements of sets, capital letters <span class="process-math">\(A,B,C,X,Y,Z\)</span> for sets, calligraphic capital letters <span class="process-math">\(\cB,\cC,\cT,\cU \)</span> for collections of sets.</div></section><section class="subsection" id="subsec-functions"><h3 class="heading hide-type">
+</div></article><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/remark-power-set.png" class="contained"></div>
+<div class="para" id="p-26">Discussion of standard mathematical conventions for notation Notation for indices: <span class="process-math">\(i,j,k,m,n\)</span> for finite or countably many indices, <span class="process-math">\(\alpha,\beta,\dots \)</span> for arbitrarily many indices. Notation for sets, elements of sets, and sets of sets: Small letters <span class="process-math">\(a,b,c,p,q,x,y,z\)</span> for elements of sets, capital letters <span class="process-math">\(A,B,C,X,Y,Z\)</span> for sets, calligraphic capital letters <span class="process-math">\(\cB,\cC,\cT,\cU \)</span> for collections of sets.</div></section><section class="subsection" id="subsec-functions"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.2</span> <span class="title">Properties of functions</span>
 </h3>
 <article class="definition definition-like" id="def-1.6"><h4 class="heading">
@@ -788,33 +789,39 @@ window.MathJax = {
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.18</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-65">Let <span class="process-math">\(A, B\text{,}\)</span> and <span class="process-math">\(A_\alpha \)</span> for all <span class="process-math">\(\alpha \in J\)</span> be sets. The <em class="emphasis">Cartesian product</em> <span class="process-math">\(A \times B := \{(a,b) | a \in A, b \in B\} \text{ and }\prod_{\alpha \in J} A_\alpha := \{(a_\alpha )_{\alpha \in J} | a_\alpha \in A_\alpha \}\text{.}\)</span>
-</div></article><article class="definition definition-like" id="def-1.21"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span>
+</div></article><article class="example example-like" id="example-3"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.19</span><span class="period">.</span>
+</h5>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/example-product.png" class="contained"></div></article><article class="definition definition-like" id="def-1.21"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.20</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-66">Let <span class="process-math">\(A_\alpha \)</span> for all <span class="process-math">\(\alpha \in J\)</span> be sets and let <span class="process-math">\(\beta\in J\text{.}\)</span> The <em class="emphasis">projection map</em> <span class="process-math">\(p_\beta : \prod_{\alpha \in J} A_\alpha \to A_\beta \)</span> is defined by <span class="process-math">\(p_\beta ((a_\alpha )_{\alpha \in J}) = a_\beta  \text{ for all }(a_\alpha )_{\alpha \in J} \in \prod_{\alpha \in J} A_\alpha \text{.}\)</span>
 </div></article><article class="definition definition-like" id="def-1.22"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.20</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.21</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-67">Let <span class="process-math">\(A_\alpha \)</span> for all <span class="process-math">\(\alpha \in J\)</span> be sets, let <span class="process-math">\(\beta \in J\text{,}\)</span> and for each <span class="process-math">\(\alpha \in J\setminus \{\beta \}\text{,}\)</span> let <span class="process-math">\(b_\alpha \in A_\alpha \text{.}\)</span> The associated <em class="emphasis">product inclusion map</em> <span class="process-math">\(i_\beta : A_\beta \to \prod_{\alpha \in J} A_\alpha \)</span> is defined for each <span class="process-math">\(a \in A_\beta \)</span> by <span class="process-math">\(i_\beta (a) := (a_\alpha )_{\alpha \in J}\text{,}\)</span> where <span class="process-math">\(a_\beta  := a\)</span> and <span class="process-math">\(a_\alpha := b_\alpha \text{ for all }\alpha \in J\setminus \{\beta \}\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="thm-1.23"><h5 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.21</span><span class="period">.</span>
+</div></article><article class="example example-like" id="example-4"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.22</span><span class="period">.</span>
+</h5>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/example-product-inclusion.png" class="contained"></div></article><article class="theorem theorem-like" id="thm-1.23"><h5 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.23</span><span class="period">.</span>
 </h5>
 <div class="para logical" id="p-68"><ol class="decimal">
 <li id="li-39"><div class="para" id="p-69">Projection maps are surjections.</div></li>
 <li id="li-40"><div class="para" id="p-70">Product inclusion maps are injections.</div></li>
 </ol></div></article><article class="lemma theorem-like" id="lem-1.24"><h5 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.2.22</span><span class="period">.</span>
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">1.2.24</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-71">If <span class="process-math">\(A \sse G\)</span> and <span class="process-math">\(B \sse H\text{,}\)</span> then <span class="process-math">\(A \times B \sse G \times H\text{.}\)</span>
 </div></article><article class="axiom theorem-like" id="axiom-choice"><h5 class="heading">
-<span class="type">Axiom</span><span class="space"> </span><span class="codenumber">1.2.23</span><span class="period">.</span><span class="space"> </span><span class="title">Axiom of Choice.</span>
+<span class="type">Axiom</span><span class="space"> </span><span class="codenumber">1.2.25</span><span class="period">.</span><span class="space"> </span><span class="title">Axiom of Choice.</span>
 </h5>
 <div class="para" id="p-72">If <span class="process-math">\(A_\alpha \ne \es \)</span> for all <span class="process-math">\(\alpha \in J\text{,}\)</span> then <span class="process-math">\(\prod_{\alpha \in J} A_\alpha \ne \es \text{.}\)</span>
 </div></article></section><section class="subsubsection" id="subsubsec-quotients"><h4 class="heading hide-type">
 <span class="type">Subsubsection</span> <span class="codenumber"></span> <span class="title">Quotient sets and equivalence relations</span>
 </h4>
 <article class="definition definition-like" id="def-1.27"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.24</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.26</span><span class="period">.</span>
 </h5>
 <div class="para logical" id="p-73">
 <div class="para">An <em class="emphasis">equivalence relation</em> <span class="process-math">\(\sim \)</span> on a set <span class="process-math">\(X\)</span> is a subset <span class="process-math">\(S\)</span> of <span class="process-math">\(X \times X\)</span> (where <span class="process-math">\((a,b) \in S\)</span> is written <span class="process-math">\(a \sim b\)</span>) that satisfies the following for all <span class="process-math">\(a,b,c\)</span> in <span class="process-math">\(X\text{:}\)</span>
@@ -834,12 +841,15 @@ window.MathJax = {
 </li>
 </ol>
 <div class="para">The <em class="emphasis">equivalence class</em> of an element <span class="process-math">\(a\)</span> of <span class="process-math">\(X\)</span> is <span class="process-math">\([a] := \{b | b \sim a\}\text{.}\)</span> The notation <span class="process-math">\(X/\sim \)</span> denotes the set of equivalence classes, also called the <em class="emphasis">quotient</em> of <span class="process-math">\(X\)</span> with respect to <span class="process-math">\(\sim \text{.}\)</span> The function <span class="process-math">\(q:X \to X/\sim \)</span> defined by <span class="process-math">\(q(p) := [p]\)</span> for all <span class="process-math">\(p \in X\)</span> is called the <em class="emphasis">equivalence map</em>.</div>
-</div></article><article class="definition definition-like" id="def-1.28"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.25</span><span class="period">.</span>
+</div></article><article class="example example-like" id="example-5"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.27</span><span class="period">.</span>
+</h5>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/example-equiv-rel.png" class="contained"></div></article><article class="definition definition-like" id="def-1.28"><h5 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.28</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-77">A <em class="emphasis">partition</em> of a set <span class="process-math">\(X\)</span> is a collection of nonempty disjoint subsets of <span class="process-math">\(X\)</span> whose union is <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="proposition theorem-like" id="prop-1.29"><h5 class="heading">
-<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.2.26</span><span class="period">.</span>
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">1.2.29</span><span class="period">.</span>
 </h5>
 <div class="para logical" id="p-78">
 <div class="para">Let <span class="process-math">\(X\)</span> be a set.</div>
@@ -849,15 +859,15 @@ window.MathJax = {
 <li id="li-45"><div class="para" id="p-80">If <span class="process-math">\(\cC \)</span> is a partition of <span class="process-math">\(X\text{,}\)</span> and <span class="process-math">\(T = \{(x,y) \in X \times X | x,y \text{ are in the same element of }\cC \}\text{,}\)</span> then <span class="process-math">\(T\)</span> is an equivalence relation on <span class="process-math">\(X\text{.}\)</span>
 </div></li>
 </ol>
-</div></article><article class="example example-like" id="example-3"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.27</span><span class="period">.</span>
+</div></article><article class="example example-like" id="example-6"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.30</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-81"></div></article><article class="theorem theorem-like" id="thm-1.30"><h5 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.28</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.31</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-82">Let <span class="process-math">\(f: X \to Y\)</span> be a function, and let <span class="process-math">\(\sim = \{(p,p') \in X \times X | f(p) = f(p')\}\text{.}\)</span> Then <span class="process-math">\(\sim \)</span> is an equivalence relation on <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="theorem theorem-like" id="thm-1.31"><h5 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.29</span><span class="period">.</span><span class="space"> </span><span class="title">FBT = Function Building Theorem for quotient sets.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.32</span><span class="period">.</span><span class="space"> </span><span class="title">FBT = Function Building Theorem for quotient sets.</span>
 </h5>
 <div class="para logical" id="p-83">
 <div class="para">Let <span class="process-math">\(\sim \)</span> be an equivalence relation on a set <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(f: X \to Y\)</span> be a function satisfying the property that whenever <span class="process-math">\(x,x' \in X\)</span> and <span class="process-math">\(x \sim x'\)</span> then <span class="process-math">\(f(x) = f(x')\text{.}\)</span> Then:</div>
@@ -866,20 +876,23 @@ window.MathJax = {
 <li id="li-47"><div class="para" id="p-85">If <span class="process-math">\(f\)</span> is onto, then <span class="process-math">\(g\)</span> is onto.</div></li>
 <li id="li-48"><div class="para" id="p-86">If <span class="process-math">\(f\)</span> also satisfies the property that whenever <span class="process-math">\(x,x' \in X\)</span> and <span class="process-math">\(f(x) = f(x')\)</span> then <span class="process-math">\(x \sim x'\text{,}\)</span> then <span class="process-math">\(g\)</span> is one-to-one.</div></li>
 </ol>
-</div></article><div class="para" id="p-87">Template for proving a well-defined function with domain <span class="process-math">\(X/\sim \text{.}\)</span>
+</div></article><article class="example example-like" id="example-7"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.33</span><span class="period">.</span>
+</h5>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/example-fbt.png" class="contained"></div></article><div class="para" id="p-87">Template for proving a well-defined function with domain <span class="process-math">\(X/\sim \text{.}\)</span>
 </div>
-<article class="example example-like" id="example-4"><h5 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.30</span><span class="period">.</span>
+<article class="example example-like" id="example-8"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.34</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-88"></div></article><article class="definition definition-like" id="def-1.32"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.31</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.35</span><span class="period">.</span>
 </h5>
 <div class="para" id="p-89">Let <span class="process-math">\(X\)</span> be a set and let <span class="process-math">\(S\)</span> be a subset of <span class="process-math">\(X \times X\text{.}\)</span> The <em class="emphasis">equivalence relation on <span class="process-math">\(X\)</span> generated by</em> <span class="process-math">\(S\)</span> is the intersection of all of the equivalence relations on <span class="process-math">\(X\)</span> that contain <span class="process-math">\(S\text{.}\)</span>
 </div></article></section></section><section class="subsection" id="subsec-cardinality"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.4</span> <span class="title">Cardinality</span>
 </h3>
 <article class="definition definition-like" id="def-1.34"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.32</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.36</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-90"><ul class="disc">
 <li id="li-49"><div class="para" id="p-91">A set <span class="process-math">\(X\)</span> is <em class="emphasis">finite</em> if there is a bijection <span class="process-math">\(X \to \{1,\dots,n\}\)</span> for some natural number <span class="process-math">\(n\text{,}\)</span> or <span class="process-math">\(X\)</span> is empty. In this case the number <span class="process-math">\(n\)</span> is called the <em class="emphasis">cardinality</em> of <span class="process-math">\(X\text{.}\)</span>
@@ -887,7 +900,7 @@ window.MathJax = {
 <li id="li-50"><div class="para" id="p-92">A set <span class="process-math">\(X\)</span> is <em class="emphasis">infinite</em> if <span class="process-math">\(X\)</span> is not finite. A set <span class="process-math">\(X\)</span> is <em class="emphasis">countable</em> if there is an injection <span class="process-math">\(X \into \N \text{.}\)</span>
 </div></li>
 </ul></div></article><article class="theorem theorem-like" id="thm-1.35"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.33</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.37</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-93">
 <div class="para">Let <span class="process-math">\(X\)</span> be a set.</div>
@@ -927,19 +940,19 @@ window.MathJax = {
 </div></li>
 </ol>
 </div></article><article class="theorem theorem-like" id="thm-1.36"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.34</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.38</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-106"><ol class="decimal">
 <li id="li-63"><div class="para" id="p-107">The class of finite sets is closed under: subsets, intersections, finite unions, and finite products.</div></li>
 <li id="li-64"><div class="para" id="p-108">The class of countable sets is closed under: subsets, intersections, countable unions, and finite products.</div></li>
-</ol></div></article><article class="example example-like" id="example-5"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.35</span><span class="period">.</span>
+</ol></div></article><article class="example example-like" id="example-9"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.2.39</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-109"></div></article></section><section class="subsection" id="subsec-bounds"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">1.2.5</span> <span class="title">Upper and lower bound properties of <span class="process-math">\(\N\)</span>  and <span class="process-math">\(\R\)</span></span>
 </h3>
 <article class="definition definition-like" id="def-1.39"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.36</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.40</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-110"><ol class="decimal">
 <li id="li-65"><div class="para" id="p-111">An <em class="emphasis">upper bound</em> for a subset <span class="process-math">\(A \sse \R \)</span> is a real number <span class="process-math">\(r \in \R \)</span> satisfying <span class="process-math">\(a \leq r\)</span> for all <span class="process-math">\(a \in A\text{.}\)</span>
@@ -947,7 +960,7 @@ window.MathJax = {
 <li id="li-66"><div class="para" id="p-112">A <em class="emphasis">lower bound</em> for a subset <span class="process-math">\(A \sse \R \)</span> is a real number <span class="process-math">\(s \in \R \)</span> satisfying <span class="process-math">\(s \leq a\)</span> for all <span class="process-math">\(a \in A\text{.}\)</span>
 </div></li>
 </ol></div></article><article class="definition definition-like" id="def-1.40"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.37</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.2.41</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-113"><ol class="decimal">
 <li id="li-67">
@@ -957,7 +970,7 @@ window.MathJax = {
 <span class="heading"><span class="title">Greatest lower bound property of <span class="process-math">\(\R \)</span>.</span></span><div class="para" id="p-115">If <span class="process-math">\(A \sse \R \)</span> and <span class="process-math">\(A\)</span> has a lower bound, then <span class="process-math">\(A\)</span> has a greatest lower bound.</div>
 </li>
 </ol></div></article><article class="theorem theorem-like" id="thm-1.41"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.38</span><span class="period">.</span><span class="space"> </span><span class="title">Archimedean property of <span class="process-math">\(\N \)</span>.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.42</span><span class="period">.</span><span class="space"> </span><span class="title">Archimedean property of <span class="process-math">\(\N \)</span>.</span>
 </h4>
 <div class="para" id="p-116">
 <span class="process-math">\(\N \)</span> has no upper bound in <span class="process-math">\(\R \text{.}\)</span>

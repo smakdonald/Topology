@@ -647,91 +647,102 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">3.4</span> <span class="title">Compactness</span>
 </h2>
 <blockquote class="blockquote" id="blockquote-9">
-<div class="para" id="p-349">“A piece of art is a compact form of the universe”</div> <cite class="attribution">―Thomas Kinkade</cite>
+<div class="para" id="p-368">“A piece of art is a compact form of the universe”</div> <cite class="attribution">―Thomas Kinkade</cite>
 </blockquote>
-<div class="para" id="p-350">Motivation: Characterize spaces for which the Extreme Value Theorem holds.</div>
+<div class="para" id="p-369">Motivation: Characterize spaces for which the Extreme Value Theorem holds.</div>
 <article class="definition definition-like" id="def-3.120"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-351">Let X be a topological space. A collection \cC of subsets of X is said to cover X, or to be a covering of X, if \cup C \in \cC C = X. An open covering of a topological space X is a collection \cC of open sets in X that covers X.</div></article><article class="definition definition-like" id="def-3.121"><h3 class="heading">
+<div class="para" id="p-370">Let <span class="process-math">\(X\)</span> be a topological space. A collection <span class="process-math">\(\cC\)</span> of subsets of <span class="process-math">\(X\)</span> is said to cover <span class="process-math">\(X\text{,}\)</span> or to be a covering of <span class="process-math">\(X\text{,}\)</span> if <span class="process-math">\(\cup C \in \cC C = X\text{.}\)</span> An open covering of a topological space <span class="process-math">\(X\)</span> is a collection <span class="process-math">\(\cC\)</span> of open sets in <span class="process-math">\(X\)</span> that covers <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-3.121"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-352">A topological space X is compact if every open covering of X contains a finite subcollection that also covers X.</div></article><article class="theorem theorem-like" id="thm-3.124"><h3 class="heading">
+<div class="para" id="p-371">A topological space <span class="process-math">\(X\)</span> is compact if every open covering of <span class="process-math">\(X\)</span> contains a finite subcollection that also covers <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-3.124"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.3</span><span class="period">.</span><span class="space"> </span><span class="title">EVT = Extreme Value Theorem.</span>
 </h3>
-<div class="para" id="p-353">Let X be a compact space, and let f: X \to (\R,\cT_{\text{Eucl}}) be a continuous function. Then there exist c,d \in X such that for all p \in X, f(c) \leq f(p) \leq f(d).</div></article><article class="example example-like" id="example-22"><h3 class="heading">
+<div class="para" id="p-372">Let <span class="process-math">\(X\)</span> be a compact space, and let <span class="process-math">\(f: X \to (\R,\cT_{\text{Eucl}})\)</span> be a continuous function. Then there exist <span class="process-math">\(c,d \in X\)</span> such that for all <span class="process-math">\(p \in X\text{,}\)</span> <span class="process-math">\(f(c) \leq f(p) \leq f(d)\text{.}\)</span>
+</div></article><article class="example example-like" id="example-32"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">3.4.4</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-354">Examples</div></article><section class="paragraphs" id="paragraphs-10"><h3 class="heading"><span class="title">Interactions with constructions and continuous functions:.</span></h3> <article class="theorem theorem-like" id="thm-3.128"><h4 class="heading">
+<div class="para" id="p-373">Examples</div></article><section class="paragraphs" id="paragraphs-10"><h3 class="heading"><span class="title">Interactions with constructions and continuous functions:.</span></h3> <article class="theorem theorem-like" id="thm-3.128"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-355">Let A be a subspace of a topological space (X,\cT_X). The space A is compact if and only if for every collection \cC of open sets in X satisfying A \sse \cup C \in \cC C, there is a finite subcollection 𝒟 \sse \cC such that A \sse \cup D \in 𝒟 D.</div></article> <article class="theorem theorem-like" id="thm-3.132"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span>
+<div class="para" id="p-374">Let <span class="process-math">\(A\)</span> be a subspace of a topological space <span class="process-math">\((X,\cT_X)\text{.}\)</span> The space <span class="process-math">\(A\)</span> is compact if and only if for every collection <span class="process-math">\(\cC\)</span> of open sets in <span class="process-math">\(X\)</span> satisfying <span class="process-math">\(A \sse \cup C \in \cC C\text{,}\)</span> there is a finite subcollection <span class="process-math">\(\cD \sse \cC\)</span> such that <span class="process-math">\(A \sse \cup D \in \cD D\text{.}\)</span>
+</div></article> <article class="theorem theorem-like" id="thm-3.132"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.6</span><span class="period">.</span><span class="space"> </span><span class="title">A continuous image of a compact space is compact.</span>
 </h4>
-<div class="para" id="p-356">A continuous image of a compact space is compact. That is, if X,Y are topological spaces, and if X is compact and f: X \to Y is a continuous surjective function, then Y is compact.</div></article> <article class="corollary theorem-like" id="cor-3.133"><h4 class="heading">
+<div class="para" id="p-375">If <span class="process-math">\(X,Y\)</span> are topological spaces, and if <span class="process-math">\(X\)</span> is compact and <span class="process-math">\(f: X \to Y\)</span> is a continuous surjective function, then <span class="process-math">\(Y\)</span> is compact.</div></article> <article class="corollary theorem-like" id="cor-3.133"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.4.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-357">Compactness is a homeomorphism invariant.</div></article> <article class="corollary theorem-like" id="cor-3.134"><h4 class="heading">
+<div class="para" id="p-376">Compactness is a homeomorphism invariant.</div></article> <article class="corollary theorem-like" id="cor-3.134"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.4.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-358">If X is a compact space and X/\sim is a quotient space, then X/\sim is compact.</div></article> <article class="theorem theorem-like" id="thm-3.138"><h4 class="heading">
+<div class="para" id="p-377">If <span class="process-math">\(X\)</span> is a compact space and <span class="process-math">\(X/\sim\)</span> is a quotient space, then <span class="process-math">\(X/\sim\)</span> is compact.</div></article> <article class="theorem theorem-like" id="thm-3.138"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-359">If A is a subspace of a compact space X and A is a closed subset in X, then A is compact.</div></article> <article class="theorem theorem-like" id="thm-3.139"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.10</span><span class="period">.</span>
+<div class="para" id="p-378">If <span class="process-math">\(A\)</span> is a subspace of a compact space <span class="process-math">\(X\)</span> and <span class="process-math">\(A\)</span> is a closed subset in <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(A\)</span> is compact.</div></article> <article class="theorem theorem-like" id="thm-3.139"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.10</span><span class="period">.</span><span class="space"> </span><span class="title">Every compact subspace of a Hausdorff space is closed.</span>
 </h4>
-<div class="para" id="p-360">Every compact subspace of a Hausdorff space is closed. That is, if Y is a compact subspace of a T2 space X, then Y is a closed subset of X.</div></article> <article class="corollary theorem-like" id="cor-3.142"><h4 class="heading">
+<div class="para" id="p-379">If <span class="process-math">\(Y\)</span> is a compact subspace of a <span class="process-math">\(T_2\)</span> space <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(Y\)</span> is a closed subset of <span class="process-math">\(X\text{.}\)</span>
+</div></article> <article class="corollary theorem-like" id="cor-3.142"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.4.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-361">If Y is a compact subspace of a T2 space X, and p \in X\setminus Y, then there are disjoint open sets U,V in X satisfying p \in U and Y \sse V.</div></article> <article class="theorem theorem-like" id="thm-3.145"><h4 class="heading">
+<div class="para" id="p-380">If <span class="process-math">\(Y\)</span> is a compact subspace of a <span class="process-math">\(T_2\)</span> space <span class="process-math">\(X\text{,}\)</span> and <span class="process-math">\(p \in X\setminus Y\text{,}\)</span> then there are disjoint open sets <span class="process-math">\(U,V\)</span> in <span class="process-math">\(X\)</span> satisfying <span class="process-math">\(p \in U\)</span> and <span class="process-math">\(Y \sse V\text{.}\)</span>
+</div></article> <article class="theorem theorem-like" id="thm-3.145"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.12</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-362"><ol class="decimal">
-<li id="li-139"><div class="para" id="p-363">If X and Y are compact spaces, then the product space X \times Y is compact. (a') ("Tychonoff theorem") If X_\alpha is a compact space for all \alpha, then the product space \prod_\alpha X_\alpha is compact.</div></li>
-<li id="li-140">
-<span class="heading"><span class="title">Tube Lemma.</span></span><div class="para" id="p-364">If X and Y are spaces, p \in X, Y is compact, and N is an open set in the product space X \times Y containing {p} \times Y, then there is an open set W in X such that {p} \times Y \sse W \times Y \sse N.</div>
+<div class="para logical" id="p-381"><ol class="decimal">
+<li id="li-166"><div class="para" id="p-382">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are compact spaces, then the product space <span class="process-math">\(X \times Y\)</span> is compact. (a') ("Tychonoff theorem") If <span class="process-math">\(X_\alpha\)</span> is a compact space for all <span class="process-math">\(\alpha\text{,}\)</span> then the product space <span class="process-math">\(\prod_\alpha X_\alpha\)</span> is compact.</div></li>
+<li id="li-167">
+<span class="heading"><span class="title">Tube Lemma.</span></span><div class="para" id="p-383">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are spaces, <span class="process-math">\(p \in X, Y\)</span> is compact, and <span class="process-math">\(N\)</span> is an open set in the product space <span class="process-math">\(X \times Y containing\{p\} \times Y\text{,}\)</span> then there is an open set <span class="process-math">\(W\)</span> in <span class="process-math">\(X\)</span> such that<span class="process-math">\(\{p\} \times Y \sse W \times Y \sse N\text{.}\)</span>
+</div>
 </li>
-</ol></div></article> <article class="remark remark-like" id="remark-8"><h4 class="heading">
+</ol></div></article> <article class="remark remark-like" id="remark-11"><h4 class="heading">
 <span class="type">Remark</span><span class="space"> </span><span class="codenumber">3.4.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-365">Compactness is not preserved by non-closed subspaces or continuous preimages.</div></article></section><article class="theorem theorem-like" id="thm-3.150"><h3 class="heading">
+<div class="para" id="p-384">Compactness is not preserved by non-closed subspaces or continuous preimages.</div></article></section><article class="theorem theorem-like" id="thm-3.150"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.14</span><span class="period">.</span><span class="space"> </span><span class="title">VUT = Very Useful Theorem.</span>
 </h3>
-<div class="para" id="p-366">A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.</div></article><article class="corollary theorem-like" id="cor-3.152"><h3 class="heading">
+<div class="para" id="p-385">A continuous bijection from a compact space to a Hausdorff space is a homeomorphism.</div></article><article class="corollary theorem-like" id="cor-3.152"><h3 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">3.4.15</span><span class="period">.</span><span class="space"> </span><span class="title">CH-HBT = Compact Hausdorff Homeomorphism Building Theorem.</span>
 </h3>
-<div class="para" id="p-367">Let X be a compact space, let \sim be an equivalence relation on X, and let X/\sim be the quotient space. If Z is a T2 space and f: X \to Z is a continuous surjection satisfying [f(p) = f(q) if and only if p \sim q] for all p,q \in X, then the function g: X/\sim \to Z defined by g([p]) := f(p) for all [p] \in X/\sim is a homeomorphism.</div></article><article class="theorem theorem-like" id="thm-3.153"><h3 class="heading">
+<div class="para" id="p-386">Let <span class="process-math">\(X\)</span> be a compact space, let <span class="process-math">\(\sim \)</span> be an equivalence relation on <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(X/\sim\)</span> be the quotient space. If <span class="process-math">\(Z\)</span> is a <span class="process-math">\(T_2\)</span> space and <span class="process-math">\(f: X \to Z\)</span> is a continuous surjection satisfying <span class="process-math">\(f(p) = f(q)\)</span> if and only if <span class="process-math">\(p \sim q\)</span> for all <span class="process-math">\(p,q \in X\text{,}\)</span> then the function <span class="process-math">\(g: X/\sim \to Z\)</span> defined by <span class="process-math">\(g([p]) := f(p)\)</span> for all <span class="process-math">\([p] \in X/\sim\)</span> is a homeomorphism.</div></article><article class="theorem theorem-like" id="thm-3.153"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.16</span><span class="period">.</span><span class="space"> </span><span class="title">(CQ4).</span>
 </h3>
-<div class="para" id="p-368">If X is a compact space, Y is a T2 space, and f: X \to Y is a surjective continuous function, then f is a quotient map.</div></article><section class="paragraphs" id="paragraphs-11"><h3 class="heading"><span class="title">Compactness and Euclidean topology:.</span></h3> <article class="theorem theorem-like" id="thm-3.155"><h4 class="heading">
+<div class="para" id="p-387">If <span class="process-math">\(X\)</span> is a compact space, <span class="process-math">\(Y\)</span> is a <span class="process-math">\(T_2\)</span> space, and <span class="process-math">\(f: X \to Y\)</span> is a surjective continuous function, then <span class="process-math">\(f\)</span> is a quotient map.</div></article><section class="paragraphs" id="paragraphs-11"><h3 class="heading"><span class="title">Compactness and Euclidean topology:.</span></h3> <article class="theorem theorem-like" id="thm-3.155"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.17</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-369">If a,b \in \R  with a &lt; b, then the interval [a,b], with the subspace topology from (\R,\cT_{\text{Eucl}}), is compact.</div></article> <article class="definition definition-like" id="def-3.157"><h4 class="heading">
+<div class="para" id="p-388">If <span class="process-math">\(a,b \in \R\)</span>  with <span class="process-math">\(a &lt; b\text{,}\)</span> then the interval <span class="process-math">\([a,b]\text{,}\)</span> with the subspace topology from <span class="process-math">\((\R,\cT_{\text{Eucl}})\text{,}\)</span> is compact.</div></article> <article class="definition definition-like" id="def-3.157"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">3.4.18</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-370">Let (X,d) be a metric space. The diameter of a nonempty subset Y of X is diam(Y) := sup{d(p,q) | p,q \in Y}. The set Y is bounded if diam(Y) is finite.</div></article> <article class="theorem theorem-like" id="thm-3.158"><h4 class="heading">
+<div class="para" id="p-389">Let <span class="process-math">\((X,d)\)</span> be a metric space. The diameter of a nonempty subset <span class="process-math">\(Y\)</span> of <span class="process-math">\(X\)</span> is <span class="process-math">\(diam(Y) := sup{d(p,q) | p,q \in Y\}\text{.}\)</span> The set <span class="process-math">\(Y\)</span> is bounded if <span class="process-math">\(diam(Y)\)</span> is finite.</div></article> <article class="theorem theorem-like" id="thm-3.158"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.19</span><span class="period">.</span><span class="space"> </span><span class="title">Heine-Borel Theorem.</span>
 </h4>
-<div class="para" id="p-371">Let Y be a subspace of (\R^n,\cT_{\text{Eucl}}). Then Y is compact iff Y is a closed and bounded subset of \R^n.</div></article></section><article class="proposition theorem-like" id="prop-3.160"><h3 class="heading">
+<div class="para" id="p-390">Let <span class="process-math">\(Y\)</span> be a subspace of <span class="process-math">\((\R^n,\cT_{\text{Eucl}})\text{.}\)</span> Then <span class="process-math">\(Y\)</span> is compact iff <span class="process-math">\(Y\)</span> is a closed and bounded subset of <span class="process-math">\(\R^n\text{.}\)</span>
+</div></article></section><article class="proposition theorem-like" id="prop-3.160"><h3 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">3.4.20</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-372"><ol class="decimal">
-<li id="li-141"><div class="para" id="p-373">If \approx is the smallest equivalence relation on I such that 0 \approx 1, then I/\approx \cong S^1, with a homeomorphism that maps the equivalence class [s] to the point ( cos(2 \pi s), sin(2 \pi s) ) for all s \in I.</div></li>
-<li id="li-142"><div class="para" id="p-374">If \sim is the smallest equivalence relation on I \times I such that (s,1) \sim (1,1) for all s \in I and (0,t) \sim (1,1) \sim (1,t) for all t \in I, then (I \times I)/\sim \cong D2, with a homeomorphism that maps the equivalence class [(1,1)] to the point (1,0) and maps [(s,0)] to (cos(2\pi s),sin(2\pi s)) for all s \in I.</div></li>
+<div class="para logical" id="p-391"><ol class="decimal">
+<li id="li-168"><div class="para" id="p-392">If <span class="process-math">\(\sim\)</span> is the smallest equivalence relation on <span class="process-math">\(I\)</span> such that <span class="process-math">\(0 \sim 1\text{,}\)</span> then <span class="process-math">\(I/\sim \cong S^1\text{,}\)</span> with a homeomorphism that maps the equivalence class <span class="process-math">\([s]\)</span> to the point <span class="process-math">\(( \cos(2 \pi s), \sin(2 \pi s) )\)</span> for all <span class="process-math">\(s \in I\text{.}\)</span>
+</div></li>
+<li id="li-169"><div class="para" id="p-393">If <span class="process-math">\(\sim\)</span> is the smallest equivalence relation on <span class="process-math">\(I \times I\)</span> such that <span class="process-math">\((s,1) \sim (1,1)\)</span> for all <span class="process-math">\(s \in I\)</span> and <span class="process-math">\((0,t) \sim (1,1) \sim (1,t)\)</span> for all <span class="process-math">\(t \in I\text{,}\)</span> then <span class="process-math">\((I \times I)/\sim \cong D^2\text{,}\)</span> with a homeomorphism that maps the equivalence class <span class="process-math">\([(1,1)]\)</span> to the point <span class="process-math">\((1,0)\)</span> and maps <span class="process-math">\([(s,0)]\)</span> to <span class="process-math">\((\cos(2\pi s),\sin(2\pi s))\)</span> for all <span class="process-math">\(s \in I\text{.}\)</span>
+</div></li>
 </ol></div></article><article class="theorem theorem-like" id="thm-3.162"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.21</span><span class="period">.</span>
 </h3>
-<div class="para logical" id="p-375">
-<div class="para">Let X be a topological space, let \sim be an equivalence relation on X, and let q:X \to X/\sim be the quotient map. Let I = [0,1] have the Euclidean subspace topology.</div>
+<div class="para logical" id="p-394">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space, let <span class="process-math">\(\sim\)</span> be an equivalence relation on <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(q:X \to X/\sim\)</span> be the quotient map. Let <span class="process-math">\(I = [0,1]\)</span> have the Euclidean subspace topology.</div>
 <ol class="decimal">
-<li id="li-143"><div class="para" id="p-376">The function q':X \times I \to (X/\sim ) \times I defined by q'(p,t) := (q(p),t) for all (p,t) \in X \times I is a quotient map.</div></li>
-<li id="li-144"><div class="para" id="p-377">The relation \approx on X \times I defined by [(p,t) \approx (p',t') if and only if p \sim p' and t = t' for all (p,t),(p',t') \in X \times I] is an equivalence relation on X \times I.</div></li>
-<li id="li-145"><div class="para" id="p-378">The function h:(X \times I)/\approx \to (X/\sim ) \times I defined by h([(p,t)]) := [(q(p),t)] for all [(p,t)] \in (X \times I)/\approx is a homeomorphism.</div></li>
+<li id="li-170"><div class="para" id="p-395">The function <span class="process-math">\(q':X \times I \to (X/\sim ) \times I\)</span> defined by <span class="process-math">\(q'(p,t) := (q(p),t)\)</span> for all <span class="process-math">\((p,t) \in X \times I\)</span> is a quotient map.</div></li>
+<li id="li-171"><div class="para" id="p-396">The relation \approx on X \times I defined by [(p,t) \approx (p',t') if and only if p \sim p' and t = t' for all (p,t),(p',t') \in X \times I] is an equivalence relation on X \times I.</div></li>
+<li id="li-172"><div class="para" id="p-397">The function h:(X \times I)/\approx \to (X/\sim ) \times I defined by h([(p,t)]) := [(q(p),t)] for all [(p,t)] \in (X \times I)/\approx is a homeomorphism.</div></li>
 </ol>
 </div></article><article class="theorem theorem-like" id="thm-3.166"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">3.4.22</span><span class="period">.</span><span class="space"> </span><span class="title">Lebesgue Number Lemma.</span>
 </h3>
-<div class="para" id="p-379">If X is a compact metrizable space and \cC is an open covering of X, then there is a real number s &gt; 0 such that whenever A is a subset of X with diameter &lt; s, then there is an open set U in \cC with A \sse U.</div></article></section></div>
+<div class="para" id="p-398">If <span class="process-math">\(X\)</span> is a compact metrizable space and <span class="process-math">\(\cC\)</span> is an open covering of <span class="process-math">\(X\text{,}\)</span> then there is a real number <span class="process-math">\(s &gt; 0\)</span> such that whenever <span class="process-math">\(A\)</span> is a subset of <span class="process-math">\(X\)</span> with diameter <span class="process-math">\(&lt; s\text{,}\)</span> then there is an open set <span class="process-math">\(U in \cC\)</span> with <span class="process-math">\(A \sse U\text{.}\)</span>
+</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-connected.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-separation.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

@@ -665,15 +665,12 @@ window.MathJax = {
 </div></li>
 </ol>
 </div></article><article class="definition definition-like" id="def-2.2"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-122">A <em class="emphasis">topological space</em> is a set <span class="process-math">\(X\)</span> together with a topology <span class="process-math">\(\cT \)</span> on <span class="process-math">\(X\text{,}\)</span> often denoted <span class="process-math">\((X,\cT )\text{.}\)</span> The elements of <span class="process-math">\(X\)</span> are called <em class="emphasis">points</em> in <span class="process-math">\(X\text{,}\)</span> and the elements of <span class="process-math">\(\cT \)</span> are called <em class="emphasis">open sets</em> in <span class="process-math">\(X\)</span> or open sets relative to <span class="process-math">\(X\)</span> or open sets rel <span class="process-math">\(X\text{.}\)</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.2</span><span class="period">.</span><span class="space"> </span><span class="title">.</span>
+</h4> <div class="para" id="p-122">A <em class="emphasis">topological space</em> is a set <span class="process-math">\(X\)</span> together with a topology <span class="process-math">\(\cT \)</span> on <span class="process-math">\(X\text{,}\)</span> often denoted <span class="process-math">\((X,\cT )\text{.}\)</span> The elements of <span class="process-math">\(X\)</span> are called <em class="emphasis">points</em> in <span class="process-math">\(X\text{,}\)</span> and the elements of <span class="process-math">\(\cT \)</span> are called <em class="emphasis">open sets</em> in <span class="process-math">\(X\)</span> or open sets relative to <span class="process-math">\(X\)</span> or open sets rel <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="example example-like" id="def-2.6"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.3</span><span class="period">.</span><span class="space"> </span><span class="title">Examples of Topologies and Topological Spaces:.</span>
 </h4>
-<div class="para logical" id="p-123">
-<div class="para">Examples of topologies and topological spaces:</div>
-<ol class="decimal">
+<div class="para logical" id="p-123"><ol class="decimal">
 <li id="li-72"><div class="para" id="p-124">Indiscrete topology on a set <span class="process-math">\(X: \cT_{\text{ind}} := \{\es, X\}\text{.}\)</span>
 </div></li>
 <li id="li-73"><div class="para" id="p-125">Discrete topology on a set <span class="process-math">\(X: \cT_{\text{dis}} := \{U | U \sse X\} = \cP (X) =\)</span> the set of all subsets of <span class="process-math">\(X\text{.}\)</span>
@@ -685,7 +682,7 @@ window.MathJax = {
 </div></li>
 <li id="li-77"><div class="para" id="p-129">Included point topology on a set <span class="process-math">\(X\)</span> with included point <span class="process-math">\(a \in X: \cT_{\text{incl}} := \{U \sse X | a \in U\} \cup \{\es \}\text{.}\)</span>
 </div></li>
-<li id="li-78"><div class="para" id="p-130">Excluded point topology on a set <span class="process-math">\(X\)</span> with excluded point <span class="process-math">\(a \in X: \cT_{\text{excl}} := \{U \sse X | a ∉ U\} \cup \{X\}\text{.}\)</span>
+<li id="li-78"><div class="para" id="p-130">Excluded point topology on a set <span class="process-math">\(X\)</span> with excluded point <span class="process-math">\(a \in X: \cT_{\text{excl}} := \{U \sse X | a \not\in U\} \cup \{X\}\text{.}\)</span>
 </div></li>
 <li id="li-79"><div class="para" id="p-131">Infinite ray topology on <span class="process-math">\(\R : \cT_{\text{ray}} := \{ (-∞,a) | a \in \R \} \cup \{\es,\R \}\text{.}\)</span>
 </div></li>
@@ -695,27 +692,30 @@ window.MathJax = {
 </div></li>
 <li id="li-82"><div class="para" id="p-134">On the finite set <span class="process-math">\(X = \{a,b,c\}: \cT  = \{ \es, \{a\}, \{a,b\}, \{a,c\}, X\}\text{.}\)</span>
 </div></li>
-</ol>
-</div></article><article class="lemma theorem-like" id="lem-2.7"><h4 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
+</ol></div></article><article class="remark remark-like" id="remark-2"><h4 class="heading">
+<span class="type">Remark</span><span class="space"> </span><span class="codenumber">2.1.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-135">All of the examples in <a href="" class="xref" data-knowl="./knowl/def-2.6.html" title="Example 2.1.3">Example 2.1.3</a> are topologies.</div></article><article class="definition definition-like" id="def-2.9"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/rem-counterex.png" class="contained"></div></article><article class="proposition theorem-like" id="lem-2.7"><h4 class="heading">
+<span class="type">Proposition</span><span class="space"> </span><span class="codenumber">2.1.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-136">Let <span class="process-math">\(\cT \)</span> and <span class="process-math">\(\cT'\)</span> be topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\cT \sse \cT \text{,}\)</span> then the topology <span class="process-math">\(\cT \)</span> is called <em class="emphasis">smaller</em> or <em class="emphasis">coarser</em> than <span class="process-math">\(\cT'\text{,}\)</span> and the topology <span class="process-math">\(\cT'\)</span> is called <em class="emphasis">larger</em> or <em class="emphasis">finer</em> than <span class="process-math">\(\cT \text{.}\)</span>
-</div></article></section><section class="subsection" id="subsec-continuoty"><h3 class="heading hide-type">
+<div class="para" id="p-135">All of the examples in <a href="" class="xref" data-knowl="./knowl/def-2.6.html" title="Example 2.1.3: Examples of Topologies and Topological Spaces:">Example 2.1.3</a> are topologies.</div></article><article class="definition definition-like" id="def-2.9"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span><span class="space"> </span><span class="title">Courser and Finer Topologies.</span>
+</h4> <div class="para" id="p-136">Let <span class="process-math">\(\cT \)</span> and <span class="process-math">\(\cT'\)</span> be topologies on a set <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(\cT \sse \cT \text{,}\)</span> then the topology <span class="process-math">\(\cT \)</span> is called <em class="emphasis">smaller</em> or <em class="emphasis">coarser</em> than <span class="process-math">\(\cT'\text{,}\)</span> and the topology <span class="process-math">\(\cT'\)</span> is called <em class="emphasis">larger</em> or <em class="emphasis">finer</em> than <span class="process-math">\(\cT \text{.}\)</span>
+</div></article><article class="example example-like" id="example-11"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+</h4>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-finer.png" class="contained"></div></article></section><section class="subsection" id="subsec-continuoty"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.2</span> <span class="title">Continuity</span>
 </h3>
 <div class="para" id="p-137">Motivation: Unraveling the <span class="process-math">\(\varepsilon -\delta \)</span> definition of continuous in Euclidean space to an equivalent definition on open sets.</div>
 <article class="definition definition-like" id="def-2.20"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-138">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: X \to Y\)</span> be a function. The function <span class="process-math">\(f\)</span> is <em class="emphasis">continuous</em> if and only if for every open set <span class="process-math">\(U\)</span> in <span class="process-math">\(Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
-</div></article><article class="example example-like" id="example-7"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">Continuous Function.</span>
+</h4> <div class="para" id="p-138">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, and let <span class="process-math">\(f: X \to Y\)</span> be a function. The function <span class="process-math">\(f\)</span> is <em class="emphasis">continuous</em> if and only if for every open set <span class="process-math">\(U\)</span> in <span class="process-math">\(Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(U)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="example example-like" id="example-12"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-139">Examples</div></article><article class="theorem theorem-like" id="thm-2.21"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.8</span><span class="period">.</span><span class="space"> </span><span class="title">CC0.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">CC0.</span>
 </h4>
 <div class="para logical" id="p-140"><ol class="decimal">
 <li id="li-83"><div class="para" id="p-141">Let <span class="process-math">\(c\)</span> be a real number. The function <span class="process-math">\(f:\R \to \R \)</span> defined by <span class="process-math">\(f(r) := cr\)</span> for all <span class="process-math">\(r \in \R \)</span> is continuous.</div></li>
@@ -723,7 +723,7 @@ window.MathJax = {
 <li id="li-85"><div class="para" id="p-143">The function <span class="process-math">\(g:\R \times (\R \setminus \{0\}) \to \R \)</span> defined by <span class="process-math">\(g(x,y) := x/y\)</span> is continuous.</div></li>
 <li id="li-86"><div class="para" id="p-144">A uniform limit of continuous functions from <span class="process-math">\(\R \)</span> to <span class="process-math">\(\R \)</span> is continuous; hence sine and cosine are continuous.</div></li>
 </ol></div></article><article class="theorem theorem-like" id="thm-2.22"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.9</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-145"><ol class="decimal">
 <li id="li-87">
@@ -732,90 +732,98 @@ window.MathJax = {
 <li id="li-88">
 <span class="heading"><span class="title">CC2.</span></span><div class="para" id="p-147">If <span class="process-math">\(f: X \to Y\)</span> and <span class="process-math">\(g: Y \to Z\)</span> are continuous, then the composition <span class="process-math">\(g \circ f: X \to Z\)</span> is continuous.</div>
 </li>
-</ol></div></article><article class="theorem theorem-like" id="thm-2.23"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.10</span><span class="period">.</span>
+</ol></div></article><article class="example example-like" id="example-13"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-148">Let <span class="process-math">\((X,\cT_X)\)</span> and <span class="process-math">\((Y,\cT_Y)\)</span> be topological spaces and let <span class="process-math">\(f: X \to Y\text{.}\)</span> The function <span class="process-math">\(f\)</span> is continuous if and only if for all <span class="process-math">\(V \in \cT_Y\)</span> and <span class="process-math">\(f(x) \in V\text{,}\)</span> there exist <span class="process-math">\(U \in \cT_X\)</span> with <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(f(U) \sse V\text{.}\)</span>
-</div></article><article class="definition definition-like" id="def-2.25"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.11</span><span class="period">.</span>
+<div class="para logical" id="p-148">
+<ol class="decimal"><li id="li-89"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-cont-1.png" class="contained"></div></li></ol>
+<ol class="decimal"><li id="li-90"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-cont-2.png" class="contained"></div></li></ol>
+<ol class="decimal"><li id="li-91"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-cont-3.png" class="contained"></div></li></ol>
+<ol class="decimal"><li id="li-92"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-cont-4.png" class="contained"></div></li></ol>
+</div></article><article class="theorem theorem-like" id="thm-2.23"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-149">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces. A function <span class="process-math">\(f: X \to Y\)</span> is a <em class="emphasis">homeomorphism</em> if <span class="process-math">\(f\)</span> is a continuous bijection and <span class="process-math">\(f\inv\)</span> is also continuous. The spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are called <em class="emphasis">homeomorphic</em>, or topologically equivalent, if there is a homeomorphism from <span class="process-math">\(X\)</span> to <span class="process-math">\(Y\text{;}\)</span> in symbols this is written <span class="process-math">\(X \cong Y\text{.}\)</span>
+<div class="para" id="p-149">Let <span class="process-math">\((X,\cT_X)\)</span> and <span class="process-math">\((Y,\cT_Y)\)</span> be topological spaces and let <span class="process-math">\(f: X \to Y\text{.}\)</span> The function <span class="process-math">\(f\)</span> is continuous if and only if for all <span class="process-math">\(V \in \cT_Y\)</span> and <span class="process-math">\(f(x) \in V\text{,}\)</span> there exist <span class="process-math">\(U \in \cT_X\)</span> with <span class="process-math">\(x \in U\)</span> and <span class="process-math">\(f(U) \sse V\text{.}\)</span>
+</div></article><article class="hiddenproof" id="proof-1"><a href="" data-knowl="" class="id-ref proof-knowl original has-image" data-refid="hk-proof-1"><h4 class="heading"><span class="type">Proof<span class="period">.</span></span></h4></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/thm-pic.png" class="contained"></div> <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/proof.png" class="contained"></div></article></div>
+<article class="definition definition-like" id="def-2.25"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.14</span><span class="period">.</span><span class="space"> </span><span class="title">Homeomorphism.</span>
+</h4> <div class="para" id="p-150">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces. A function <span class="process-math">\(f: X \to Y\)</span> is a <em class="emphasis">homeomorphism</em> if <span class="process-math">\(f\)</span> is a continuous bijection and <span class="process-math">\(f\inv\)</span> is also continuous. The spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are called <em class="emphasis">homeomorphic</em>, or topologically equivalent, if there is a homeomorphism from <span class="process-math">\(X\)</span> to <span class="process-math">\(Y\text{;}\)</span> in symbols this is written <span class="process-math">\(X \cong Y\text{.}\)</span>
 </div></article><article class="theorem theorem-like" id="thm-2.26"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.12</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-150">"Homeomorphic" is an equivalence relation on topological spaces.</div></article><article class="example example-like" id="example-8"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.13</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-151">Examples</div></article><section class="paragraphs" id="paragraphs-2"><h4 class="heading"><span class="title">Big picture:.</span></h4> <div class="para" id="p-152">Euclidean, spherical and hyperbolic metric spaces of the same dimension are homeomorphic. <span class="process-math">\(E^2 \cong H^2 \cong S^2\setminus \{(0,0,1)\}\text{.}\)</span>
+<div class="para" id="p-151">"Homeomorphic" is an equivalence relation on topological spaces.</div></article><section class="paragraphs" id="paragraphs-2"><h4 class="heading"><span class="title">Big picture:.</span></h4> <div class="para" id="p-152">Euclidean, spherical and hyperbolic metric spaces of the same dimension are homeomorphic. <span class="process-math">\(E^2 \cong H^2 \cong S^2\setminus \{(0,0,1)\}\text{.}\)</span>
 </div> <article class="definition definition-like" id="def-2.28"><h5 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.14</span><span class="period">.</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span><span class="space"> </span><span class="title">Homeomorphism Problem.</span>
+</h5> <div class="para" id="p-153">The <em class="emphasis">Homeomorphism Problem</em> asks: Is there a computer algorithm that, upon input of two topological spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> can determine whether or not <span class="process-math">\(X \cong Y\text{?}\)</span>
+</div></article> <div class="para" id="p-154">(Backing up a step: How do you input a space into a computer?!)</div> <article class="example example-like" id="example-14"><h5 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.17</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-153">The <em class="emphasis">Homeomorphism Problem</em> asks: Is there a computer algorithm that, upon input of two topological spaces <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\text{,}\)</span> can determine whether or not <span class="process-math">\(X \cong Y\text{?}\)</span>
-</div></article> <div class="para" id="p-154">(Backing up a step: How do you input a space into a computer?!)</div></section></section><section class="subsection" id="subsec-bases"><h3 class="heading hide-type">
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/ex-homeo-prob.png" class="contained"></div></article></section></section><section class="subsection" id="subsec-bases"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.1.3</span> <span class="title">Bases</span>
 </h3>
 <article class="definition definition-like" id="def-2.30"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.15</span><span class="period">.</span>
-</h4>
-<div class="para logical" id="p-155">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.18</span><span class="period">.</span><span class="space"> </span><span class="title">Basis.</span>
+</h4> <div class="para logical" id="p-155">
 <div class="para">A <em class="emphasis">basis</em> on a set <span class="process-math">\(X\)</span> is a collection <span class="process-math">\(\cB \)</span> of subsets of <span class="process-math">\(X\)</span> satisfying:</div>
 <ol class="decimal">
-<li id="li-89"><div class="para" id="p-156">For each <span class="process-math">\(p\)</span> in <span class="process-math">\(X\)</span> there is an <span class="process-math">\(N_p\)</span> in <span class="process-math">\(\cB \)</span> such that<span class="process-math">\(p \in N_p\text{,}\)</span> and</div></li>
-<li id="li-90"><div class="para" id="p-157">whenever <span class="process-math">\(N_1,N_2\)</span> are in <span class="process-math">\(\cB \)</span> and <span class="process-math">\(p\)</span> is an element of <span class="process-math">\(N_1 \cap N_2\text{,}\)</span> then there is an <span class="process-math">\(N_3\)</span> in <span class="process-math">\(\cB \)</span> such that <span class="process-math">\(p \in N_3 \sse N_1 \cap N_2\text{.}\)</span>
+<li id="li-93"><div class="para" id="p-156">For each <span class="process-math">\(p\)</span> in <span class="process-math">\(X\)</span> there is an <span class="process-math">\(N_p\)</span> in <span class="process-math">\(\cB \)</span> such that<span class="process-math">\(p \in N_p\text{,}\)</span> and</div></li>
+<li id="li-94"><div class="para" id="p-157">whenever <span class="process-math">\(N_1,N_2\)</span> are in <span class="process-math">\(\cB \)</span> and <span class="process-math">\(p\)</span> is an element of <span class="process-math">\(N_1 \cap N_2\text{,}\)</span> then there is an <span class="process-math">\(N_3\)</span> in <span class="process-math">\(\cB \)</span> such that <span class="process-math">\(p \in N_3 \sse N_1 \cap N_2\text{.}\)</span>
 </div></li>
 </ol>
 </div></article><article class="definition definition-like" id="def-2.31"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.16</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-158">The topology <em class="emphasis">generated</em> by a basis <span class="process-math">\(\cB \)</span> is <span class="process-math">\(\cT (\cB ) := \{U \sse X | \text{ for all }p\in U \text{ there is an } N\in \cB \text{ such that }p \in N \sse U\}\text{.}\)</span>
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.19</span><span class="period">.</span><span class="space"> </span><span class="title">Topology Generated by a Basis.</span>
+</h4> <div class="para" id="p-158">The topology <em class="emphasis">generated</em> by a basis <span class="process-math">\(\cB \)</span> is <span class="process-math">\(\cT (\cB ) := \{U \sse X | \text{ for all }p\in U \text{ there is an } N\in \cB \text{ such that }p \in N \sse U\}\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-2.32"><h4 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.1.17</span><span class="period">.</span>
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.1.20</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-159"><ol class="decimal">
-<li id="li-91"><div class="para" id="p-160">If <span class="process-math">\(\cB \)</span> is a basis on <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\cT (\cB )\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span>
+<li id="li-95"><div class="para" id="p-160">If <span class="process-math">\(\cB \)</span> is a basis on <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\cT (\cB )\)</span> is a topology on <span class="process-math">\(X\text{.}\)</span>
 </div></li>
-<li id="li-92"><div class="para" id="p-161">If <span class="process-math">\(\cT'\)</span> is a topology on <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\cT'\)</span> is also a basis on <span class="process-math">\(X\text{,}\)</span> and <span class="process-math">\(\cT (\cT') = \cT'\text{.}\)</span>
+<li id="li-96"><div class="para" id="p-161">If <span class="process-math">\(\cT'\)</span> is a topology on <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\cT'\)</span> is also a basis on <span class="process-math">\(X\text{,}\)</span> and <span class="process-math">\(\cT (\cT') = \cT'\text{.}\)</span>
 </div></li>
-</ol></div></article><article class="theorem theorem-like" id="thm-2.33"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.18</span><span class="period">.</span>
+</ol></div></article><article class="example example-like" id="example-15"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.21</span><span class="period">.</span>
+</h4>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/1.png" class="contained"></div> <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/2.png" class="contained"></div></article><article class="theorem theorem-like" id="thm-2.33"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.22</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-162">If <span class="process-math">\(\cB \)</span> is a basis on <span class="process-math">\(X\)</span> and <span class="process-math">\(U \sse X\text{,}\)</span> then <span class="process-math">\(U\)</span> is in <span class="process-math">\(\cT (\cB )\)</span> if and only if <span class="process-math">\(U\)</span> is a union of elements of <span class="process-math">\(\cB \text{.}\)</span> That is, <span class="process-math">\(\cT (\cB ) = \{ \cup \alpha B_\alpha | B_\alpha \in \cB  for all \alpha \}\text{.}\)</span>
 </div></article><article class="example example-like" id="def-2.36"><h4 class="heading">
-<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.19</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-163">The Euclidean basis on <span class="process-math">\(\R^n\)</span> is <span class="process-math">\(\cB_{\text{Eucl}} := \{ B_n(q,r) | q \in \R^n \text{ and }r &gt; 0\}\text{.}\)</span>
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.23</span><span class="period">.</span><span class="space"> </span><span class="title">The Euclidean Basis.</span>
+</h4> <div class="para" id="p-163">The Euclidean basis on <span class="process-math">\(\R^n\)</span> is <span class="process-math">\(\cB_{\text{Eucl}} := \{ B_n(q,r) | q \in \R^n \text{ and }r &gt; 0\}\text{.}\)</span>
 </div></article><article class="lemma theorem-like" id="lem-2.37"><h4 class="heading">
-<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.1.20</span><span class="period">.</span>
+<span class="type">Lemma</span><span class="space"> </span><span class="codenumber">2.1.24</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-164"><span class="process-math">\(\cT (\cB_{\text{Eucl}}) = \cT {\text{Eucl}}\text{.}\)</span></div></article><article class="definition definition-like" id="def-2.39"><h4 class="heading">
-<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.21</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-165">The <em class="emphasis">lower limit topology</em> on the set <span class="process-math">\(\R \)</span> is the topology <span class="process-math">\(\cT ll := \cT (\cB ll)\)</span> generated by the basis <span class="process-math">\(\cB ll := \{[a,b) | a,b \in \R, a &lt; b\}\text{.}\)</span>
+<div class="para" id="p-164"><span class="process-math">\(\cT (\cB_{\text{Eucl}}) = \cT_{\text{Eucl}}\text{.}\)</span></div></article><article class="definition definition-like" id="def-2.39"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.25</span><span class="period">.</span><span class="space"> </span><span class="title">Lower Limit Topology.</span>
+</h4> <div class="para" id="p-165">The <em class="emphasis">lower limit topology</em> on the set <span class="process-math">\(\R \)</span> is the topology <span class="process-math">\(\cT ll := \cT (\cB ll)\)</span> generated by the basis <span class="process-math">\(\cB ll := \{[a,b) | a,b \in \R, a &lt; b\}\text{.}\)</span>
 </div></article><article class="theorem theorem-like" id="thm-2.40"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.22</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.26</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-166">Let <span class="process-math">\(\cB Y\)</span> be a basis on a set <span class="process-math">\(Y\text{.}\)</span> A function <span class="process-math">\(f: (X,\cT_X) \to (Y,\cT (\cB Y))\)</span> is continuous if and only if for every basis element <span class="process-math">\(N \in \cB Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(N)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
 </div></article><article class="theorem theorem-like" id="thm-2.42"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.23</span><span class="period">.</span>
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.27</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-167">Let <span class="process-math">\(\cB \)</span> and <span class="process-math">\(\cB'\)</span> be bases on a set <span class="process-math">\(X\text{.}\)</span> Then <span class="process-math">\(\cT (\cB ) \sse \cT (\cB')\)</span> iff for all <span class="process-math">\(N\)</span> in <span class="process-math">\(\cB \)</span> and <span class="process-math">\(x\)</span> in <span class="process-math">\(N\text{,}\)</span> there is an <span class="process-math">\(N'\)</span> in <span class="process-math">\(\cB'\)</span> with <span class="process-math">\(x \in N' \sse N\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="thm-2.44"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.24</span><span class="period">.</span>
-</h4>
-<div class="para" id="p-168">A subbasis on a set <span class="process-math">\(X\)</span> is a collection <span class="process-math">\(\cS \)</span> of subsets of <span class="process-math">\(X\)</span> satisfying <span class="process-math">\(\cup_{U \in \cS } U = X\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="thm-2.45"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.25</span><span class="period">.</span>
+</div></article><article class="definition definition-like" id="def-2.44"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.28</span><span class="period">.</span><span class="space"> </span><span class="title">Subbasis.</span>
+</h4> <div class="para" id="p-168">A subbasis on a set <span class="process-math">\(X\)</span> is a collection <span class="process-math">\(\cS \)</span> of subsets of <span class="process-math">\(X\)</span> satisfying <span class="process-math">\(\cup_{U \in \cS } U = X\text{.}\)</span>
+</div></article><article class="definition definition-like" id="thm-2.45"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.1.29</span><span class="period">.</span>
 </h4>
 <div class="para" id="p-169">The basis generated by a subbasis <span class="process-math">\(\cS\)</span>  is <span class="process-math">\(\cB (\cS ) := \{\cap i=1n Ui | n \in \N  \text{ and }Ui \in \cS  \text{ for all }i\}\text{.}\)</span> The topology generated by a subbasis <span class="process-math">\(\cS\)</span>  is <span class="process-math">\(\cT (\cS ) := \cT (\cB (\cS ))\text{.}\)</span>
-</div></article><article class="theorem theorem-like" id="thm-2.46"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.26</span><span class="period">.</span>
+</div></article><article class="example example-like" id="example-17"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">2.1.30</span><span class="period">.</span>
+</h4>
+<div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="external/3.png" class="contained"></div></article><article class="theorem theorem-like" id="thm-2.46"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.1.31</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-170">
 <div class="para">Let <span class="process-math">\(\cS_Y\)</span> be a subbasis on a set <span class="process-math">\(Y\text{.}\)</span>
 </div>
 <ol class="decimal">
-<li id="li-93"><div class="para" id="p-171">The basis <span class="process-math">\(\cB (\cS_Y)\)</span> generated by the subbasis <span class="process-math">\(\cS_Y\)</span> is a basis, and hence the topology <span class="process-math">\(\cT (\cS_Y)\)</span> generated by the subbasis <span class="process-math">\(\cS_Y\)</span> is a topology.</div></li>
-<li id="li-94"><div class="para" id="p-172">A function <span class="process-math">\(f: (X,\cT_X) \to (Y,\cT (\cS_Y))\)</span> is continuous if and only if for every subbasis element <span class="process-math">\(V \in \cS_Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(V)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+<li id="li-97"><div class="para" id="p-171">The basis <span class="process-math">\(\cB (\cS_Y)\)</span> generated by the subbasis <span class="process-math">\(\cS_Y\)</span> is a basis, and hence the topology <span class="process-math">\(\cT (\cS_Y)\)</span> generated by the subbasis <span class="process-math">\(\cS_Y\)</span> is a topology.</div></li>
+<li id="li-98"><div class="para" id="p-172">A function <span class="process-math">\(f: (X,\cT_X) \to (Y,\cT (\cS_Y))\)</span> is continuous if and only if for every subbasis element <span class="process-math">\(V \in \cS_Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(V)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
 </div></li>
 </ol>
 </div></article></section></section></div>

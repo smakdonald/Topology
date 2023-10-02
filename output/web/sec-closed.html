@@ -647,72 +647,127 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">2.3</span> <span class="title">Closed Sets, Boundaries, and Continuity</span>
 </h2>
 <section class="introduction" id="introduction-4"><blockquote class="blockquote" id="blockquote-5">
-<div class="para" id="p-256">“I prefer to see with closed eyes.”</div> <cite class="attribution">―Josef Albers</cite>
+<div class="para" id="p-261">“I prefer to see with closed eyes.”</div> <cite class="attribution">―Josef Albers</cite>
 </blockquote></section><section class="subsection" id="subsec-closed"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.1</span> <span class="title">Closed sets</span>
 </h3>
 <article class="definition definition-like" id="def-2.150"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-257">A subset C of a topological space X is a <em class="emphasis">closed set</em> in X if and only if X\setminus C is open in X.</div></article><article class="theorem theorem-like" id="thm-2.151"><h4 class="heading">
+<div class="para" id="p-262">A subset <span class="process-math">\(C\)</span> of a topological space <span class="process-math">\(X\)</span> is a <em class="emphasis">closed set</em> in <span class="process-math">\(X\)</span> if and only if <span class="process-math">\(X\setminus C\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.151"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-258">Let X be a topological space. Then (1) \es  and X are closed in X; (2) whenever A_\alpha is closed in X for all \alpha, then \cap_\alpha A_\alpha is closed in X; and (3) whenever A1,\dots,An are closed in X, then \cup i=1n Ai is closed in X.</div></article><div class="para" id="p-259">Closed sets and continuity:</div>
+<div class="para logical" id="p-263">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space. Then</div>
+<ol class="decimal">
+<li id="li-139"><div class="para" id="p-264">
+<span class="process-math">\(\es\)</span> and <span class="process-math">\(X\)</span> are closed in <span class="process-math">\(X\text{;}\)</span>
+</div></li>
+<li id="li-140"><div class="para" id="p-265">whenever <span class="process-math">\(A_\alpha\)</span> is closed in <span class="process-math">\(X\)</span> for all <span class="process-math">\(\alpha\text{,}\)</span> then <span class="process-math">\(\cap_\alpha A_\alpha\)</span> is closed in <span class="process-math">\(X\text{;}\)</span> and</div></li>
+<li id="li-141"><div class="para" id="p-266">whenever <span class="process-math">\(A_1,\dots,A_n\)</span> are closed in <span class="process-math">\(X\text{,}\)</span> then <span class="process-math">\(\cup_{i=1n}A_i\)</span> is closed in <span class="process-math">\(X\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><div class="para" id="p-267">Closed sets and continuity:</div>
 <article class="theorem theorem-like" id="thm-2.154"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-260">Let X and Y be topological spaces and let f: X \to Y. Then f is continuous if and only for every closed set C in Y, the preimage f\inv(C) is closed in X.</div></article><article class="theorem theorem-like" id="thm-2.155"><h4 class="heading">
-<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
+<div class="para" id="p-268">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and let <span class="process-math">\(f: X \to Y\text{.}\)</span> Then <span class="process-math">\(f\)</span> is continuous if and only for every closed set <span class="process-math">\(C\)</span> in <span class="process-math">\(Y\text{,}\)</span> the preimage <span class="process-math">\(f\inv(C)\)</span> is closed in <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.155"><h4 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span><span class="space"> </span><span class="title">CC14 = "Pasting Lemma".</span>
 </h4>
-<div class="para" id="p-261">(CC14 = "Pasting Lemma"): Let X and Y be topological spaces, let A and B be closed subsets of X, and let A and B have the subspace topologies inherited from X. If f: X \to Y satisfies that f|A and f|B are both continuous, then f is continuous.</div></article><article class="example example-like" id="example-14"><h4 class="heading">
+<div class="para" id="p-269">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces, let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be closed subsets of <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> have the subspace topologies inherited from <span class="process-math">\(X\text{.}\)</span> If <span class="process-math">\(f: X \to Y\)</span> satisfies that <span class="process-math">\(f|A\)</span> and <span class="process-math">\(f|B\)</span> are both continuous, then <span class="process-math">\(f\)</span> is continuous.</div></article><article class="example example-like" id="example-24"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-262">Examples</div></article><div class="para" id="p-263">Closed sets and constructions:</div>
+<div class="para" id="p-270">Examples</div></article><div class="para" id="p-271">Closed sets and constructions:</div>
 <article class="theorem theorem-like" id="thm-2.160"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-264">If A is a subspace of X and C is a subset of A, then C is closed in A if and only if C = A \cap D for some closed set D in X.</div></article><article class="theorem theorem-like" id="thm-2.162"><h4 class="heading">
+<div class="para" id="p-272">If <span class="process-math">\(A\)</span> is a subspace of <span class="process-math">\(X\)</span> and <span class="process-math">\(C\)</span> is a subset of <span class="process-math">\(A\text{,}\)</span> then <span class="process-math">\(C\)</span> is closed in <span class="process-math">\(A\)</span> if and only if <span class="process-math">\(C = A \cap D\)</span> for some closed set <span class="process-math">\(D\)</span> in <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.162"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-265">If A is closed in X and B is closed in Y, then A \times B is closed in X \times Y.</div></article></section><section class="subsection" id="subsec-closures"><h3 class="heading hide-type">
+<div class="para" id="p-273">If <span class="process-math">\(A\)</span> is closed in <span class="process-math">\(X\)</span> and <span class="process-math">\(B\)</span> is closed in <span class="process-math">\(Y\text{,}\)</span> then <span class="process-math">\(A \times B\)</span> is closed in <span class="process-math">\(X \times Y\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-closures"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">2.3.2</span> <span class="title">Closures, interiors, boundaries, and limit points</span>
 </h3>
 <article class="definition definition-like" id="def-2.170"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-266">Let X be a topological space and let A \sse X. The <em class="emphasis">closure</em> of A in X is the set ClX(A) := \cap A \sse C \sse X, C closed in X C. The <em class="emphasis">interior</em> of A in X is the set IntX(A) := \cup U \sse A, U open in X U. The <em class="emphasis">boundary</em> of A in X is BdX(A) := ClX(A) \cap ClX(X-A).</div></article><article class="example example-like" id="example-15"><h4 class="heading">
+<div class="para logical" id="p-274">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(A \sse X\text{.}\)</span>
+</div>
+<ul class="disc">
+<li id="li-142"><div class="para" id="p-275">The <em class="emphasis">closure</em> of <span class="process-math">\(A\)</span> in <span class="process-math">\(X\)</span> is the set <span class="process-math">\(\text{Cl}_X(A) := \cap A \sse C \sse X, C \text{ closed in }X C\text{.}\)</span>
+</div></li>
+<li id="li-143"><div class="para" id="p-276">The <em class="emphasis">interior</em> of <span class="process-math">\(A\)</span> in <span class="process-math">\(X\)</span> is the set <span class="process-math">\(IntX(A) := \cup U \sse A, U \text{ open in }X U\text{.}\)</span>
+</div></li>
+<li id="li-144"><div class="para" id="p-277">The <em class="emphasis">boundary</em> of <span class="process-math">\(A\)</span> in <span class="process-math">\(X\)</span> is <span class="process-math">\(BdX(A) := \text{Cl}_X(A) \cap \text{Cl}_X(X-A)\text{.}\)</span>
+</div></li>
+</ul>
+</div></article><article class="example example-like" id="example-25"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-267">Examples</div></article><article class="theorem theorem-like" id="thm-2.172"><h4 class="heading">
+<div class="para" id="p-278">Examples</div></article><article class="theorem theorem-like" id="thm-2.172"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.10</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-268">Let X be a topological space and let A and B be subsets of X. (1) ClX(A) is closed in X. (1') IntX(A) is open in X. (2) If A \sse B \sse X, then ClX(A) \sse ClX(B) and IntX(A) \sse IntX(B). (3) A is closed in X iff A = ClX(A). (3') B is open in X iff B = IntX(B). (4) ClX(A) is the smallest closed set in X containing A. (4') IntX(A) is the largest open set in X contained in A.</div></article><div class="para" id="p-269">Interaction with continuity:</div>
+<div class="para logical" id="p-279">
+<div class="para">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(A\)</span> and <span class="process-math">\(B\)</span> be subsets of <span class="process-math">\(X\text{.}\)</span>
+</div>
+<ol class="decimal">
+<li id="li-145"><div class="para" id="p-280">
+<span class="process-math">\(\text{Cl}_X(A)\)</span> is closed in <span class="process-math">\(X\)</span> and <span class="process-math">\(IntX(A)\)</span> is open in <span class="process-math">\(X\text{.}\)</span>
+</div></li>
+<li id="li-146"><div class="para" id="p-281">If A \sse B \sse X, then \text{Cl}_X(A) \sse \text{Cl}_X(B) and IntX(A) \sse IntX(B).</div></li>
+<li id="li-147"><div class="para" id="p-282">
+<span class="process-math">\(A\)</span> is closed in <span class="process-math">\(X\)</span> iff <span class="process-math">\(A = \text{Cl}_X(A)\)</span> and <span class="process-math">\(B\)</span> is open in <span class="process-math">\(X\)</span> iff <span class="process-math">\(B = IntX(B)\text{.}\)</span>
+</div></li>
+<li id="li-148"><div class="para" id="p-283">
+<span class="process-math">\(\text{Cl}_X(A)\)</span> is the smallest closed set in <span class="process-math">\(X\)</span> containing <span class="process-math">\(A\text{,}\)</span> and <span class="process-math">\(IntX(A)\)</span> is the largest open set in <span class="process-math">\(X\)</span> contained in <span class="process-math">\(A\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><div class="para" id="p-284">Interaction with continuity:</div>
 <article class="theorem theorem-like" id="thm-2.174"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-270">If X and Y are topological spaces and f: X \to Y, then f is continuous if and only if for all A \sse X, f(ClX(A)) \sse ClY(f(A)).</div></article><div class="para" id="p-271">Interactions with constructions:</div>
+<div class="para" id="p-285">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are topological spaces and <span class="process-math">\(f: X \to Y\text{,}\)</span> then <span class="process-math">\(f\)</span> is continuous if and only if for all <span class="process-math">\(A \sse X\text{,}\)</span> <span class="process-math">\(f(\text{Cl}_X(A)) \sse \text{Cl}_Y(f(A))\text{.}\)</span>
+</div></article><div class="para" id="p-286">Interactions with constructions:</div>
 <article class="theorem theorem-like" id="thm-2.180"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.12</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-272">Let Y be a subspace of X, and let A be a subset of Y. Then ClY(A) = ClX(A) \cap Y.</div></article><article class="theorem theorem-like" id="thm-2.182"><h4 class="heading">
+<div class="para" id="p-287">Let <span class="process-math">\(Y\)</span> be a subspace of <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(A\)</span> be a subset of <span class="process-math">\(Y\text{.}\)</span> Then <span class="process-math">\(\text{Cl}_Y(A) = \text{Cl}_X(A) \cap Y\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.182"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.13</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-273">Let X_\alpha be a topological space and let A_\alpha \sse X_\alpha for all \alpha. Let \prod_\alpha X_\alpha have the product topology. Then Cl\prod_\alpha X_\alpha (\prod_\alpha A_\alpha ) = \prod_\alpha ClX_\alpha (A_\alpha ).</div></article><article class="theorem theorem-like" id="thm-2.185"><h4 class="heading">
+<div class="para" id="p-288">Let <span class="process-math">\(X_\alpha\)</span> be a topological space and let <span class="process-math">\(A_\alpha \sse X_\alpha\)</span> for all <span class="process-math">\(\alpha\text{.}\)</span> Let <span class="process-math">\(\prod_\alpha X_\alpha\)</span> have the product topology. Then <span class="process-math">\(Cl\prod_\alpha X_\alpha (\prod_\alpha A_\alpha ) = \prod_\alpha ClX_\alpha (A_\alpha )\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.185"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.14</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-274">Let (X,\cT ) be a topological space, let A \sse X, and let p \in X. (1) The point p \in ClX(A) if and only if every open set in X that contains p intersects A. (2) If \cT  = \cT (\cB ) is the topology generated by a basis \cB, then p \in ClX(A) if and only if every basis element containing p intersects A.</div></article><article class="definition definition-like" id="def-2.190"><h4 class="heading">
+<div class="para logical" id="p-289">
+<div class="para">Let <span class="process-math">\((X,\cT )\)</span> be a topological space, let <span class="process-math">\(A \sse X\text{,}\)</span> and let <span class="process-math">\(p \in X\text{.}\)</span>
+</div>
+<ol class="decimal">
+<li id="li-149"><div class="para" id="p-290">The point <span class="process-math">\(p \in \text{Cl}_X(A)\)</span> if and only if every open set in <span class="process-math">\(X\)</span> that contains <span class="process-math">\(p\)</span> intersects <span class="process-math">\(A\text{.}\)</span>
+</div></li>
+<li id="li-150"><div class="para" id="p-291">If <span class="process-math">\(\cT  = \cT (\cB )\)</span> is the topology generated by a basis <span class="process-math">\(\cB\text{,}\)</span> then <span class="process-math">\(p \in \text{Cl}_X(A)\)</span> if and only if every basis element containing <span class="process-math">\(p\)</span> intersects <span class="process-math">\(A\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><article class="definition definition-like" id="def-2.190"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">2.3.15</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-275">Let X be a topological space, let A \sse X, and let p \in X. The point p is a <em class="emphasis">limit point</em> of A in X if and only if for every open set U in X containing p, the set (A -\{p\}) \cap U \ne \es. The set of limit points of A in X is denoted LimX(A).</div></article><article class="example example-like" id="example-16"><h4 class="heading">
+<div class="para" id="p-292">Let <span class="process-math">\(X\)</span> be a topological space, let <span class="process-math">\(A \sse X\text{,}\)</span> and let <span class="process-math">\(p \in X\text{.}\)</span> The point <span class="process-math">\(p\)</span> is a <em class="emphasis">limit point</em> of <span class="process-math">\(A\)</span> in <span class="process-math">\(X\)</span> if and only if for every open set <span class="process-math">\(U\)</span> in <span class="process-math">\(X\)</span> containing <span class="process-math">\(p\text{,}\)</span> the set <span class="process-math">\((A -\{p\}) \cap U \ne \es\text{.}\)</span> The set of limit points of <span class="process-math">\(A\)</span> in <span class="process-math">\(X\)</span> is denoted <span class="process-math">\(LimX(A)\text{.}\)</span>
+</div></article><article class="example example-like" id="example-26"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">2.3.16</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-276">Examples</div></article><article class="theorem theorem-like" id="thm-2.191"><h4 class="heading">
+<div class="para" id="p-293">Examples</div></article><article class="theorem theorem-like" id="thm-2.191"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.17</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-277">Let X be a topological space, let A \sse X, and let p \in X. Then p \in LimX(A) if and only if p \in ClX(A\setminus \{p\}).</div></article><article class="theorem theorem-like" id="thm-2.193"><h4 class="heading">
+<div class="para" id="p-294">Let <span class="process-math">\(X\)</span> be a topological space, let <span class="process-math">\(A \sse X\text{,}\)</span> and let <span class="process-math">\(p \in X\text{.}\)</span> Then <span class="process-math">\(p \in LimX(A)\)</span> if and only if <span class="process-math">\(p \in \text{Cl}_X(A\setminus \{p\})\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-2.193"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">2.3.18</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-278">Let X be a topological space and let A \sse X. Then ClX(A) = A \cup LimX(A).</div></article></section></section></div>
+<div class="para" id="p-295">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(A \sse X\text{.}\)</span> Then <span class="process-math">\(\text{Cl}_X(A) = A \cup LimX(A)\text{.}\)</span>
+</div></article></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-constructions.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="ch-invariants.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>
