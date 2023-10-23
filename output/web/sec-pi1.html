@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Definition of \pi _1</title>
+<title>Definition of \pi_1</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta property="og:type" content="book">
@@ -551,7 +551,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-fundamental.html" class="internal"><span class="codenumber">5</span> <span class="title">Fundamental Groups</span></a></div>
 <ul class="structural">
-<li class="active"><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi _1\)</span></span></a></div></li>
+<li class="active"><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi_1\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-group-homs.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Group homomorphisms</span></a></div>
 <ul class="structural">
@@ -644,50 +644,62 @@ window.MathJax = {
 <li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sec-pi1"><h2 class="heading hide-type">
-<span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi _1\)</span></span>
+<span class="type">Section</span> <span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi_1\)</span></span>
 </h2>
 <article class="definition definition-like" id="def-5.1"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.1</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-482">Let X be a topological space and let x_0 \in X. A loop in X at x_0 is a continuous function f:I \to X with f(0) = f(1) = x_0.</div></article><article class="definition definition-like" id="def-5.3"><h3 class="heading">
+<div class="para" id="p-482">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(x_0 \in X\text{.}\)</span> A loop in <span class="process-math">\(X at x_0 \)</span>is a continuous function <span class="process-math">\(f:I \to X\)</span> with <span class="process-math">\(f(0) = f(1) = x_0\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-5.3"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.2</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-483">Two paths f,g:I \to X in a space X are path homotopic, written f \simeq p g, if there is a continuous function H: I \times I \to X such that H(s,0) = f(s) and H(s,1) = g(s) for all s \in I, and H(0,t) = f(0) and H(1,t) = f(1) for all t \in I. The map H is called a path homotopy.</div></article><article class="lemma theorem-like" id="lem-5.4"><h3 class="heading">
+<div class="para" id="p-483">Two paths <span class="process-math">\(f,g:I \to X\)</span> in a space <span class="process-math">\(X\)</span> are path homotopic, written <span class="process-math">\(f \simeq_p g\text{,}\)</span> if there is a continuous function <span class="process-math">\(H: I \times I \to X\)</span> such that <span class="process-math">\(H(s,0) = f(s)\)</span> and <span class="process-math">\(H(s,1) = g(s)\)</span> for all <span class="process-math">\(s \in I\text{,}\)</span> and <span class="process-math">\(H(0,t) = f(0)\)</span> and<span class="process-math">\(H(1,t) = f(1)\)</span> for all <span class="process-math">\(t \in I\text{.}\)</span> The map <span class="process-math">\(H\)</span> is called a path homotopy.</div></article><article class="lemma theorem-like" id="lem-5.4"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.1.3</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-484">If X is a topological space, then \simeq p is an equivalence relation on the set of paths in X.</div></article><article class="definition definition-like" id="def-5.6"><h3 class="heading">
+<div class="para" id="p-484">If <span class="process-math">\(X\)</span> is a topological space, then <span class="process-math">\(\simeq_p\)</span> is an equivalence relation on the set of paths in <span class="process-math">\(X\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-5.6"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.4</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="p-485">
-<div class="para">Let f,g:I \to X be paths in a space X.</div>
+<div class="para">Let <span class="process-math">\(f,g:I \to X\)</span> be paths in a space <span class="process-math">\(X\text{.}\)</span>
+</div>
 <ol class="decimal">
-<li id="li-196"><div class="para" id="p-486">If f(1) = g(0), then their product, written f∗g, is the path in X from f(0) to g(1) defined by (f∗g)(s) := f(2s) for all s \in [0,1/2] and (f∗g)(s) := g(2s-1) for all s \in [1/2,1].</div></li>
-<li id="li-197"><div class="para" id="p-487">The constant path at x_0, written cx_0, is the path (loop) in X defined by cx_0 := x_0 for all s \in I.</div></li>
+<li id="li-196"><div class="para" id="p-486">If <span class="process-math">\(f(1) = g(0)\text{,}\)</span> then their product, written <span class="process-math">\(f∗g\text{,}\)</span> is the path in <span class="process-math">\(X\)</span> from <span class="process-math">\(f(0)\)</span> to <span class="process-math">\(g(1)\)</span> defined by <span class="process-math">\((f∗g)(s) := f(2s)\)</span> for all <span class="process-math">\(s \in [0,1/2]\)</span> and <span class="process-math">\((f∗g)(s) := g(2s-1)\)</span> for all <span class="process-math">\(s \in [1/2,1]\text{.}\)</span>
+</div></li>
+<li id="li-197"><div class="para" id="p-487">The constant path at <span class="process-math">\(x_0\text{,}\)</span> written <span class="process-math">\(c_{x_0}\text{,}\)</span> is the path (loop) in X defined by c_{x_0} := x_0 for all s \in I.</div></li>
 <li id="li-198"><div class="para" id="p-488">The reverse of the path f is the path frev:I \to X defined by frev(s) := f(1-s) for all s \in I.</div></li>
 </ol>
 </div></article><article class="lemma theorem-like" id="lem-5.8"><h3 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">5.1.5</span><span class="period">.</span>
 </h3>
 <div class="para logical" id="p-489">
-<div class="para">Let f,g,h,k:I \to X be paths in a space X, and let x_0 := f(0) and x1 := f(1).</div>
+<div class="para">Let <span class="process-math">\(f,g,h,k:I \to X\)</span> be paths in a space <span class="process-math">\(X\text{,}\)</span> and let <span class="process-math">\(x_0 := f(0)\)</span> and <span class="process-math">\(x1 := f(1)\text{.}\)</span>
+</div>
 <ol class="decimal">
-<li id="li-199"><div class="para" id="p-490">If f \simeq p g and h \simeq p k, then f∗h \simeq p g∗k.</div></li>
-<li id="li-200"><div class="para" id="p-491">cx_0∗f \simeq p f \simeq p f∗cx1.</div></li>
-<li id="li-201"><div class="para" id="p-492">f∗frev \simeq p cx_0 and frev∗ f \simeq p cx1.</div></li>
+<li id="li-199"><div class="para" id="p-490">If <span class="process-math">\(f \simeq_p g\)</span> and <span class="process-math">\(h \simeq_p k\text{,}\)</span> then <span class="process-math">\(f∗h \simeq_p g∗k\text{.}\)</span>
+</div></li>
+<li id="li-200"><div class="para" id="p-491"><span class="process-math">\(c_{x_0}∗f \simeq_p f \simeq_p f∗c_{x_1}\text{.}\)</span></div></li>
+<li id="li-201"><div class="para" id="p-492">
+<span class="process-math">\(f∗f_{rev} \simeq_p c_{x_0}\)</span> and <span class="process-math">\(f_{rev∗} f \simeq p c_{x_1}\text{.}\)</span>
+</div></li>
 </ol>
 </div></article><article class="definition definition-like" id="def-5.10"><h3 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">5.1.6</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-493">Let X be a topological space and let x_0 \in X. The fundamental group of X at the basepoint x_0, written \pi_1(X,x_0), is the set of path homotopy equivalence classes of loops in X at x_0, with group operation defined by [f][g] := [f∗g] for all [f],[g] \in \pi_1(X,x_0).</div></article><article class="theorem theorem-like" id="thm-5.11"><h3 class="heading">
+<div class="para" id="p-493">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(x_0 \in X\text{.}\)</span> The fundamental group of <span class="process-math">\(X\)</span> at the basepoint <span class="process-math">\(x_0\text{,}\)</span> written <span class="process-math">\(\pi_1(X,x_0)\text{,}\)</span> is the set of path homotopy equivalence classes of loops in <span class="process-math">\(X\)</span> at <span class="process-math">\(x_0\text{,}\)</span> with group operation defined by <span class="process-math">\([f][g] := [f∗g]\)</span> for all <span class="process-math">\([f],[g] \in \pi_1(X,x_0).\)</span>
+</div></article><article class="theorem theorem-like" id="thm-5.11"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.7</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-494">\pi_1(X,x_0) is a group.</div></article><article class="example example-like" id="example-37"><h3 class="heading">
+<div class="para" id="p-494">
+<span class="process-math">\(\pi_1(X,x_0)\)</span> is a group.</div></article><article class="example example-like" id="example-37"><h3 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">5.1.8</span><span class="period">.</span>
 </h3>
 <div class="para" id="p-495">Examples</div></article><article class="theorem theorem-like" id="thm-5.13"><h3 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">5.1.9</span><span class="period">.</span>
 </h3>
-<div class="para" id="p-496">\pi_1(X,x_0) = 1 for all x_0 in X iff every continuous map S^1 \to X extends to a continuous map D2 \to X.</div></article></section></div>
+<div class="para" id="p-496">
+<span class="process-math">\(\pi_1(X,x_0) = 1\)</span> for all <span class="process-math">\(x_0\)</span> in <span class="process-math">\(X\)</span> iff every continuous map <span class="process-math">\(S^1 \to X\)</span> extends to a continuous map <span class="process-math">\(D^2 \to X\text{.}\)</span>
+</div></article></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="ch-fundamental.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="sec-group-homs.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>
 </div></main>

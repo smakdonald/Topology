@@ -968,7 +968,8 @@
                   <ol>
                     <li>
                       <p>
-                        There is a well-defined function <m>g:X/\sim \to Y</m> defined by <m>g([x]) = f(x)</m> for all <m>[x]</m> in <m>X/\sim </m>; that is, <m>g \circ q = f</m>, where <m>q</m> is the equivalence map.
+                        There is a well-defined function <m>g:X/\sim \to Y</m> defined by <m>g([x]) = f(x)</m> for all <m>[x]</m> in <m>X/\sim </m>; 
+                        that is, <m>g \circ q = f</m>, where <m>q</m> is the equivalence map.
                       </p>
                     </li>
 
@@ -4034,8 +4035,8 @@
         <definition xml:id="def-4.44">
           <statement>
             <p>
-              Topological spaces X and Y are homotopy equivalent, written X \simeq Y, if there are continuous functions f:X \to Y and g:Y \to X such that f \circ g \simeq 1Y and g \circ f \simeq 1X.
-              The functions f and g are called homotopy equivalences, and each function is a homotopy inverse of the other.
+              Topological spaces <m>X</m> and <m>Y</m> are homotopy equivalent, written <m>X \simeq Y</m>, if there are continuous functions <m>f:X \to Y</m> and <m>g:Y \to X</m> such that <m>f \circ g \simeq 1_Y</m> and <m>g \circ f \simeq 1_X</m>.
+              The functions <m>f</m> and <m>g</m> are called homotopy equivalences, and each function is a homotopy inverse of the other.
             </p>
           </statement>
         </definition>
@@ -4051,17 +4052,18 @@
         <lemma xml:id="lem-4.47">
           <statement>
             <p>
-              Let X and Y be topological spaces. 
+              Let <m>X</m> and <m>Y</m> be topological spaces. 
               <ol>
                 <li>
                   <p>
-                    If X \cong Y then X \simeq Y. 
+                    If <m>X \cong Y</m> then <m>X \simeq Y</m>. 
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    If f,g: X \to Y and f = g then f \simeq g. If moreover Z is any subspace of X then f \simeq Z g also.
+                    If <m>f,g: X \to Y</m> and <m>f = g</m> then <m>f \simeq g</m>. 
+                    If moreover <m>Z</m> is any subspace of <m>X</m> then <m>f \simeq_Z g</m> also.
                   </p>
                 </li>
               </ol>
@@ -4072,7 +4074,7 @@
         <definition xml:id="def-4.50">
           <statement>
             <p>
-              A property P of topological spaces is a homotopy invariant if whenever X \simeq Y and X has property P, then Y has property P.
+              A property <m>P</m> of topological spaces is a homotopy invariant if whenever <m>X \simeq Y</m> and <m>X</m> has property <m>P</m>, then <m>Y</m> has property <m>P</m>.
             </p>
           </statement>
         </definition>
@@ -4102,7 +4104,7 @@
         <theorem xml:id="thm-4.54">
           <statement>
             <p>
-              If Y is a deformation retract of X, then X \simeq Y.
+              If <m>Y</m> is a deformation retract of <m>X</m>, then <m>X \simeq Y</m>.
             </p>
           </statement>
         </theorem>
@@ -4110,7 +4112,8 @@
         <theorem xml:id="thm-4.55">
           <statement>
             <p>
-              Let X and Y be topological spaces. Then X \simeq Y if and only if there is a space Z such that X and Y are both deformation retracts of Z.
+              Let <m>X</m> and <m>Y</m> be topological spaces. 
+              Then <m>X \simeq Y</m> if and only if there is a space <m>Z</m> such that <m>X</m> and <m>Y</m> are both deformation retracts of <m>Z</m>.
             </p>
           </statement>
         </theorem>
@@ -4118,7 +4121,8 @@
         <corollary xml:id="cor-4.56">
           <statement>
             <p>
-              Let \approx be the smallest equivalence relation on spaces such that whenever Y is a deformation retract of X then Y \approx X. Then X \simeq Z iff X \approx Z.
+              Let <m>\approx</m> be the smallest equivalence relation on spaces such that whenever <m>Y</m> is a deformation retract of <m>X</m> then <m>Y \approx X</m>. 
+              Then <m>X \simeq Z</m> iff <m>X \approx Z</m>.
             </p>
           </statement>
         </corollary>
@@ -4126,7 +4130,7 @@
         <definition xml:id="def-4.60">
           <statement>
             <p>
-              A space X is contractible if X \simeq P, where P =\{*\} is the topological space with one point.
+              A space <m>X</m> is contractible if <m>X \simeq P</m>, where <m>P =\{*\}</m> is the topological space with one point.
             </p>
           </statement>
         </definition>
@@ -4134,7 +4138,8 @@
         <definition xml:id="def-4.62">
           <statement>
             <p>
-              Let X and Y be topological spaces. A map f:X \to Y is null homotopic if f is homotopic to a constant function.
+              Let <m>X</m> and <m>Y</m> be topological spaces. 
+              A map <m>f:X \to Y</m> is null homotopic if <m>f</m> is homotopic to a constant function.
             </p>
           </statement>
         </definition>
@@ -4142,7 +4147,7 @@
         <theorem xml:id="thm-4.62">
           <statement>
             <p>
-              A space X is contractible iff the identity map 1X on X is nullhomotopic.
+              A space <m>X</m> is contractible iff the identity map <m>1_X</m> on <m>X</m> is nullhomotopic.
             </p>
           </statement>
         </theorem>
@@ -4159,12 +4164,13 @@
 
     <chapter xml:id="ch-fundamental"><title>Fundamental Groups</title>
 
-      <section xml:id="sec-pi1"><title>Definition of <m>\pi _1</m></title>
+      <section xml:id="sec-pi1"><title>Definition of <m>\pi_1</m></title>
 
         <definition xml:id="def-5.1">
           <statement>
             <p>
-              Let X be a topological space and let x_0 \in X. A loop in X at x_0 is a continuous function f:I \to X with f(0) = f(1) = x_0.
+              Let <m>X</m> be a topological space and let <m>x_0 \in X</m>. 
+              A loop in <m>X at x_0 </m>is a continuous function <m>f:I \to X</m> with <m>f(0) = f(1) = x_0</m>.
             </p>
           </statement>
         </definition>
@@ -4172,8 +4178,8 @@
         <definition xml:id="def-5.3">
           <statement>
             <p>
-              Two paths f,g:I \to X in a space X are path homotopic, written f \simeq p g, if there is a continuous function H: I \times I \to X such that H(s,0) = f(s) and H(s,1) = g(s) for all s \in I, and H(0,t) = f(0) and H(1,t) = f(1) for all t \in I.
-              The map H is called a path homotopy.
+              Two paths <m>f,g:I \to X</m> in a space <m>X</m> are path homotopic, written <m>f \simeq_p g</m>, if there is a continuous function <m>H: I \times I \to X</m> such that <m>H(s,0) = f(s)</m> and <m>H(s,1) = g(s)</m> for all <m>s \in I</m>, and <m>H(0,t) = f(0)</m> and<m> H(1,t) = f(1)</m> for all <m>t \in I</m>.
+              The map <m>H</m> is called a path homotopy.
             </p>
           </statement>
         </definition>
@@ -4181,7 +4187,7 @@
         <lemma xml:id="lem-5.4">
           <statement>
             <p>
-              If X is a topological space, then \simeq p is an equivalence relation on the set of paths in X.
+              If <m>X</m> is a topological space, then <m>\simeq_p</m> is an equivalence relation on the set of paths in <m>X</m>.
             </p>
           </statement>
         </lemma>
@@ -4189,17 +4195,17 @@
         <definition xml:id="def-5.6">
           <statement>
             <p>
-              Let f,g:I \to X be paths in a space X.
+              Let <m>f,g:I \to X</m> be paths in a space <m>X</m>.
               <ol>
                 <li>
                   <p>
-                    If f(1) = g(0), then their product, written f∗g, is the path in X from f(0) to g(1) defined by (f∗g)(s) := f(2s) for all s \in [0,1/2] and (f∗g)(s) := g(2s-1) for all s \in [1/2,1].
+                    If <m>f(1) = g(0)</m>, then their product, written <m>f∗g</m>, is the path in <m>X</m> from <m>f(0)</m> to <m>g(1)</m> defined by <m>(f∗g)(s) := f(2s)</m> for all <m>s \in [0,1/2]</m> and <m>(f∗g)(s) := g(2s-1)</m> for all <m>s \in [1/2,1]</m>.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    The constant path at x_0, written cx_0, is the path (loop) in X defined by cx_0 := x_0 for all s \in I.
+                    The constant path at <m>x_0</m>, written <m>c_{x_0}</m>, is the path (loop) in X defined by c_{x_0} := x_0 for all s \in I.
                   </p>
                 </li>
 
@@ -4216,23 +4222,23 @@
         <lemma xml:id="lem-5.8">
           <statement>
             <p>
-              Let f,g,h,k:I \to X be paths in a space X, and let x_0 := f(0) and x1 := f(1).
+              Let <m>f,g,h,k:I \to X</m> be paths in a space <m>X</m>, and let <m>x_0 := f(0)</m> and <m>x1 := f(1)</m>.
               <ol>
                 <li>
                   <p>
-                    If f \simeq p g and h \simeq p k, then f∗h \simeq p g∗k.
+                    If <m>f \simeq_p g</m> and <m>h \simeq_p k</m>, then <m>f∗h \simeq_p g∗k</m>.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    cx_0∗f \simeq p f \simeq p f∗cx1.
+                    <m>c_{x_0}∗f \simeq_p f \simeq_p f∗c_{x_1}</m>.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    f∗frev \simeq p cx_0 and frev∗ f \simeq p cx1.
+                    <m>f∗f_{rev} \simeq_p c_{x_0}</m> and <m>f_{rev∗} f \simeq p c_{x_1}</m>.
                   </p>
                 </li>
               </ol>
@@ -4243,7 +4249,8 @@
         <definition xml:id="def-5.10">
           <statement>
             <p>
-              Let X be a topological space and let x_0 \in X. The fundamental group of X at the basepoint x_0, written \pi_1(X,x_0), is the set of path homotopy equivalence classes of loops in X at x_0, with group operation defined by [f][g] := [f∗g] for all [f],[g] \in \pi_1(X,x_0).
+              Let <m>X</m> be a topological space and let <m>x_0 \in X</m>. 
+              The fundamental group of <m>X</m> at the basepoint <m>x_0</m>, written <m>\pi_1(X,x_0)</m>, is the set of path homotopy equivalence classes of loops in <m>X</m> at <m>x_0</m>, with group operation defined by <m>[f][g] := [f∗g]</m> for all <m>[f],[g] \in \pi_1(X,x_0).</m>
             </p>
           </statement>
         </definition>
@@ -4251,7 +4258,7 @@
         <theorem xml:id="thm-5.11">
           <statement>
             <p>
-              \pi_1(X,x_0) is a group.
+              <m>\pi_1(X,x_0)</m> is a group.
             </p>
           </statement>
         </theorem>
@@ -4265,7 +4272,7 @@
         <theorem xml:id="thm-5.13">
           <statement>
             <p>
-              \pi_1(X,x_0) = 1 for all x_0 in X iff every continuous map S^1 \to X extends to a continuous map D2 \to X.
+              <m>\pi_1(X,x_0) = 1</m> for all <m>x_0</m> in <m>X</m> iff every continuous map <m>S^1 \to X</m> extends to a continuous map <m>D^2 \to X</m>.
             </p>
           </statement>
         </theorem>
@@ -4279,7 +4286,8 @@
           <definition xml:id="def-5.17">
             <statement>
               <p>
-                Let p:I \to X be a path in a space X from x_0 to x1. The change of basepoint homomorphism induced by p is the function \beta p: \pi_1(X,x_0) \to \pi_1(X,x1) defined by \beta p([f]) := [prev∗f∗p] for all [f] \in \pi_1(X,x_0).
+                Let <m>p:I \to X</m> be a path in a space <m>X</m> from <m>x_0</m> to <m>x_1</m>. 
+                The change of basepoint homomorphism induced by <m>p</m> is the function <m>\beta_p: \pi_1(X,x_0) \to \pi_1(X,x1)</m> defined by <m>\beta_p([f]) := [p_{rev∗}f∗p]</m> for all <m>[f] \in \pi_1(X,x_0)</m>.
               </p>
             </statement>
           </definition>
@@ -4287,7 +4295,7 @@
           <theorem xml:id="thm-5.18">
             <statement>
               <p>
-                If p is a path in X from x_0 to x1, then \beta p: \pi_1(X,x_0) \to \pi_1(X,x1) is an isomorphism of groups.
+                If <m>p</m> is a path in <m>X</m> from <m>x_0</m> to <m>x_1</m>, then <m>\beta_p: \pi_1(X,x_0) \to \pi_1(X,x1)</m> is an isomorphism of groups.
               </p>
             </statement>
           </theorem>
@@ -4295,7 +4303,7 @@
           <corollary xml:id="cor-5.20">
             <statement>
               <p>
-                If X is a path-connected space, then \pi_1(X) is independent of basepoint, up to isomorphism.
+                If <m>X</m> is a path-connected space, then <m>\pi_1(X)</m> is independent of basepoint, up to isomorphism.
               </p>
             </statement>
           </corollary>
@@ -4303,8 +4311,8 @@
           <definition xml:id="def-5.22">
             <statement>
               <p>
-                A space X is 0-connected if X is path-connected.
-                A space X is 1-connected, or simply connected, if X is path-connected and \pi_1(X) = 1.
+                A space <m>X</m> is <m>0</m>-connected if <m>X</m> is path-connected.
+                A space <m>X</m> is <m>1</m>-connected, or simply connected, if <m>X</m> is path-connected and <m>\pi_1(X) = 1</m>.
               </p>
             </statement>
           </definition>
@@ -4316,8 +4324,8 @@
           <definition xml:id="def-5.24">
             <statement>
               <p>
-                A pointed space is a pair (X,x_0) in which X is a topological space and x_0 \in X.
-                A function h:X \to Y with h(x_0) = y_0 is a map of pointed spaces h:(X,x_0) \to (Y,y_0).
+                A pointed space is a pair <m>(X,x_0)</m> in which <m>X</m> is a topological space and <m>x_0 \in X</m>.
+                A function <m>h:X \to Y</m> with <m>h(x_0) = y_0</m> is a map of pointed spaces <m>h:(X,x_0) \to (Y,y_0)</m>.
               </p>
             </statement>
           </definition>
@@ -4325,14 +4333,15 @@
           <definition xml:id="def-5.25">
             <statement>
               <p>
-                Let h:(X,x_0) \to (Y,y_0) be a continuous map of pointed spaces. The induced homomomorphism associated to h is the function h∗: \pi_1(X,x_0) \to \pi_1(Y,y_0) defined by h∗([f]) := [h \circ f] for all [f] \in \pi_1(X,x_0).
+                Let <m>h:(X,x_0) \to (Y,y_0)</m> be a continuous map of pointed spaces. 
+                The induced homomomorphism associated to <m>h</m> is the function <m>h∗: \pi_1(X,x_0) \to \pi_1(Y,y_0)</m> defined by <m>h∗([f]) := [h \circ f]</m> for all <m>[f] \in \pi_1(X,x_0)</m>.
               </p>
             </statement>
           </definition>
 
           <remark>
             <p>
-              The function h∗ is also sometimes written \pi_1(h).
+              The function <m>h∗</m> is also sometimes written <m>\pi_1(h)</m>.
             </p>
           </remark>
 
@@ -4342,19 +4351,19 @@
                 <ol>
                   <li>
                     <p>
-                      If h:(X,x_0) \to (Y,y_0) is a continuous map of pointed spaces, then h∗ is a (well-defined) group homomorphism.
+                      If <m>h:(X,x_0) \to (Y,y_0)</m> is a continuous map of pointed spaces, then <m>h∗</m> is a (well-defined) group homomorphism.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      If h:(X,x_0) \to (Y,y_0) and k:(Y,y_0) \to (Z,z0) are continuous maps of pointed spaces, then (k \circ h)∗ = k∗ \circ h∗.
+                      If <m>h:(X,x_0) \to (Y,y_0)</m> and <m>k:(Y,y_0) \to (Z,z_0)</m> are continuous maps of pointed spaces, then <m>(k \circ h)∗ = k∗ \circ h∗</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      For any pointed space (X,x_0), (1(X,x_0))∗ = 1\pi_1(X,x_0).
+                      For any pointed space <m>(X,x_0), (1(X,x_0))∗ = 1\pi_1(X,x_0)</m>.
                     </p>
                   </li>
                 </ol>
@@ -4369,7 +4378,9 @@
           <theorem xml:id="thm-5.30">
             <statement>
               <p>
-                Let X be a topological space and let x_0,x1 \in X. Let h:X \to Y be a continuous function, and let h0:(X,x_0) \to (Y,h(x_0)) and h1:(X,x1) \to (Y,h(x1)) be the corresponding maps of pointed spaces. If p:I \to X is a path from x_0 to x1, then \beta h \circ p \circ (h0)∗ = (h1)∗ \circ \beta p.
+                Let <m>X</m> be a topological space and let <m>x_0,x_1 \in X</m>. 
+                Let <m>h:X \to Y</m> be a continuous function, and let <m>h_0:(X,x_0) \to (Y,h(x_0))</m> and <m>h_1:(X,x1) \to (Y,h(x1))</m> be the corresponding maps of pointed spaces. 
+                If <m>p:I \to X</m> is a path from <m>x_0</m> to <m>x_1</m>, then <m>\beta h \circ p \circ (h_0)∗ = (h_1)∗ \circ \beta p</m>.
               </p>
             </statement>
           </theorem>
@@ -4377,7 +4388,7 @@
           <theorem xml:id="thm-5.32">
             <statement>
               <p>
-                If X and Y are path-connected spaces and X \simeq Y, then \pi_1(X) \cong \pi_1(Y).
+                If <m>X</m> and <m>Y</m> are path-connected spaces and <m>X \simeq Y</m>, then <m>\pi_1(X) \cong \pi_1(Y)</m>.
               </p>
             </statement>
           </theorem>
@@ -4393,7 +4404,7 @@
           <corollary xml:id="cor-5.35">
             <statement>
               <p>
-                If X is a contractible space then \pi_1(X) = 1.
+                If <m>X</m> is a contractible space then <m>\pi_1(X) = 1</m>.
               </p>
             </statement>
           </corollary>
@@ -4401,7 +4412,7 @@
           <corollary xml:id="cor-5.37">
             <statement>
               <p>
-                If X and Y are homotopy equivalent path-connected spaces, then \pi_1(X) is abelian [respectively, finite] if and only if \pi_1(Y) is abelian [respectively, finite].
+                If <m>X</m> and <m>Y</m> are homotopy equivalent path-connected spaces, then <m>\pi_1(X)</m> is abelian [respectively, finite] if and only if <m>\pi_1(Y)</m> is abelian [respectively, finite].
               </p>
             </statement>
           </corollary>
@@ -4413,7 +4424,7 @@
           <theorem xml:id="thm-5.40">
             <statement>
               <p>
-                If X and Y are PC topological spaces and X \times Y has the product topology, then \pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y).
+                If <m>X</m> and <m>Y</m> are PC topological spaces and <m>X \times Y</m> has the product topology, then <m>\pi_1(X \times Y) \cong \pi_1(X) \times \pi_1(Y)</m>.
               </p>
             </statement>
           </theorem>
@@ -4423,13 +4434,13 @@
               <ol>
                 <li>
                   <p>
-                    If A is a subspace of X, then \pi_1(A) might not be a subgroup of \pi_1(X). 
+                    If <m>A</m> is a subspace of <m>X</m>, then <m>\pi_1(A)</m> might not be a subgroup of <m>\pi_1(X)</m>. 
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    For equivalence relation \sim on a space X, \pi_1(X/\sim ) might not be a quotient (group) of \pi_1(X).
+                    For equivalence relation <m>\sim </m>on a space <m>X, \pi_1(X/\sim )</m> might not be a quotient (group) of <m>\pi_1(X)</m>.
                   </p>
                 </li>
               </ol>
@@ -4439,7 +4450,7 @@
           <theorem xml:id="thm-5.43">
             <statement>
               <p>
-                If r:X \to A is a retraction and i:A \to X is the inclusion, then r∗ is onto and i∗ is one-to-one.
+                If <m>r:X \to A</m> is a retraction and <m>i:A \to X</m> is the inclusion, then <m>r∗</m> is onto and <m>i∗</m> is one-to-one.
               </p>
             </statement>
           </theorem>
@@ -4447,7 +4458,9 @@
           <theorem xml:id="thm-5.44">
             <statement>
               <p>
-                Let A be a PC subspace of a PC topological space X, and let a0 \in A. Let i: A \to X be the inclusion map, and let i∗: \pi_1(A,a0) \to \pi_1(A,a0) be the induced homomorphism. Then i∗ is onto if and only if every path in X with endpoints in A is path homotopic to a path in A.
+                Let <m>A</m> be a PC subspace of a PC topological space <m>X</m>, and let <m>a_0 \in A</m>. 
+                Let <m>i: A \to X</m> be the inclusion map, and let <m>i∗: \pi_1(A,a_0) \to \pi_1(A,a_0)</m> be the induced homomorphism. 
+                Then <m>i∗</m> is onto if and only if every path in <m>X</m> with endpoints in <m>A</m> is path homotopic to a path in <m>A</m>.
               </p>
             </statement>
           </theorem>
@@ -4461,7 +4474,8 @@
         <proposition xml:id="prop-5.49">
           <statement>
             <p>
-              For each integer n, let ωn be the loop in S^1 defined by ωn(s) := ( cos(2 \pi n s), sin(2 \pi n s) ) for all s \in I. Then [ωm][ωn] = [ωm+n] in \pi_1(S^1,(1,0)).
+              For each integer <m>n</m>, let ωn be the loop in <m>S^1</m> defined by <m>ωn(s) := ( \cos(2 \pi n s), \sin(2 \pi n s) )</m> for all <m>s \in I</m>. 
+              Then <m>[ωm][ωn] = [ωm+n]</m> in <m>\pi_1(S^1,(1,0))</m>.
             </p>
           </statement>
         </proposition>
@@ -4469,17 +4483,18 @@
         <theorem xml:id="thm-5.50"><title>Path and Path Homotopy Lifting Theorems (PPHLT) for S^1</title>
           <statement>
             <p>
-              Let p: R \to S^1 be defined by p(t) := (cos(2\pi t), sin(2\pi t)) for all t \in R.
+              Let <m>p: R \to S^1</m> be defined by <m>p(t) := (\cos(2\pi t), \sin(2\pi t))</m> for all <m>t \in R</m>.
               <ul>
                 <li>
                   <p>
-                    (PLT) Given a path f: (I,0) \to (S^1,(1,0)), there is a unique path f": (I,0) \to (R,0) such that p \circ f" = f.
+                    (PLT) Given a path <m>f: (I,0) \to (S^1,(1,0))</m>, there is a unique path <m>f": (I,0) \to (R,0)</m> such that <m>p \circ f" = f</m>.
                   </p>
                 </li>
 
                 <li>
                   <p>
-                    (PHLT) Given a path homotopy H: (I \times I,(0,0)) \to (S^1,(1,0)) there is a unique path homotopy H": (I \times I,(0,0)) \to (R,0) such that p \circ H" = H. Moreover, if H is a path homotopy between two paths f,g: (I,0) \to (S^1,(1,0)), then H" is a path homotopy between the "lifts" f",g": (I,0) \to (R,0) of f,g from the PLT.
+                    (PHLT) Given a path homotopy <m>H: (I \times I,(0,0)) \to (S^1,(1,0))</m> there is a unique path homotopy <m>H": (I \times I,(0,0)) \to (R,0)</m> such that <m>p \circ H" = H</m>. 
+                    Moreover, if <m>H</m> is a path homotopy between two paths <m>f,g: (I,0) \to (S^1,(1,0))</m>, then <m>H"</m> is a path homotopy between the "lifts" <m>f",g": (I,0) \to (R,0)</m> of <m>f,g</m> from the PLT.
                   </p>
                 </li>
               </ul>
@@ -4500,7 +4515,7 @@
           <definition xml:id="def-5.70">
             <statement>
               <p>
-                Let A be a set, let A' :=\{a-1 | a \in A\} be a set that bijects to A, let (A \cup A')* be the set of all words written with the letters of A \cup A' (including the empty word, denoted 1), and let \sim be the smallest equivalence relation on (A \cup A')* such that xaa-1y \sim xy \sim xa-1ay for all a \in A and x,y \in (A \cup A')*. The free group on A, denoted F(A), is the quotient set (A \cup A')*/\sim with the group operation [v][w] := [vw] where vw is the concatenation of the words v and w. In the case that |A| = n, this group is also denoted Fn.
+                Let <m>A</m> be a set, let <m>A' :=\{a-1 | a \in A\}</m> be a set that bijects to <m>A</m>, let <m>(A \cup A')*</m> be the set of all words written with the letters of <m>A \cup A'</m> (including the empty word, denoted <m>1</m>), and let \sim be the smallest equivalence relation on (A \cup A')* such that xaa-1y \sim xy \sim xa-1ay for all a \in A and x,y \in (A \cup A')*. The free group on A, denoted F(A), is the quotient set (A \cup A')*/\sim with the group operation [v][w] := [vw] where vw is the concatenation of the words v and w. In the case that |A| = n, this group is also denoted Fn.
               </p>
             </statement>
           </definition>
@@ -4508,7 +4523,8 @@
           <definition xml:id="def-5.75">
             <statement>
               <p>
-                Let A be a set and let R be a subset of F(A). The normal subgroup generated by R is \langle R \rangle^N :=\{u1r1e1u1-1 ··· ukrkekuk-1 | k \geq 0, and ri \in R, ei \in\{1,-1\}, and ui \in F(A) for each 1 \leq i \leq k\}.
+                Let <m>A</m> be a set and let <m>R</m> be a subset of <m>F(A)</m>. 
+                The normal subgroup generated by <m>R</m> is <m>\langle R \rangle^N :=\{u1r1e1u1-1 ··· ukrkekuk-1 | k \geq 0, and ri \in R, ei \in\{1,-1\}, and ui \in F(A) for each 1 \leq i \leq k\}</m>.
               </p>
             </statement>
           </definition>
@@ -4516,7 +4532,9 @@
           <definition xml:id="def-5.77">
             <statement>
               <p>
-                Let A be a set and let R be a subset of F(A). The group presented by the presentation \langle A | R \rangle is the quotient group F(A)/\langle R \rangle^N. The set A is the set of generators, the set R is the set of relators, and the set of equations\{r = 1 | r \in R\} is the set of relations of the presentation.
+                Let <m>A</m> be a set and let <m>R</m> be a subset of <m>F(A)</m>. 
+                The group presented by the presentation <m>\langle A | R \rangle</m> is the quotient group <m>F(A)/\langle R \rangle^N</m>. 
+                The set <m>A</m> is the set of generators, the set <m>R</m> is the set of relators, and the set of equations <m>\{r = 1 | r \in R\}</m> is the set of relations of the presentation.
               </p>
             </statement>
           </definition>
@@ -4524,21 +4542,21 @@
           <definition xml:id="def-5.78">
             <statement>
               <p>
-                For a set A, R \sse F(A), and words v,w \in (A \cup A')*, the equation v = w means that v and w are the same word, v =F(A) w means that [v] = [w] in the group F(A), and v =G w means that [v]\langle R \rangle^N = [w]\langle R \rangle^N in the group G := \langle A | R \rangle.
+                For a set <m>A, R \sse F(A)</m>, and words <m>v,w \in (A \cup A')*</m>, the equation <m>v = w</m> means that <m>v</m> and <m>w</m> are the same word, <m>v =F(A) w</m> means that <m>[v] = [w]</m> in the group <m>F(A)</m>, and <m>v =G w</m> means that <m>[v]\langle R \rangle^N = [w]\langle R \rangle^N</m> in the group <m>G := \langle A | R \rangle</m>.
               </p>
             </statement>
           </definition>
 
           <remark>
             <p>
-              The group \langle A | R \rangle is the largest group generated by A satisfying r =G 1 for all r \in R.
+              The group <m>\langle A | R \rangle</m> is the largest group generated by <m>A</m> satisfying <m>r =G 1 for all r \in R</m>.
             </p>
           </remark>
 
           <definition xml:id="def-5.80">
             <statement>
               <p>
-                A group G is finitely generated if G is a quotient of F(A) for some finite set A, and G is finitely presented if G = \langle A | R \rangle for some finite sets A and R.
+                A group <m>G</m> is finitely generated if <m>G</m> is a quotient of <m>F(A)</m> for some finite set <m>A</m>, and <m>G</m> is finitely presented if <m>G = \langle A | R \rangle</m> for some finite sets <m>A</m> and <m>R</m>.
               </p>
             </statement>
           </definition>
@@ -4552,7 +4570,7 @@
           <lemma xml:id="lem-5.83">
             <statement>
               <p>
-                If G is a group, then G has a presentation; moreover, G is presented by G = \langle G | ab = (ab) for all a,b \in G \rangle.
+                If <m>G</m> is a group, then <m>G</m> has a presentation; moreover, <m>G</m> is presented by <m>G = \langle G | ab = (ab)</m> for all <m>a,b \in G \rangle</m>.
               </p>
             </statement>
           </lemma>
@@ -4560,7 +4578,8 @@
           <theorem xml:id="thm-5.85"><title>HBTP = "Homomorphism Building Theorem for presentations"</title>
             <statement>
               <p>
-                Let G = \langle A | R \rangle, let H be a group, and let f:A \to H be a function satisfying the property that for all words b1e1 ··· bmem \in R (with each bi \in A and ei \in\{1,-1\}), f(b1)e1 ··· f(bm)em =H 1. Then there is a unique group homomorphism h:G \to H satisfying h(a) = f(a) for all a \in A.
+                Let <m>G = \langle A | R \rangle</m>, let <m>H</m> be a group, and let <m>f:A \to H</m> be a function satisfying the property that for all words <m>b1e1 ··· bmem \in R</m> (with each <m>bi \in A</m> and <m>ei \in\{1,-1\}), f(b1)e1 ··· f(bm)em =H 1</m>. 
+                Then there is a unique group homomorphism <m>h:G \to H satisfying h(a) = f(a)</m> for all <m>a \in A</m>.
               </p>
             </statement>
           </theorem>
@@ -4568,7 +4587,8 @@
           <definition xml:id="def-5.87">
             <statement>
               <p>
-                Let A be a set, let R \sse F(A), let b be a letter not in A, let w \in F(A), and let r \in \langle R \rangle^N. The operations \langle A | R \rangle ↔ \langle A \cup\{b\} | R \cup\{b = w\} \rangle and \langle A | R \rangle ↔ \langle A | R \cup\{r\} \rangle are Tietze transformations.
+                Let <m>A</m> be a set, let <m>R \sse F(A)</m>, let <m>b</m> be a letter not in <m>A</m>, let <m>w \in F(A)</m>, and let <m>r \in \langle R \rangle^N</m>. 
+                The operations <m>\langle A | R \rangle ↔ \langle A \cup\{b\} | R \cup\{b = w\} \rangle</m> and <m>\langle A | R \rangle ↔ \langle A | R \cup\{r\} \rangle</m> are Tietze transformations.
               </p>
             </statement>
           </definition>
@@ -4576,7 +4596,7 @@
           <theorem xml:id="thm-5.88">
             <statement>
               <p>
-                If \langle A | R \rangle \cong \langle B | S \rangle, then there is a finite sequence of Tietze transformations from \langle A | R \rangle to \langle B | S \rangle.
+                If <m>\langle A | R \rangle \cong \langle B | S \rangle</m>, then there is a finite sequence of Tietze transformations from <m>\langle A | R \rangle</m> to <m>\langle B | S \rangle</m>.
               </p>
             </statement>
           </theorem>
@@ -4590,21 +4610,25 @@
             <definition xml:id="def-5.95">
               <statement>
                 <p>
-                  The abelianization of a group G is the quotient group Gab := G/[G,G] where [G,G] is the commutator subgroup [G,G] :=\{aba-1b-1 | a,b \in G\}. The element aba-1b-1 of G is denoted [a,b] and called the commutator of a with b.
+                  The abelianization of a group <m>G</m> is the quotient group <m>Gab := G/[G,G]</m> where <m>[G,G]</m> is the commutator subgroup <m>[G,G] :=\{aba-1b-1 | a,b \in G\}</m>. 
+                  The element <m>aba-1b-1</m> of <m>G</m> is denoted <m>[a,b]</m> and called the commutator of <m>a</m> with <m>b</m>.
                 </p>
               </statement>
             </definition>
 
             <remark>
               <p>
-                There are 3 views of Gab: Using presentations (if G = \langle A | R \rangle, then Gab = \langle A | R \cup\{aba-1b-1 | a,b \in A\} \rangle), as the quotient of G by its commutator subgroup (as in Def 5.115), and as the largest abelian group that is a quotient of G.
+                There are <m>3</m> views of <m>Gab</m>: 
+                Using presentations (if <m>G = \langle A | R \rangle</m>, then <m>Gab = \langle A | R \cup\{aba-1b-1 | a,b \in A\} \rangle</m>), 
+                as the quotient of <m>G</m> by its commutator subgroup (as in Def 5.115), 
+                and as the largest abelian group that is a quotient of <m>G</m>.
               </p>
             </remark>
 
             <proposition xml:id="prop-5.97">
               <statement>
                 <p>
-                  If G and H are groups and Gab ≇ Hab, then G ≇ H.
+                  If <m>G</m> and <m>H</m> are groups and <m>Gab ≇ Hab</m>, then <m>G ≇ H</m>.
                 </p>
               </statement>
             </proposition>
@@ -4622,14 +4646,18 @@
             <definition xml:id="def-5.100">
               <statement>
                 <p>
-                  Let g_\alpha be a group, and write g_\alpha = \langle A_\alpha | R\alpha \rangle, for each \alpha. The direct sum of the g_\alpha is the group ⊕ g_\alpha = \langle \cup \alpha A_\alpha | \cup \alpha R\alpha \cup\{ab = ba | a \in g_\alpha, b \in \alpha, \alpha \ne \beta \} \rangle.
+                  Let <m>g_\alpha</m> be a group, and write <m>g_\alpha = \langle A_\alpha | R\alpha \rangle</m>, for each <m>\alpha</m>. 
+                  The direct sum of the <m>g_\alpha</m> is the <m>group \oplus g_\alpha = \langle \cup \alpha A_\alpha | \cup \alpha R\alpha \cup\{ab = ba | a \in g_\alpha, b \in \alpha, \alpha \ne \beta \} \rangle</m>.
                 </p>
               </statement>
             </definition>
 
             <remark>
               <p>
-                There are 3 views of G \times H: Using presentations (if G = \langle A | R \rangle and H = \langle B | S \rangle, then G \times H = \langle A \cup B | R \cup S \cup\{ab = ba | a \in A, b \in B\} >), as a Cartesian product set with componentwise multiplication, and as the largest group generated by G and H such that the subgroups G and H commute.
+                There are <m>3</m> views of <m>G \times H</m>: 
+                Using presentations (if <m>G = \langle A | R \rangle</m> and <m>H = \langle B | S \rangle</m>, then <m>G \times H = \langle A \cup B | R \cup S \cup\{ab = ba | a \in A, b \in B\}\rangle</m>), 
+                as a Cartesian product set with componentwise multiplication, 
+                and as the largest group generated by <m>G</m> and <m>H</m> such that the subgroups <m>G</m> and <m>H</m> commute.
               </p>
             </remark>
 
@@ -4646,7 +4674,8 @@
             <definition xml:id="def-5.103">
               <statement>
                 <p>
-                  Let g_\alpha be a group, and write g_\alpha = \langle A_\alpha | R\alpha \rangle, for each \alpha. The free product of the g_\alpha is the group ∗\alpha g_\alpha = \langle \cup \alpha A_\alpha | \cup \alpha R\alpha \rangle.
+                  Let <m>g_\alpha</m> be a group, and write <m>g_\alpha = \langle A_\alpha | R\alpha \rangle</m>, for each <m>\alpha</m>. 
+                  The free product of the <m>g_\alpha</m> is the group <m>∗\alpha g_\alpha = \langle \cup \alpha A_\alpha | \cup \alpha R\alpha \rangle</m>.
                 </p>
               </statement>
             </definition>
@@ -4654,7 +4683,9 @@
             <definition xml:id="def-5.104">
               <statement>
                 <p>
-                  Let g_\alpha be a group for all \alpha. A reduced sequence for the collection of groups g_\alpha is a sequence of group elements (or word) of the form g1 ··· gk such that k \geq 0, for each i \in\{1,\dots,k\} there is an index \alpha i such that gi \in g_\alpha i\setminus\{1g_\alpha i\}, and for each i \in\{1,\dots,k-1\}, \alpha i \ne \alpha i+1. In the case of two groups G and H, a reduced sequence for G,H is a word of one of the forms g1h1 ··· gkhk, g1h1 ··· hk-1gk, h1g2 ··· gkhk, or h1g2 ··· hk-1gk, such that k \geq 0, and each gi \in G\setminus\{1G\} and hi \in H\setminus\{1H\}.
+                  Let <m>g_\alpha</m> be a group for all <m>\alpha</m>. 
+                  A reduced sequence for the collection of groups <m>g_\alpha</m> is a sequence of group elements (or word) of the form <m>g1 ··· gk</m> such that <m>k \geq 0</m>, for each <m>i \in\{1,\dots,k\}</m> there is an index <m>\alpha i</m> such that <m>gi \in g_\alpha i\setminus\{1g_\alpha i\}</m>, and for each <m>i \in\{1,\dots,k-1\}</m>, <m>\alpha i \ne \alpha i+1</m>. 
+                  In the case of two groups <m>G</m> and <m>H</m>, a reduced sequence for <m>G,H</m> is a word of one of the forms <m>g1h1 ··· gkhk, g1h1 ··· hk-1gk, h1g2 ··· gkhk</m>, or <m>h1g2 ··· hk-1gk</m>, such that <m>k \geq 0</m>, and each <m>gi \in G\setminus\{1G\}</m> and <m>hi \in H\setminus\{1H\}</m>.
                 </p>
               </statement>
             </definition>
@@ -4662,14 +4693,15 @@
             <lemma xml:id="lem-5.105">
               <statement>
                 <p>
-                  If G and H are groups, then G ∗ H is isomorphic to the set of reduced sequences for G,H with group operation given by concatenation and reduction (in the groups G and H) to a reduced sequence.
+                  If <m>G</m> and <m>H</m> are groups, then <m>G ∗ H</m> is isomorphic to the set of reduced sequences for <m>G,H</m> with group operation given by concatenation and reduction (in the groups <m>G</m> and <m>H</m>) to a reduced sequence.
                 </p>
               </statement>
             </lemma>
 
             <remark>
               <p>
-                There are 3 views of G ∗ H: Using presentations (if G = \langle A | R \rangle and H = \langle B | S \rangle, then G ∗ H\langle = \langle A \cup B | R \cup S \rangle), as the set of reduced sequences for G,H (as in Lemma 5.105), and as the largest group generated by G and H.
+                There are <m>3</m> views of <m>G ∗ H</m>: 
+                Using presentations (if <m>G = \langle A | R \rangle</m> and <m>H = \langle B | S \rangle</m>, then <m>G ∗ H\langle = \langle A \cup B | R \cup S \rangle</m>), as the set of reduced sequences for <m>G,H</m> (as in Lemma 5.105), and as the largest group generated by <m>G</m> and <m>H</m>.
               </p>
             </remark>
 
@@ -4682,7 +4714,8 @@
             <theorem xml:id="thm-5.108"><title>HBTFP = "Homomorphism Building Theorem for free products"</title>
               <statement>
                 <p>
-                  Let g_\alpha be a group for each \alpha, let J be a group, and let f_\alpha :g_\alpha \to J be a homomorphism for each \alpha. Then there is a unique group homomorphism h:∗\alpha g_\alpha \to J satisfying h(g) = f(g) for all g \in g_\alpha, for all \alpha.
+                  Let <m>g_\alpha</m> be a group for each <m>\alpha</m>, let <m>J</m> be a group, and let <m>f_\alpha :g_\alpha \to J</m> be a homomorphism for each <m>\alpha</m>. 
+                  Then there is a unique group homomorphism <m>h:∗\alpha g_\alpha \to J satisfying h(g) = f(g)</m> for all <m>g \in g_\alpha</m>, for all <m>\alpha</m>.
                 </p>
               </statement>
             </theorem>
@@ -5205,7 +5238,7 @@
           <theorem xml:id="thm-5.230">
             <statement>
               <p>
-                Let X be a 2-dimensional PC CW complex and let p \in X be the basepoint. The inclusion map X(1) \to X(2) induces a surjective homomorphism of fundamental groups whose kernel is generated by loops based at p in bijection with the 2-cells of X. More precisely: For each face f = e\alpha 2 of X define θ\alpha : I \to X by θ\alpha := iX(1)X \circ φ\alpha \circ ω, where iX(1)X: X(1) \to X is the inclusion map and ω:I \to S\alpha 1 is defined by ω(t) := (cos(2\pi t),sin(2\pi t)) for all t \in I. Let γ\alpha :I \to X be a path from p to θ\alpha (0), and let wf := γ\alpha ∗ θ\alpha ∗ γ\alpha rev. Then \pi_1(X,p) \cong \pi_1(X(1),p) / \langle{[wf]\}\rangle^N.
+                Let X be a 2-dimensional PC CW complex and let p \in X be the basepoint. The inclusion map X(1) \to X(2) induces a surjective homomorphism of fundamental groups whose kernel is generated by loops based at p in bijection with the 2-cells of X. More precisely: For each face f = e\alpha 2 of X define \theta \alpha : I \to X by \theta \alpha := iX(1)X \circ φ\alpha \circ ω, where iX(1)X: X(1) \to X is the inclusion map and ω:I \to S\alpha 1 is defined by ω(t) := (cos(2\pi t),sin(2\pi t)) for all t \in I. Let γ\alpha :I \to X be a path from p to \theta \alpha (0), and let wf := γ\alpha ∗ \theta \alpha ∗ γ\alpha rev. Then \pi_1(X,p) \cong \pi_1(X(1),p) / \langle{[wf]\}\rangle^N.
               </p>
             </statement>
           </theorem>
@@ -5458,7 +5491,8 @@
           <definition xml:id="def-6.40">
             <statement>
               <p>
-                Given a group G and a topological space Y, an action of G on Y (or "action of G on Y by homeomorphisms") is a homomorphism ρ:G \to Homeo(Y), where Homeo(Y) is the group of homeomorphisms :Y \to Y with group operation given by composition. For each g \in G and y \in Y, denote g · y := (ρ(g))(y).
+                Given a group <m>G</m> and a topological space <m>Y</m>, an action of <m>G</m> on <m>Y</m> (or "action of <m>G</m> on <m>Y</m> by homeomorphisms") is a homomorphism <m>ρ:G \to Homeo(Y)</m>, where <m>Homeo(Y)</m> is the group of homeomorphisms <m>:Y \to Y</m> with group operation given by composition. 
+                For each <m>g \in G</m> and <m>y \in Y</m>, denote <m>g · y := (ρ(g))(y)</m>.
               </p>
             </statement>
           </definition>
@@ -5466,7 +5500,9 @@
           <definition xml:id="def-6.42">
             <statement>
               <p>
-                Given an action of a group G on a space Y, let \sim G be the equivalence relation on Y defined by [y \sim G y' iff there is a g \in G with g · y = y'] for all y,y' \in Y. For each y \in Y, the equivalence class [y] = [y]G = G · y is called the orbit of y. The quotient space Y/\sim is called the orbit space of the group action and denoted Y/G.
+                Given an action of a group <m>G</m> on a space <m>Y</m>, let <m>\sim G</m> be the equivalence relation on <m>Y</m> defined by <m>y \sim G y'</m> iff there is a <m>g \in G</m> with <m>g · y = y'</m> for all <m>y,y' \in Y</m>. 
+                For each <m>y \in Y</m>, the equivalence class <m>[y] = [y]G = G · y</m> is called the orbit of <m>y</m>. 
+                The quotient space <m>Y/\sim</m> is called the orbit space of the group action and denoted <m>Y/G</m>.
               </p>
             </statement>
           </definition>
@@ -5474,7 +5510,8 @@
           <definition xml:id="def-6.44">
             <statement>
               <p>
-                A covering space action of a group G on a space Y is an action satisfying: For each y \in Y there is an open set Uy in Y containing y such that whenever g,g' \in G and (g · Uy) \cap (g' · Uy) \ne \es then g = g'.
+                A covering space action of a group <m>G</m> on a space <m>Y</m> is an action satisfying: 
+                For each <m>y \in Y</m> there is an open set <m>Uy</m> in <m>Y</m> containing <m>y</m> such that whenever <m>g,g' \in G</m> and <m>(g · Uy) \cap (g' · Uy) \ne \es</m> then <m>g = g'</m>.
               </p>
             </statement>
           </definition>
@@ -5482,17 +5519,17 @@
           <theorem xml:id="thm-6.45">
             <statement>
               <p>
-                If G has a covering space action on Y, then: 
+                If <m>G</m> has a covering space action on <m>Y</m>, then: 
                 <ol>
                   <li>
                     <p>
-                      The quotient p:Y \to Y/G is a covering space. 
+                      The quotient <m>p:Y \to Y/G</m> is a covering space. 
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      If Y is PC and LPC and y_0 \in Y, then p∗(\pi_1(Y,y_0)) ⊴ \pi_1(Y/G,[y_0]) and G \cong \pi_1(Y/G,[y_0]) / p∗(\pi_1(Y,y_0)).
+                      If <m>Y</m> is PC and LPC and <m>y_0 \in Y</m>, then <m>p∗(\pi_1(Y,y_0)) ⊴ \pi_1(Y/G,[y_0])</m> and <m>G \cong \pi_1(Y/G,[y_0]) / p∗(\pi_1(Y,y_0))</m>.
                     </p>
                   </li>
                 </ol>
@@ -5503,7 +5540,7 @@
           <corollary xml:id="cor-6.46">
             <statement>
               <p>
-                If Y is an SC CW complex and G acts on Y with a covering space action, then \pi_1(Y/G) \cong G.
+                If <m>Y</m> is an SC CW complex and <m>G</m> acts on <m>Y</m> with a covering space action, then <m>\pi_1(Y/G) \cong G</m>.
               </p>
             </statement>
           </corollary>
@@ -5515,8 +5552,11 @@
           <definition xml:id="def-6.50">
             <statement>
               <p>
-                Let \langle A | R \rangle be a presentation of a group G. The Cayley complex of this presentation is the CW complex X̃ constructed by: X̃(0) = G. The set of edges is in bijection with G \times A; for each g \in G and a \in A, the attaching map of the edge eg,a is φg,a(-1) = g and φg,a(1) = ga. The set of faces is in bijection with G \times R; for each g \in G and r \in R, the attaching map φg,r of the face fg,r satisfies φg,r \circ ω := edge path in X̃(1) starting at g labeled by r.
-                The 1-skeleton X̃(1) is the Cayley graph of G with respect to A.
+                Let <m>\langle A | R \rangle</m> be a presentation of a group <m>G</m>. 
+                The Cayley complex of this presentation is the CW complex <m>X̃</m> constructed by: <m>X̃(0) = G</m>. 
+                The set of edges is in bijection with <m>G \times A</m>; for each <m>g \in G</m> and <m>a \in A</m>, the attaching map of the edge eg, <m>a</m> is <m>φg,a(-1) = g</m> and <m>φg,a(1) = ga</m>.
+                The set of faces is in bijection with <m>G \times R</m>; for each <m>g \in G</m> and <m>r \in R</m>, the attaching map <m>φg,r</m> of the face <m>fg,r</m> satisfies <m>φg,r \circ ω := \text{ edge path in }X̃(1)</m> starting at <m>g</m> labeled by <m>r</m>.
+                The <m>1</m>-skeleton <m>X̃(1)</m> is the Cayley graph of <m>G</m> with respect to <m>A</m>.
               </p>
             </statement>
           </definition>
@@ -5524,23 +5564,24 @@
           <theorem xml:id="thm-6.52">
             <statement>
               <p>
-                Let \langle A | R \rangle be a presentation of a group G, let X̃ be the Cayley complex, and let X be the presentation complex. Then
+                Let <m>\langle A | R \rangle</m> be a presentation of a group <m>G</m>, let <m>X̃</m> be the Cayley complex, and let <m>X</m> be the presentation complex. 
+                Then
                 <ol>
                   <li>
                     <p>
-                      the action of G on X̃, given by g · h := (gh), g · eh,a := e(gh),a, and g · fh,r := f(gh),r for all h \in G, a\in A, and r \in R, is a covering space action;
+                      the action of <m>G</m> on <m>X̃</m>, given by <m>g · h := (gh), g · eh,a := e(gh),a</m>, and <m>g · fh,r := f(gh),r</m> for all <m>h \in G</m>, <m>a\in A</m>, and <m>r \in R</m>, is a covering space action;
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      X̃ is a SC CW complex (and hence PC, LPC, and SLSC), and hence \pi_1(X̃/G) \cong G; and 
+                      <m>X̃</m> is a SC CW complex (and hence PC, LPC, and SLSC), and hence <m>\pi_1(X̃/G) \cong G</m>; and 
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      X̃/G \cong X.
+                      <m>X̃/G \cong X</m>.
                     </p>
                   </li>
                 </ol>
@@ -5561,17 +5602,18 @@
           <theorem xml:id="thm-6.60">
             <statement>
               <p>
-                Let X be a PC, LPC, SLSC space and x_0 \in X. Then:
+                Let <m>X</m> be a PC, LPC, SLSC space and <m>x_0 \in X</m>. Then:
                 <ol>
                   <li>
                     <p>
-                      (SC Covering Space Thm): There is a SC covering space p:(X̃,x̃_0) \to (X,x_0), and there is covering space group action of G := \pi_1(X,x_0) on X̃ that induces p; hence (X̃/G,[x̃_0]) \cong (X,x_0). Moreover, if X is a CW complex, then X̃ is a CW complex, and for each open n-cell \sigma of X there are |G| open n-cells of X̃ mapping via p to \sigma such that the action of each g \in G on X̃ permutes these n-cells.
+                      (SC Covering Space Thm): There is a SC covering space <m>p:(X̃,x̃_0) \to (X,x_0)</m>, and there is covering space group action of <m>G := \pi_1(X,x_0)</m> on <m>X̃</m> that induces <m>p</m>; hence <m>(X̃/G,[x̃_0]) \cong (X,x_0)</m>. 
+                      Moreover, if <m>X</m> is a CW complex, then <m>X̃</m> is a CW complex, and for each open <m>n</m>-cell \sigma of <m>X</m> there are <m>|G|</m> open <m>n</m>-cells of <m>X̃</m> mapping via <m>p</m> to <m>\sigma</m> such that the action of each <m>g \in G</m> on <m>X̃</m> permutes these <m>n</m>-cells.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      (Covering Space Existence Thm): For each subgroup H &lt; \pi_1(X,x_0), there is a covering space rH: (X̃/H,[x̃_0]H) \to (X,x_0) such that rH \circ qH = p, where qH: X̃ \to X̃/H is the quotient map, and H = rH∗(\pi_1(X̃/H,[x̃_0]H)).
+                      (Covering Space Existence Thm): For each subgroup <m>H &lt; \pi_1(X,x_0)</m>, there is a covering space <m>rH: (X̃/H,[x̃_0]H) \to (X,x_0)</m> such that <m>rH \circ qH = p</m>, where <m>qH: X̃ \to X̃/H</m> is the quotient map, and <m>H = rH∗(\pi_1(X̃/H,[x̃_0]H))</m>.
                     </p>
                   </li>
                 </ol>
@@ -5588,7 +5630,7 @@
           <corollary xml:id="cor-6.67">
             <statement>
               <p>
-                If (X,x_0) is a PC, LPC, SLSC space or PC CW complex, H &lt; \pi_1(X,x_0), and rH:(X̃/H,[x̃_0]H) \to (X,x_0) is the covering space of Thm 6.60(b), then the number of sheets of this covering space is the index of H in \pi_1(X,x_0).
+                If <m>(X,x_0)</m> is a PC, LPC, SLSC space or PC CW complex, <m>H &lt; \pi_1(X,x_0)</m>, and <m>rH:(X̃/H,[x̃_0]H) \to (X,x_0)</m> is the covering space of Thm 6.60(b), then the number of sheets of this covering space is the index of <m>H</m> in <m>\pi_1(X,x_0)</m>.
               </p>
             </statement>
           </corollary>
@@ -5600,17 +5642,22 @@
           <theorem xml:id="thm-6.70">
             <statement>
               <p>
-                Let \langle A | R \rangle be a presentation of a group G and let X be the presentation complex with vertex x_0. Let H &lt; G.
+                Let <m>\langle A | R \rangle</m> be a presentation of a group <m>G</m> and let <m>X</m> be the presentation complex with vertex <m>x_0</m>. 
+                Let <m>H &lt; G</m>.
                 <ol>
                   <li>
                     <p>
-                      (Top-down Method): Let X̃ be the Cayley complex of the presentation with quotient map p:X̃ \to X. Then H has a covering space action on X̃, with quotient map qH:X̃ \to X̃/H, and the covering space rH:X̃/H \to X defined by rH([s]H) := p(s) for all [s]H \in X̃/H satisfies Im rH∗ = H.
+                      (Top-down Method): Let <m>X̃</m> be the Cayley complex of the presentation with quotient map <m>p:X̃ \to X</m>. 
+                      Then <m>H</m> has a covering space action on <m>X̃</m>, with quotient map <m>qH:X̃ \to X̃/H</m>, and the covering space <m>rH:X̃/H \to X</m> defined by <m>rH([s]H) := p(s)</m> for all <m>[s]H \in X̃/H</m> satisfies <m>Im rH∗ = H</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      (Bottom-up Method): Let Z be the CW complex constructed by: Z(0) := H\G (the set of right cosets of H in G). The set of edges of Z is in bijection with H\G \times A; for each Hg \in H\G and a \in A, the attaching map of the edge eHg,a is φHg,a(-1) = Hg and φHg,a(1) = Hga. The set of faces of Z is in bijection with H\G \times R; for each Hg \in H\G and r \in R, the attaching map φHg,r of the face fHg,r satisfies φHg,r \circ ω := edge path in Z(1) starting at Hg labeled by r. Then r:Z \to X such that r(Hg) = x_0, r(eHg,a) = the edge of X corresponding to a, and r(fHg,r) = the face of X corresponding to r (for all Hg, a, and r) is a covering space and Im r∗ = H.
+                      (Bottom-up Method): Let <m>Z</m> be the CW complex constructed by: <m>Z(0) := H\G</m> (the set of right cosets of <m>H</m> in <m>G</m>). 
+                      The set of edges of <m>Z</m> is in bijection with <m>H\G \times A</m>; for each <m>Hg \in H\G</m> and <m>a \in A</m>, the attaching map of the edge <m>eHg</m>,<m>a</m> is <m>φHg,a(-1) = Hg and φHg,a(1) = Hga</m>. 
+                      The set of faces of <m>Z</m> is in bijection with <m>H\G \times R</m>; for each <m>Hg \in H\G</m> and <m>r \in R</m>, the attaching map <m>φHg,r</m> of the face <m>fHg,r</m> satisfies <m>φHg,r \circ ω :=</m> edge path in <m>Z(1)</m> starting at <m>Hg</m> labeled by <m>r</m>. 
+                      Then <m>r:Z \to X</m> such that <m>r(Hg) = x_0, r(eHg,a) = </m>the edge of <m>X</m> corresponding to <m>a</m>, and <m>r(fHg,r) =</m> the face of <m>X</m> corresponding to <m>r</m> (for all <m>Hg, a</m>, and <m>r</m>) is a covering space and <m>Im r∗ = H</m>.
                     </p>
                   </li>
                 </ol>
@@ -5633,17 +5680,17 @@
           <theorem xml:id="thm-6.77">
             <statement>
               <p>
-                Let H be a finite index subgroup of a group G. 
+                Let <m>H</m> be a finite index subgroup of a group <m>G</m>. 
                 <ol>
                   <li>
                     <p>
-                      If G is a finitely generated group, then H is also finitely generated.
+                      If <m>G</m> is a finitely generated group, then <m>H</m> is also finitely generated.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      If G is a finitely presented group, then H is also finitely presented.
+                      If <m>G</m> is a finitely presented group, then <m>H</m> is also finitely presented.
                     </p>
                   </li>
                 </ol>
@@ -5660,7 +5707,7 @@
         <definition xml:id="def-6.80">
           <statement>
             <p>
-              An isomorphism of pointed covering spaces pi: (Yi,yi) \to (X,x_0) for i=1,2 is a homeomorphism f:(Y1,y1) \to (Y2,y2) such that p2 \circ f = p1.
+              An isomorphism of pointed covering spaces <m>pi: (Yi,yi) \to (X,x_0)</m> for <m>i=1,2</m> is a homeomorphism <m>f:(Y1,y1) \to (Y2,y2)</m> such that <m>p2 \circ f = p1</m>.
             </p>
           </statement>
         </definition>
@@ -5668,7 +5715,7 @@
         <theorem xml:id="thm-6.81"><title>Covering Space Uniqueness Theorem</title>
           <statement>
             <p>
-              Any two PC, LPC pointed covering spaces pi: (Yi,yi) \to (X,x_0) (for i=1,2) of a pointed space (X,x_0) satisfy p1∗(Y1,y1) = p2∗(Y2,y2) iff the pointed covering spaces are isomorphic.
+              Any two PC, LPC pointed covering spaces <m>pi: (Yi,yi) \to (X,x_0)</m> (for <m>i=1,2</m>) of a pointed space <m>(X,x_0)</m> satisfy<m> p1∗(Y1,y1) = p2∗(Y2,y2)</m> iff the pointed covering spaces are isomorphic.
             </p>
           </statement>
         </theorem>
@@ -5676,7 +5723,8 @@
         <definition xml:id="def-6.82">
           <statement>
             <p>
-              Let X be a PC, LPC, SLSC space. The universal covering space of X is the unique covering space p:X̃ \to X such that X̃ is SC.
+              Let <m>X</m> be a PC, LPC, SLSC space. 
+              The universal covering space of <m>X</m> is the unique covering space <m>p:X̃ \to X</m> such that <m>X̃</m> is SC.
             </p>
           </statement>
         </definition>
@@ -5684,7 +5732,7 @@
         <definition xml:id="def-6.85">
           <statement>
             <p>
-              A deck transformation of a covering space p:X̃ \to X is a homeomorphism f:X̃ \to X̃ such that p \circ f = p.
+              A deck transformation of a covering space <m>p:X̃ \to X</m> is a homeomorphism <m>f:X̃ \to X̃</m> such that <m>p \circ f = p</m>.
             </p>
           </statement>
         </definition>
@@ -5692,7 +5740,7 @@
         <definition xml:id="def-6.86">
           <statement>
             <p>
-              A covering space p:X̃ \to X is normal if for all y,y' \in X̃ with p(y) = p(y'), there is a deck transformation f:(X̃,y) \to (X̃,y').
+              A covering space <m>p:X̃ \to X</m> is normal if for all <m>y,y' \in X̃</m> with <m>p(y) = p(y')</m>, there is a deck transformation <m>f:(X̃,y) \to (X̃,y')</m>.
             </p>
           </statement>
         </definition>
@@ -5700,26 +5748,29 @@
         <theorem xml:id="thm-6.88">
           <statement>
             <p>
-              Let (X,x_0) be a PC, LPC, SLSC space, let G := \pi_1(X,x_0), and let p: (X̃,x̃_0) \to (X,x_0) be the SC covering. Let r: (Z,z0) \to (X,x_0) be any PC covering space. Then:
+              Let <m>(X,x_0)</m> be a PC, LPC, SLSC space, let <m>G := \pi_1(X,x_0)</m>, and let <m>p: (X̃,x̃_0) \to (X,x_0)</m> be the SC covering. 
+              Let <m>r: (Z,z0) \to (X,x_0)</m> be any PC covering space. Then:
               <ol>
                 <li><title>Galois Correspondence Thm</title>
                   <p>
-                    The maps\{subgroups H of G\} ↔\{isomorphism classes of PC pointed coverings of (X,x_0)\} defined by
-                    H \to (rH: (X̃/H,[x̃_0]H) \to (X,x_0)) and
-                    (t: (Y,y_0) \to (X,x_0)) \to Im t∗ = t∗(\pi_1(Y,y_0))
+                    The maps <m>\{\text{subgroups }H \text{ of }G\} ↔\{\text{isomorphism classes of PC pointed coverings of }(X,x_0)\}</m> defined by
+                    <m>H \to (rH: (X̃/H,[x̃_0]H) \to (X,x_0))</m> and
+                    <m>(t: (Y,y_0) \to (X,x_0)) \to Im t∗ = t∗(\pi_1(Y,y_0))</m>
                     are inverse bijections.
                   </p>
                 </li>
 
                 <li><title>Universal Covering Thm</title>
                   <p>
-                    There is a covering space map q: X̃ \to Z such that r \circ q = p.
+                    There is a covering space map <m>q: X̃ \to Z</m> such that <m>r \circ q = p</m>.
                   </p>
                 </li>
 
                 <li><title>Action Thm</title>
                   <p>
-                    Let H := r∗(\pi_1(Z,z0)) and let NG(H) := the normalizer of H in G :=\{ g \in G | gHg-1 \sse H \}. The group of deck transformations of r: Z \to X is isomorphic to NG(H)/H and has a covering space action on Z. Moreover, (H is normal in G) iff (G/H has a covering space action on Z inducing r) iff (the covering space r:Z \to X is normal).
+                    Let <m>H := r∗(\pi_1(Z,z0))</m> and let <m>NG(H) :=</m> the normalizer of <m>H</m> in <m>G :=\{ g \in G | gHg-1 \sse H \}</m>. 
+                    The group of deck transformations of <m>r: Z \to X</m> is isomorphic to <m>NG(H)/H</m> and has a covering space action on <m>Z</m>. 
+                    Moreover, (<m>H</m> is normal in <m>G</m>) iff (<m>G/H</m> has a covering space action on <m>Z</m> inducing <m>r</m>) iff (the covering space <m>r:Z \to X</m> is normal).
                   </p>
                 </li>
               </ol>
@@ -5729,7 +5780,9 @@
 
         <remark>
           <p>
-            A Galois correspondence table has columns for spaces, fundamental groups, and covering space group actions. Each row of contains a space X, \pi_1(X), and the (deck transformation) group that acts on X with covering space group action (and is maximal with respect to that property). In the column of spaces, a space Y appears in a row above a space X if there is a covering space : Y \to X.
+            A Galois correspondence table has columns for spaces, fundamental groups, and covering space group actions. 
+            Each row of contains a space <m>X</m>, <m>\pi_1(X)</m>, and the (deck transformation) group that acts on <m>X</m> with covering space group action (and is maximal with respect to that property).
+            In the column of spaces, a space <m>Y</m> appears in a row above a space <m>X</m> if there is a covering space : <m>Y \to X</m>.
           </p>
         </remark>
 
@@ -5752,7 +5805,8 @@
           <definition xml:id="def-7.1">
             <statement>
               <p>
-                Let X be a topological space and x_0 \in X, and let n \geq 1 be a natural number. The n-th homotopy group of X at x_0, denoted \pi n(X,x_0), is the set of homotopy classes of maps (In,Bd\R^n(In)) \to (X,x_0) with group operation defined by [f][g] = [f ∗ g] for all [f],[g] \in \pi n(X,x_0).
+                Let <m>X</m> be a topological space and <m>x_0 \in X</m>, and let <m>n \geq 1</m> be a natural number. 
+                The <m>n</m>-th homotopy group of <m>X</m> at <m>x_0</m>, denoted <m>\pi n(X,x_0)</m>, is the set of homotopy classes of maps <m>(In,Bd\R^n(In)) \to (X,x_0)</m> with group operation defined by <m>[f][g] = [f ∗ g]</m> for all <m>[f],[g] \in \pi n(X,x_0)</m>.
               </p>
             </statement>
           </definition>
@@ -5760,21 +5814,24 @@
           <theorem xml:id="thm-7.2">
             <statement>
               <p>
-                Let X be a space and x_0 \in X. For all n \geq 2, the group \pi n(X,x_0) is abelian.
+                Let <m>X</m> be a space and <m>x_0 \in X</m>. 
+                For all <m>n \geq 2</m>, the group <m>\pi n(X,x_0)</m> is abelian.
               </p>
             </statement>
           </theorem>
 
           <p>
-            Motivation: For dimensions n \geq 2, the group \pi n(X,x_0) is often difficult to compute. Instead, define abelian groups H_n(X) for all n \geq 0 that capture much of the same information.
+            Motivation: For dimensions <m>n \geq 2</m>, the group <m>\pi n(X,x_0)</m> is often difficult to compute. 
+            Instead, define abelian groups <m>H_n(X)</m> for all <m>n \geq 0</m> that capture much of the same information.
           </p>
 
           <p>
-            Motivation: Define homology groups 3 ways: simplicial homology Hn\delta  on \delta -complexes, cellular homology HnCW on CW-complexes, and singular homology Hnsing on topological spaces.
+            Motivation: Define homology groups 3 ways: 
+            simplicial homology <m>Hn\delta</m>  on <m>\delta</m> -complexes, cellular homology <m>HnCW</m> on CW-complexes, and singular homology <m>Hnsing</m> on topological spaces.
            \{\delta -complexes\} ⊊\{CW complexes\} ⊊\{topological spaces\}.
-            Hn\delta  is easiest to compute, HnCW is harder to compute but easier to find the complex structure, and Hnsing is hardest to compute but easiest to use for proving theorems.
-            For a \delta -complex X, Hn\delta (X) = HnCW(X) = Hnsing(X).
-            Hn\delta, HnCW, and Hnsing are all homotopy invariants.
+            <m>Hn\delta</m>  is easiest to compute, <m>HnCW</m> is harder to compute but easier to find the complex structure, and <m>Hnsing</m> is hardest to compute but easiest to use for proving theorems.
+            For a <m>\delta</m>-complex <m>X</m>, <m>Hn\delta (X) = HnCW(X) = Hnsing(X)</m>.
+            <m>Hn\delta</m>, <m>HnCW</m>, and <m>Hnsing</m> are all homotopy invariants.
           </p>
 
         </subsection>
@@ -5784,7 +5841,7 @@
           <definition xml:id="def-7.10">
             <statement>
               <p>
-                In \R^n+1, the i-th standard basis vector is \varepsilon i(n) := (0,0,\dots,0,1,0,\dots,0), where the coordinates are indexed by 0,\dots,n and the 1 appears in the i-th coordinate.
+                In <m>\R^n+1</m>, the <m>i</m>-th standard basis vector is <m>\varepsilon i(n) := (0,0,\dots,0,1,0,\dots,0)</m>, where the coordinates are indexed by <m>0,\dots,n</m> and the <m>1</m> appears in the <m>i</m>-th coordinate.
               </p>
             </statement>
           </definition>
@@ -5792,7 +5849,7 @@
           <definition xml:id="def-7.11">
             <statement>
               <p>
-                The standard n-simplex is the subspace of \R^n+1 (with the Euclidean topology) given by \delta n :=\{∑i=0n ti\varepsilon i(n) | ∑i=0n ti = 1 and 0 \leq ti \leq 1 for all i\}.
+                The standard <m>n</m>-simplex is the subspace of <m>\R^n+1</m> (with the Euclidean topology) given by <m>\delta n :=\{\sum i=0n ti\varepsilon i(n) | \sum i=0n ti = 1 \text{ and }0 \leq ti \leq 1 \text{ for all }i\}</m>.
               </p>
             </statement>
           </definition>
@@ -5800,8 +5857,8 @@
           <definition xml:id="def-7.12">
             <statement>
               <p>
-                The boundary of the standard n-simplex is the subspace ∂\delta n :=\{∑i=0n ti\varepsilon i(n) | ∑i=0n ti = 1, 0 \leq ti \leq 1 for all i, and tj = 0 for some j\}.
-                The open n-simplex is the subspace 0\delta n := \delta n - ∂ \delta n for n \geq 1, and 0\delta 0 := \delta 0.
+                The boundary of the standard <m>n</m>-simplex is the subspace <m>∂\delta n :=\{\sum i=0n ti\varepsilon i(n) | \sum i=0n ti = 1, 0 \leq ti \leq 1 \text{ for all }i, \text{ and }tj = 0 \text{ for some }j\}</m>.
+                The open <m>n</m>-simplex is the subspace <m>0\delta n := \delta n - ∂ \delta n</m> for <m>n \geq 1</m>, and <m>0\delta 0 := \delta 0</m>.
               </p>
             </statement>
           </definition>
@@ -5809,7 +5866,7 @@
           <definition xml:id="def-7.15">
             <statement>
               <p>
-                For 0 \leq i \leq n, the i-th face map of the standard n-simplex is the function Fi(n): \delta n-1 \into  \delta n defined by Fi(n)(∑i=0n-1 ti\varepsilon i(n-1)) := ∑j=0i-1 tj\varepsilon j(n) + ∑j=i+1n tj-1\varepsilon j(n).
+                For <m>0 \leq i \leq n</m>, the <m>i</m>-th face map of the standard <m>n</m>-simplex is the function <m>Fi(n): \delta n-1 \into  \delta n</m> defined by <m>Fi(n)(\sum i=0n-1 ti\varepsilon i(n-1)) := \sum j=0i-1 tj\varepsilon j(n) + \sum j=i+1n tj-1\varepsilon j(n)</m>.
               </p>
             </statement>
           </definition>
@@ -5817,12 +5874,22 @@
           <definition xml:id="def-7.20">
             <statement>
               <p>
-                A \delta -complex is a topological space X constructed inductively by:
-                Let X(0) be a set of points with the discrete topology. Write X(0) = ∐\alpha \in J0 \delta \alpha 0, where for each \alpha, \delta \alpha 0 \cong \delta 0. For each \alpha \in J0, let \sigma ̄\alpha 0: \delta \alpha 0 \to X(0) be the inclusion map.
-                For each n \geq 1, form the space X(n) from X(n-1) by:
-                For each \alpha in an index set Jn, let \delta \alpha n be a copy of the standard n-simplex \delta n, and let s\alpha : ∂\delta \alpha n \to X(n-1) be a continuous function such that for all 0 \leq i \leq n, s\alpha \circ Fi(n)|∂\delta n = \sigma ̄\beta n-1 for some \beta \in Jn-1. Let Zn := X(n-1) ∐ (∐\alpha \in Jn \delta \alpha n) have the disjoint union topology, and let \sim be the minimal equivalence relation on this space such that d \sim s\alpha (d) for all d \in ∂\delta \alpha n and \alpha \in Jn. Define X(n) be the quotient space and let qn be the quotient map. Define \sigma ̄\alpha n: \delta \alpha n \to X(n) to be the composition \sigma ̄\alpha n := qn \circ i\delta \alpha nZn where i\delta \alpha nZn: \delta \alpha n \to Zn is the inclusion map.
-                Let X := \cup n \in \N  X(n) (where each X(n) is identified with its image in X(n+1)). For all n and for all \alpha \in Jn, define \sigma \alpha n = \sigma \alpha : \delta \alpha n \to X by \sigma \alpha n := iX(n)X \circ \sigma ̄\alpha n where iX(n)X: X(n) \to X is the inclusion. A subset A of X is defined to be open in X if and only if (\sigma \alpha n)-1(A) is open in \delta \alpha n for all n \geq 0 and all \alpha \in Jn.
-                Each \sigma \alpha n is called an n-simplex of X.
+                A <m>\delta</m> -complex is a topological space <m>X</m> constructed inductively by:
+                Let <m>X(0)</m> be a set of points with the discrete topology. 
+                Write <m>X(0) = ∐\alpha \in J0 \delta \alpha 0</m>, where for each <m>\alpha, \delta \alpha 0 \cong \delta 0</m>. 
+                For each <m>\alpha \in J0</m>, let <m>\sigma ̄\alpha 0: \delta \alpha 0 \to X(0)</m> be the inclusion map.
+              </p>
+
+              <p>
+                For each <m>n \geq 1</m>, form the space <m>X(n)</m> from <m>X(n-1)</m> by:
+                For each <m>\alpha</m> in an index set <m>Jn</m>, let <m>\delta \alpha n</m> be a copy of the standard <m>n</m>-simplex <m>\delta n</m>, and let <m>s\alpha : ∂\delta \alpha n \to X(n-1)</m> be a continuous function such that for all <m>0 \leq i \leq n</m>, <m>s\alpha \circ Fi(n)|∂\delta n = \sigma ̄\beta n-1</m> for some <m>\beta \in Jn-1</m>. 
+                Let <m>Zn := X(n-1) ∐ (∐\alpha \in Jn \delta \alpha n)</m> have the disjoint union topology, and let <m>\sim</m> be the minimal equivalence relation on this space such that <m>d \sim s\alpha (d)</m> for all <m>d \in ∂\delta \alpha n</m> and <m>\alpha \in Jn</m>. 
+                Define <m>X(n)</m> be the quotient space and let qn be the quotient map. 
+                Define <m>\sigma ̄\alpha n: \delta \alpha n \to X(n)</m> to be the composition <m>\sigma ̄\alpha n := qn \circ i\delta \alpha nZn</m> where <m>i\delta \alpha nZn: \delta \alpha n \to Zn</m> is the inclusion map.
+                Let <m>X := \cup n \in \N  X(n)</m> (where each <m>X(n)</m> is identified with its image in <m>X(n+1)</m>). 
+                For all <m>n</m> and for all <m>\alpha \in Jn</m>, define <m>\sigma \alpha n = \sigma \alpha : \delta \alpha n \to X</m> by <m>\sigma \alpha n := iX(n)X \circ \sigma ̄\alpha n</m> where <m>iX(n)X: X(n) \to X</m> is the inclusion. 
+                A subset <m>A</m> of <m>X</m> is defined to be open in <m>X</m> if and only if <m>(\sigma \alpha n)-1(A)</m> is open in <m>\delta \alpha n</m> for all <m>n \geq 0</m> and all <m>\alpha \in Jn</m>.
+                Each <m>\sigma \alpha n</m> is called an <m>n</m>-simplex of <m>X</m>.
               </p>
             </statement>
           </definition>
@@ -5830,7 +5897,7 @@
           <proposition xml:id="prop-7.22">
             <statement>
               <p>
-                Every \delta -complex is a CW complex.
+                Every <m>\delta</m> -complex is a CW complex.
               </p>
             </statement>
           </proposition>
@@ -5838,7 +5905,26 @@
           <theorem xml:id="thm-7.24">
             <statement>
               <p>
-                A topological space X has a \delta -complex structure if and only if there is a collection of continuous maps \cC =\{\sigma \alpha :\delta n\alpha \to X\} such that: (1) Each restriction \sigma \alpha |(0\delta n\alpha ) is an embedding and each point of X is in the image of exactly one \sigma \alpha | (0\delta n\alpha ). (2) Each \sigma \alpha \circ Fi(n\alpha ) is a map \sigma \beta : \delta n\alpha -1 \to X in \cC. (3) A subset A of X is open in X if and only if \sigma \alpha -1(A) is open in \delta n\alpha for all \sigma \alpha in \cC.
+                A topological space <m>X</m> has a <m>\delta</m> -complex structure if and only if there is a collection of continuous maps <m>\cC =\{\sigma \alpha :\delta n\alpha \to X\}</m> such that: 
+                <ol>
+                  <li>
+                    <p>
+                      Each restriction <m>\sigma \alpha |(0\delta n\alpha )</m> is an embedding and each point of <m>X</m> is in the image of exactly one <m>\sigma \alpha | (0\delta n\alpha )</m>. 
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      Each <m>\sigma \alpha \circ Fi(n\alpha )</m> is a map <m>\sigma \beta : \delta n\alpha -1 \to X </m> in <m>\cC</m>.
+                    </p>
+                  </li>
+
+                  <li>
+                    <p>
+                      A subset <m>A</m> of <m>X</m> is open in <m>X</m> if and only if <m>\sigma \alpha -1(A)</m> is open in <m>\delta n\alpha</m> for all <m>\sigma \alpha</m> in <m>\cC</m>.
+                    </p>
+                  </li>
+                </ol>
               </p>
             </statement>
           </theorem>
@@ -5850,7 +5936,9 @@
           <definition xml:id="def-7.30">
             <statement>
               <p>
-                Let X be a \delta -complex and let n \geq 0. The group of simplicial n-chains of X is Cn\delta (X) := ⊕\alpha \in Jn \Z = ⊕n-simplices \sigma \alpha \Z \sigma \alpha. An element of Cn\delta (X) is called a (simplicial) n-chain, and written ∑\alpha \in Jn m\alpha \sigma \alpha, where each m\alpha \in \Z and all but finitely many m\alpha's are 0.
+                Let <m>X</m> be a <m>\delta</m> -complex and let <m>n \geq 0</m>. 
+                The group of simplicial <m>n</m>-chains of <m>X</m> is <m>Cn\delta (X) := \oplus \alpha \in Jn \Z = \oplus n-simplices \sigma \alpha \Z \sigma \alpha</m>. 
+                An element of <m>Cn\delta (X)</m> is called a (simplicial) <m>n</m>-chain, and written <m>\sum \alpha \in Jn m\alpha \sigma \alpha</m>, where each <m>m\alpha \in \Z</m> and all but finitely many <m>m\alpha</m>'s are <m>0</m>.
               </p>
             </statement>
           </definition>
@@ -5858,8 +5946,9 @@
           <definition xml:id="def-7.32">
             <statement>
               <p>
-                Let X be a \delta -complex and let n \geq 1. The n-th simplicial boundary map is the group homomorphism ∂n\delta  = ∂n: Cn\delta (X) \to Cn-1\delta (X) defined by ∂n(∑\alpha \in Jn m\alpha \sigma \alpha ) := ∑\alpha \in Jn m\alpha ∂n(1\sigma \alpha ) and ∂n(1\sigma \alpha ) := ∑i=0n (-1)i \sigma \alpha \circ Fi(n).
-                The 0-th simplicial boundary map is the group homomorphism ∂0\delta  = ∂0: C0\delta (X) \to 0.
+                Let <m>X</m> be a <m>\delta</m> -complex and let <m>n \geq 1</m>. 
+                The <m>n</m>-th simplicial boundary map is the group homomorphism <m>∂n\delta  = ∂n: Cn\delta (X) \to Cn-1\delta (X)</m> defined by <m>∂n(\sum \alpha \in Jn m\alpha \sigma \alpha ) := \sum \alpha \in Jn m\alpha ∂n(1\sigma \alpha )</m> and <m>∂n(1\sigma \alpha ) := \sum i=0n (-1)i \sigma \alpha \circ Fi(n)</m>.
+                The <m>0</m>-th simplicial boundary map is the group homomorphism <m>∂0\delta  = ∂0: C0\delta (X) \to 0</m>.
               </p>
             </statement>
           </definition>
@@ -5867,7 +5956,7 @@
           <lemma xml:id="lem-7.35">
             <statement>
               <p>
-                If X is a \delta -complex and n \geq 1, then Im ∂n+1\delta  \sse Ker ∂n\delta.
+                If <m>X</m> is a <m>\delta</m> -complex and <m>n \geq 1</m>, then <m>Im ∂n+1\delta  \sse Ker ∂n\delta</m>.
               </p>
             </statement>
           </lemma>
@@ -5875,38 +5964,40 @@
           <definition xml:id="def-7.36">
             <statement>
               <p>
-                Let X be a \delta -complex and let n \geq 0. The n-th simplicial homology group of X is the group Hn\delta (X) := Ker ∂n\delta  / Im ∂n+1\delta.
+                Let <m>X</m> be a <m>\delta</m> -complex and let <m>n \geq 0</m>. 
+                The <m>n</m>-th simplicial homology group of <m>X</m> is the group <m>Hn\delta (X) := Ker ∂n\delta  / Im ∂n+1\delta</m>.
               </p>
             </statement>
           </definition>
 
           <remark>
             <p>
-              A quotient of the form \Z n/\Z m is not well-defined.
-              In order to compute this quotient, write the elements of a basis of \Z m as linear combinations of the elements of a basis of \Z n: compute the Smith normal form.    
+              A quotient of the form <m>\Z n/\Z m</m> is not well-defined.
+              In order to compute this quotient, write the elements of a basis of <m>\Z m</m> as linear combinations of the elements of a basis of <m>\Z n</m>: compute the Smith normal form.    
             </p>
           </remark>
 
           <proposition xml:id="prop-7.40">
             <statement>
               <p>
-                Let \{a1,\dots,ak\}, viewed as an ordered list, be a basis for \Z k. Then each of the following operations creates another basis for this group:
+                Let <m>\{a1,\dots,ak\}</m>, viewed as an ordered list, be a basis for <m>\Z k</m>. 
+                Then each of the following operations creates another basis for this group:
                 <ol>
                   <li>
                     <p>
-                      Swap two of the basis elements (ai ↔ aj).
+                      Swap two of the basis elements <m>(ai ↔ aj)</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      Multiply a basis element by -1 (ai \to -ai).
+                      Multiply a basis element by <m>-1 (ai \to -ai)</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      Add an integral multiple of one basis element to another (ai \to ai+maj).
+                      Add an integral multiple of one basis element to another <m>(ai \to ai+maj)</m>.
                     </p>
                   </li>
                 </ol>
@@ -5936,7 +6027,8 @@
           <definition xml:id="def-7.50">
             <statement>
               <p>
-                Let X be a topological space. A singular n-simplex of X is a continuous function \sigma :\delta n \to X.
+                Let <m>X</m> be a topological space. 
+                A singular <m>n</m>-simplex of <m>X</m> is a continuous function <m>\sigma :\delta n \to X</m>.
               </p>
             </statement>
           </definition>
@@ -5944,7 +6036,10 @@
           <definition xml:id="def-7.51">
             <statement>
               <p>
-                Let X be a topological space and let n \geq 0. Let Sn be the set of singular n-simplices of X. The group of singular n-chains of X is Cnsing(X) = Cn(X) := ⊕singular n-simplices \sigma \Z = ⊕singular n-simplices \sigma \Z \sigma . An element of Cnsing(X) is called a (singular) n-chain, and written ∑singular n-simplices \sigma m\sigma \sigma , where each m\sigma \in \Z and all but finitely many m\sigma 's are 0.
+                Let <m>X</m> be a topological space and let <m>n \geq 0</m>. 
+                Let <m>Sn</m> be the set of singular <m>n</m>-simplices of <m>X</m>. 
+                The group of singular <m>n</m>-chains of <m>X</m> is <m>Cnsing(X) = Cn(X) := \oplus singular n-simplices \sigma \Z = \oplus singular n-simplices \sigma \Z \sigma</m>. 
+                An element of <m>Cnsing(X)</m> is called a (singular) <m>n</m>-chain, and written <m>\sum singular n-simplices \sigma m\sigma \sigma</m>, where each <m>m\sigma \in \Z</m> and all but finitely many <m>m\sigma</m>'s are <m>0</m>.
               </p>
             </statement>
           </definition>
@@ -5952,8 +6047,9 @@
           <definition xml:id="def-7.52">
             <statement>
               <p>
-                Let X be a topological space and let n \geq 1. The n-th singular boundary map is the group homomorphism ∂nsing = ∂nX = ∂n: Cnsing(X) \to Cn-1sing(X) defined by ∂n(∑singular n-simplices \sigma m\sigma \sigma ) := ∑singular n-simplices \sigma m\sigma ∂n(1\sigma ) and ∂n(1\sigma ) := ∑i=0n (-1)i \sigma \circ Fi(n).
-                The 0-th singular boundary map is the group homomorphism ∂0sing = ∂0: C0sing(X) \to 0.
+                Let <m>X</m> be a topological space and let <m>n \geq 1</m>. 
+                The <m>n</m>-th singular boundary map is the group homomorphism <m>∂nsing = ∂nX = ∂n: Cnsing(X) \to Cn-1sing(X)</m> defined by <m>∂n(\sum singular n-simplices \sigma m\sigma \sigma ) := \sum singular n-simplices \sigma m\sigma ∂n(1\sigma ) and ∂n(1\sigma ) := \sum i=0n (-1)i \sigma \circ Fi(n)</m>.
+                The <m>0</m>-th singular boundary map is the group homomorphism <m>∂0sing = ∂0: C0sing(X) \to 0</m>.
               </p>
             </statement>
           </definition>
@@ -5961,7 +6057,7 @@
           <lemma xml:id="lem-7.55">
             <statement>
               <p>
-                If X is a topological space and n \geq 1, then Im ∂n+1sing \sse Ker ∂nsing.
+                If <m>X</m> is a topological space and <m>n \geq 1</m>, then <m>Im ∂n+1sing \sse Ker ∂nsing</m>.
               </p>
             </statement>
           </lemma>
@@ -5969,7 +6065,8 @@
           <definition xml:id="def-7.56">
             <statement>
               <p>
-                Let X be a topological space and let n \geq 0. The n-th singular homology group of X is the group Hnsing(X) = H_n(X) := Ker ∂nsing / Im ∂n+1sing.
+                Let <m>X</m> be a topological space and let <m>n \geq 0</m>. 
+                The <m>n</m>-th singular homology group of <m>X</m> is the group <m>Hnsing(X) = H_n(X) := Ker ∂nsing / Im ∂n+1sing</m>.
               </p>
             </statement>
           </definition>
@@ -5983,7 +6080,7 @@
           <proposition xml:id="prop-7.58">
             <statement>
               <p>
-                If X is a space with exactly one point, then H_0(X) = \Z and Hn = 0 for all n \geq 1.
+                If <m>X</m> is a space with exactly one point, then <m>H_0(X) = \Z</m> and <m>Hn = 0</m> for all <m>n \geq 1</m>.
               </p>
             </statement>
           </proposition>
@@ -5991,7 +6088,7 @@
           <theorem xml:id="thm-7.60">
             <statement>
               <p>
-                If a space X has path components X_\alpha, then Hnsing(X) = ⊕\alpha Hnsing(X_\alpha ) for all n \geq 0.
+                If a space <m>X</m> has path components <m>X_\alpha</m>, then <m>Hnsing(X) = \oplus \alpha Hnsing(X_\alpha )</m> for all <m>n \geq 0</m>.
               </p>
             </statement>
           </theorem>
@@ -5999,7 +6096,7 @@
           <theorem xml:id="thm-7.62">
             <statement>
               <p>
-                If X is a path-connected space, then H0sing(X) \cong \Z .
+                If <m>X</m> is a path-connected space, then <m>H0sing(X) \cong \Z</m>.
               </p>
             </statement>
           </theorem>
@@ -6009,9 +6106,9 @@
             <definition xml:id="def-7.70">
               <statement>
                 <p>
-                  A chain complex, denoted C•, is a sequence ⋯ \to Cn+1 \to Cn \to Cn-1 \to ⋯ C0 \to 0 with group homomorphisms ∂nC = ∂n: Cn \to Cn-1 and ∂0C = ∂0: C0 \to 0 satisfying Im ∂n+1 \sse Ker ∂n for all n.
-                  An element of Ker ∂n is called an n-cycle and an element of Im ∂n+1 is an n-boundary.
-                  For n \geq 0, the n-th homology group of C• is H_n(C•) := Ker ∂nC / Im ∂n+1C.
+                  A chain complex, denoted <m>C•</m>, is a sequence <m>\cdots \to Cn+1 \to Cn \to Cn-1 \to \cdots C0 \to 0</m> with group homomorphisms <m>∂nC = ∂n: Cn \to Cn-1</m> and <m>∂0C = ∂0: C0 \to 0</m> satisfying <m>Im ∂n+1 \sse Ker ∂n</m> for all <m>n</m>.
+                  An element of <m>Ker ∂n</m> is called an <m>n</m>-cycle and an element of <m>Im ∂n+1</m> is an <m>n</m>-boundary.
+                  For <m>n \geq 0</m>, the <m>n</m>-th homology group of <m>C• is H_n(C•) := Ker ∂nC / Im ∂n+1C</m>.
                 </p>
               </statement>
             </definition>
@@ -6019,7 +6116,7 @@
             <definition xml:id="def-7.72">
               <statement>
                 <p>
-                  A chain map from a chain complex C• to a chain complex D•, written f♯:C• \to D•, is a collection of group homomorphisms fn♯: Cn \to Dn for all n \geq 0 satisfying ∂nD \circ fn♯ = fn-1♯ \circ ∂nC for all n.
+                  A chain map from a chain complex <m>C•</m> to a chain complex <m>D•</m>, written <m>f♯:C• \to D•</m>, is a collection of group homomorphisms <m>fn♯: Cn \to Dn</m> for all <m>n \geq 0</m> satisfying <m>∂nD \circ fn♯ = fn-1♯ \circ ∂nC</m> for all <m>n</m>.
                 </p>
               </statement>
             </definition>
@@ -6027,7 +6124,8 @@
             <definition xml:id="def-7.73">
               <statement>
                 <p>
-                  Let f♯:C• \to D• be a chain map. The n-th homology homomorphism induced by f♯ is the function fn∗: H_n(C•) \to H_n(D•) defined by fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D.
+                  Let <m>f♯:C• \to D•</m> be a chain map. 
+                  The <m>n</m>-th homology homomorphism induced by <m>f♯</m> is the function <m>fn∗: H_n(C•) \to H_n(D•)</m> defined by <m>fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D</m>.
                 </p>
               </statement>
             </definition>
@@ -6035,7 +6133,7 @@
             <lemma xml:id="lem-7.74">
               <statement>
                 <p>
-                  If f♯:C• \to D• is a chain map, then the n-th homology homomorphism fn∗ induced by f♯ is a well-defined group homomorphism.
+                  If <m>f♯:C• \to D•</m> is a chain map, then the <m>n</m>-th homology homomorphism <m>fn∗</m> induced by <m>f♯</m> is a well-defined group homomorphism.
                 </p>
               </statement>
             </lemma>
@@ -6043,8 +6141,8 @@
             <definition xml:id="def-7.77">
               <statement>
                 <p>
-                  Two chain maps f♯,g♯: C• \to D• are chain homotopic, written f♯ \simeq g♯, if there is a collection of group homomorphisms hn: Cn \to Dn+1 satisfying gn - fn = ∂n+1D \circ hn + hn-1 \circ ∂nC for all n.
-                  The collection of functions\{hn\} is called a chain homotopy from f♯ to g♯.
+                  Two chain maps <m>f♯,g♯: C• \to D•</m> are chain homotopic, written <m>f♯ \simeq g♯</m>, if there is a collection of group homomorphisms <m>hn: Cn \to Dn+1 </m>satisfying <m>gn - fn = ∂n+1D \circ hn + hn-1 \circ ∂nC</m> for all <m>n</m>.
+                  The collection of functions <m>\{hn\}</m> is called a chain homotopy from <m>f♯</m> to <m>g♯</m>.
                 </p>
               </statement>
             </definition>
@@ -6052,7 +6150,7 @@
             <proposition xml:id="prop-7.78">
               <statement>
                 <p>
-                  If f♯,g♯: C• \to D• are chain homotopic chain maps, then fn∗ = gn∗ for all n.
+                  If <m>f♯,g♯: C• \to D•</m> are chain homotopic chain maps, then <m>fn∗ = gn∗</m> for all <m>n</m>.
                 </p>
               </statement>
             </proposition>
@@ -6060,7 +6158,7 @@
             <definition xml:id="def-7.80">
               <statement>
                 <p>
-                  A chain map f♯: C• \to D• is a chain homotopy equivalence if there is a chain map g♯: D• \to C• such that f♯ \circ g♯ \simeq 1D• and g♯ \circ f♯ \simeq 1C•.
+                  A chain map <m>f♯: C• \to D•</m> is a chain homotopy equivalence if there is a chain map <m>g♯: D• \to C•</m> such that <m>f♯ \circ g♯ \simeq 1D•</m> and <m>g♯ \circ f♯ \simeq 1C•</m>.
                 </p>
               </statement>
             </definition>
@@ -6068,7 +6166,7 @@
             <proposition xml:id="prop-7.82">
               <statement>
                 <p>
-                  If f♯: C• \to D• is a chain homotopy equivalence, then fn∗: H_n(C•) \to H_n(D•) is an isomorphism for all n.
+                  If <m>f♯: C• \to D•</m> is a chain homotopy equivalence, then <m>fn∗: H_n(C•) \to H_n(D•)</m> is an isomorphism for all <m>n</m>.
                 </p>
               </statement>
             </proposition>
@@ -6078,7 +6176,7 @@
           <theorem xml:id="thm-7.90">
             <statement>
               <p>
-                If X is a \delta -complex, then Hn\delta (X) \cong Hnsing(X) for all n \geq 0.
+                If <m>X</m> is a <m>\delta</m> -complex, then <m>Hn\delta (X) \cong Hnsing(X)</m> for all <m>n \geq 0</m>.
               </p>
             </statement>
           </theorem>
@@ -6086,7 +6184,7 @@
           <corollary xml:id="cor-7.91">
             <statement>
               <p>
-                If X is a topological space with two \delta -complex structures X' and X'', then Hn\delta (X') \cong Hn\delta (X'') for all n \geq 0.
+                If <m>X</m> is a topological space with two <m>\delta</m> -complex structures <m>X'</m> and <m>X''</m>, then <m>Hn\delta (X') \cong Hn\delta (X'')</m> for all <m>n \geq 0</m>.
               </p>
             </statement>
           </corollary>
@@ -6094,7 +6192,8 @@
           <definition xml:id="def-7.95">
             <statement>
               <p>
-                Let X and Y be topological spaces and let f:X \to Y be a continuous function, and let n \geq 0. The n-th homology homomorphism induced by f is the homology homomorphism fn∗: H_n(X) \to H_n(Y) induced by the (induced) chain map f♯: C•sing(X) \to C•sing(Y) defined by fn♯(∑singular n-simplices \sigma of X m\sigma \sigma ) := ∑singular n-simplices \sigma of X m\sigma f \circ \sigma .
+                Let <m>X</m> and <m>Y</m> be topological spaces and let <m>f:X \to Y</m> be a continuous function, and let <m>n \geq 0</m>. 
+                The <m>n</m>-th homology homomorphism induced by <m>f</m> is the homology homomorphism <m>fn∗: H_n(X) \to H_n(Y)</m> induced by the (induced) chain map <m>f♯: C•sing(X) \to C•sing(Y)</m> defined by <m>fn♯(\sum singular n-simplices \sigma of X m\sigma \sigma ) := \sum singular n-simplices \sigma</m> of <m>X m\sigma f \circ \sigma</m>.
               </p>
             </statement>
           </definition>
@@ -6102,7 +6201,7 @@
           <lemma xml:id="lem-7.96">
             <statement>
               <p>
-                If X and Y are topological spaces and f:X \to Y is a continuous function, then the induced chain map f♯ is a well-defined chain map and hence the induced homology homomorphisms are well-defined homomorphisms.
+                If <m>X</m> and <m>Y</m> are topological spaces and <m>f:X \to Y</m> is a continuous function, then the induced chain map <m>f♯</m> is a well-defined chain map and hence the induced homology homomorphisms are well-defined homomorphisms.
               </p>
             </statement>
           </lemma>
@@ -6113,19 +6212,19 @@
                 <ol>
                   <li>
                     <p>
-                      If f: X \to Y and g: Y \to Z are continuous then (g \circ f)n∗ = gn∗ \circ fn∗ for all n. 
+                      If <m>f: X \to Y</m> and <m>g: Y \to Z</m> are continuous then <m>(g \circ f)n∗ = gn∗ \circ fn∗</m> for all <m>n</m>. 
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      (1X)n∗ = 1H_n(X) for all n.
+                      <m>(1X)n∗ = 1H_n(X)</m> for all <m>n</m>.
                     </p>
                   </li>
 
                   <li>
                     <p>
-                      If f and g are homotopic maps, then fn∗ = gn∗ for all n.
+                      If <m>f</m> and <m>g</m> are homotopic maps, then <m>fn∗ = gn∗</m> for all <m>n</m>.
                     </p>
                   </li>
                 </ol>
@@ -6136,7 +6235,7 @@
           <theorem xml:id="thm-7.99">
             <statement>
               <p>
-                If X and Y are homotopy equivalent spaces (that is, X \simeq Y), then H_n(X) \cong H_n(Y) for all n.
+                If <m>X</m> and <m>Y</m> are homotopy equivalent spaces (that is, <m>X \simeq Y</m>), then <m>H_n(X) \cong H_n(Y)</m> for all <m>n</m>.
               </p>
             </statement>
           </theorem>
@@ -6150,7 +6249,7 @@
           <corollary xml:id="cor-7.100">
             <statement>
               <p>
-                If X is a contractible space, then H_0(X) \cong \Z and H_n(X) = 0 for all n \geq 1.
+                If <m>X</m> is a contractible space, then <m>H_0(X) \cong \Z</m> and <m>H_n(X) = 0</m> for all <m>n \geq 1</m>.
               </p>
             </statement>
           </corollary>
@@ -6168,7 +6267,8 @@
             <definition xml:id="def-7.105">
               <statement>
                 <p>
-                  A sequence of φ:A \to B, θ:B \to C of groups and homomorphisms is exact at B if Im φ = Ker θ. A sequence ⋯ Dn+1 \to Dn \to ⋯ is exact if it is exact at every group.
+                  A sequence of <m>φ:A \to B</m>, <m>\theta :B \to C</m> of groups and homomorphisms is exact at <m>B</m> if <m>Im φ = Ker \theta </m>. 
+                  A sequence <m>\cdots Dn+1 \to Dn \to \cdots </m> is exact if it is exact at every group.
                 </p>
               </statement>
             </definition>
@@ -6179,19 +6279,19 @@
                   <ol>
                     <li>
                       <p>
-                        A sequence φ:A \to B, θ:B \to 0 is exact if and only if φ is onto. 
+                        A sequence <m>φ:A \to B</m>, <m>\theta :B \to 0</m> is exact if and only if <m>φ</m> is onto. 
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        A sequence φ:0 \to B, θ:B \to C is exact if and only if θ is one-to-one. 
+                        A sequence <m>φ:0 \to B, \theta :B \to C</m> is exact if and only if <m>\theta </m> is one-to-one. 
                       </p>
                     </li>
 
                     <li>
                       <p>
-                        If A \to B \to C \to D \to E is an exact sequence with homomorphisms φ:A \to B and ψ:D \to E satisfying Im φ = B and Ker ψ = 0, then C = 0.
+                        If <m>A \to B \to C \to D \to E</m> is an exact sequence with homomorphisms <m>φ:A \to B</m> and <m>ψ:D \to E</m> satisfying <m>Im φ = B</m> and <m>Ker ψ = 0</m>, then <m>C = 0</m>.
                       </p>
                     </li>
                   </ol>
@@ -6205,7 +6305,8 @@
           <theorem xml:id="thm-7.111"><title>MV = Mayer-Vietoris Theorem</title>
             <statement>
               <p>
-                Suppose that X is a topological space with subspaces A,B such that X = Int(A) \cup Int(B). Then there is an exact sequence ⋯ \to H_n(A \cap B) \to H_n(A) ⊕ H_n(B) \to H_n(X) \to Hn-1(A \cap B) \to ⋯ \to H_0(X) \to 0, such that each homorphism φn: H_n(A \cap B) \to H_n(A) ⊕ H_n(B) is given by φn := (iAB n∗,-iBA n∗) and each homomorphism ψn: H_n(A) ⊕ H_n(B) \to H_n(X) is given by ψn := jA n∗ + jB n∗, where iAB: A \cap B \to A, iBA: A \cap B \to B, jA: A \to X, and jB: B \to X are inclusion maps.
+                Suppose that <m>X</m> is a topological space with subspaces <m>A,B</m> such that <m>X = Int(A) \cup Int(B)</m>. 
+                Then there is an exact sequence <m>\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \to Hn-1(A \cap B) \to \cdots \to H_0(X) \to 0</m>, such that each homorphism <m>φn: H_n(A \cap B) \to H_n(A) \oplus H_n(B)</m> is given by <m>φn := (iAB n∗,-iBA n∗)</m> and each homomorphism <m>ψn: H_n(A) \oplus H_n(B) \to H_n(X)</m> is given by <m>ψn := jA n∗ + jB n∗</m>, where <m>iAB: A \cap B \to A</m>, <m>iBA: A \cap B \to B</m>, <m>jA: A \to X</m>, and <m>jB: B \to X</m> are inclusion maps.
               </p>
             </statement>
           </theorem>
@@ -6219,7 +6320,7 @@
           <proposition xml:id="prop-7.115">
             <statement>
               <p>
-                H_i(Sn) \cong \Z for i = 0,n, and H_i(Sn) = 0 for all i \ne 0,n.
+                <m>H_i(Sn) \cong \Z</m> for <m>i = 0,n</m>, and <m>H_i(Sn) = 0</m> for all <m>i \ne 0,n</m>.
               </p>
             </statement>
           </proposition>
@@ -6229,7 +6330,7 @@
             <definition xml:id="def-7.120">
               <statement>
                 <p>
-                  A short exact sequence of chain complexes is a sequence 0• \to A• \to B• \to C• \to 0• of chain complexes and chain maps such that for all n \geq 0 the sequence 0 \to An \to Bn \to Cn \to 0 of groups and homomorphisms is exact.
+                  A short exact sequence of chain complexes is a sequence <m>0• \to A• \to B• \to C• \to 0•</m> of chain complexes and chain maps such that for all <m>n \geq 0</m> the sequence <m>0 \to An \to Bn \to Cn \to 0</m> of groups and homomorphisms is exact.
                 </p>
               </statement>
             </definition>
@@ -6237,7 +6338,7 @@
             <theorem xml:id="thm-7.122"><title>Zig-zag Lemma</title>
               <statement>
                 <p>
-                  If 0• \to A•, i♯:A• \to B•, j♯:B• \to C•, C• \to 0 is a short exact sequence of chain complexes, then there is a (long) exact sequence ⋯ H_n(A) \to H_n(B) \to H_n(C) \to Hn-1(A) \to ⋯, with homomorphisms in∗:H_n(A) \to H_n(B) and jn∗:H_n(B) \to H_n(C).
+                  If <m>0_• \to A_•, i♯:A_• \to B_•, j♯:B_• \to C_•, C_• \to 0</m> is a short exact sequence of chain complexes, then there is a (long) exact sequence <m>\cdots H_n(A) \to H_n(B) \to H_n(C) \to H_{n-1}(A) \to \cdots ,</m> with homomorphisms <m>in∗:H_n(A) \to H_n(B)</m> and <m>jn∗:H_n(B) \to H_n(C)</m>.
                 </p>
               </statement>
             </theorem>
@@ -6250,7 +6351,7 @@
               <statement>
                 <p>
                   Let <m>X</m> be a topological space with subspaces <m>A,B</m> such that <m>X = Int(A) \cup Int(B)</m>. 
-                  The chain complex <m>C•(A+B)</m> is defined by: <m>Cn(A+B) := {∑ m\sigma \sigma + ∑ kττ | \text{ each }\sigma ,τ \text{ is a singular} n-\text{ simplex of }X, \text{ each }\sigma (\delta n) \sse A \text{ and }τ(\delta n) \sse B, \text{ and each }m\sigma , kτ \in \Z }</m> and <m>∂nA+B := ∂nX|Cn(A+B)Cn-1(A+B)</m>.
+                  The chain complex <m>C_•(A+B)</m> is defined by: <m>C_n(A+B) := {\sum m\sigma \sigma + \sum kττ | \text{ each }\sigma ,τ \text{ is a singular} n-\text{ simplex of }X, \text{ each }\sigma (\delta n) \sse A \text{ and }τ(\delta n) \sse B, \text{ and each }m\sigma , kτ \in \Z }</m> and <m>∂nA+B := ∂nX|Cn(A+B)Cn-1(A+B)</m>.
                 </p>
               </statement>
             </definition>
@@ -6259,7 +6360,7 @@
               <statement>
                 <p>
                   Let <m>X</m> be a topological space with subspaces <m>A,B</m> such that <m>X = Int(A) \cup Int(B)</m>. 
-                  The sequence <m>0• \to C•(A \cap B) \to C•(A) ⊕ C•(B) \to C•(A+B) \to 0•</m>, with homomorphisms <m>φ̃n: Cn(A \cap B) \to Cn(A) ⊕ Cn(B)</m> given by <m>φ̃n := (iAB n♯,-iBA n♯) and ψ̃n: Cn(A) ⊕ Cn(B) \to Cn(A+B)</m> given by <m>ψ̃n := jA n♯ + jB n♯</m>, is exact.
+                  The sequence <m>0_• \to C_•(A \cap B) \to C_•(A) \oplus C_•(B) \to C_•(A+B) \to 0•</m>, with homomorphisms <m>φ̃_n: C_n(A \cap B) \to C_n(A) \oplus C_n(B)</m> given by <m>φ̃_n := (i_{AB} n♯,-i_{BA} n♯) and ψ̃_n: C_n(A) \oplus C_n(B) \to C_n(A+B)</m> given by <m>ψ̃_n := jA n♯ + jB n♯</m>, is exact.
                 </p>
               </statement>
             </proposition>

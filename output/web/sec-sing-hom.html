@@ -551,7 +551,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-fundamental.html" class="internal"><span class="codenumber">5</span> <span class="title">Fundamental Groups</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi _1\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi_1\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-group-homs.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Group homomorphisms</span></a></div>
 <ul class="structural">
@@ -647,129 +647,157 @@ window.MathJax = {
 <span class="type">Section</span> <span class="codenumber">7.2</span> <span class="title">Singular Homology</span>
 </h2>
 <section class="introduction" id="introduction-7"><blockquote class="blockquote" id="blockquote-11">
-<div class="para" id="p-695">“...Commutative algebra is a lot like topology, only backwards.”</div> <cite class="attribution">―John Baez</cite>
+<div class="para" id="p-699">“...Commutative algebra is a lot like topology, only backwards.”</div> <cite class="attribution">―John Baez</cite>
 </blockquote></section><section class="subsection" id="subsec-induced-hom"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.1</span> <span class="title">Definitions and Induced Homomorphisms</span>
 </h3>
 <article class="definition definition-like" id="def-7.50"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-696">Let X be a topological space. A singular n-simplex of X is a continuous function \sigma :\delta n \to X.</div></article><article class="definition definition-like" id="def-7.51"><h4 class="heading">
+<div class="para" id="p-700">Let <span class="process-math">\(X\)</span> be a topological space. A singular <span class="process-math">\(n\)</span>-simplex of <span class="process-math">\(X\)</span> is a continuous function <span class="process-math">\(\sigma :\delta n \to X\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-7.51"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-697">Let X be a topological space and let n \geq 0. Let Sn be the set of singular n-simplices of X. The group of singular n-chains of X is Cnsing(X) = Cn(X) := ⊕singular n-simplices \sigma \Z = ⊕singular n-simplices \sigma \Z \sigma . An element of Cnsing(X) is called a (singular) n-chain, and written ∑singular n-simplices \sigma m\sigma \sigma , where each m\sigma \in \Z and all but finitely many m\sigma 's are 0.</div></article><article class="definition definition-like" id="def-7.52"><h4 class="heading">
+<div class="para" id="p-701">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(n \geq 0\text{.}\)</span> Let <span class="process-math">\(Sn\)</span> be the set of singular <span class="process-math">\(n\)</span>-simplices of <span class="process-math">\(X\text{.}\)</span> The group of singular <span class="process-math">\(n\)</span>-chains of <span class="process-math">\(X\)</span> is <span class="process-math">\(Cnsing(X) = Cn(X) := \oplus singular n-simplices \sigma \Z = \oplus singular n-simplices \sigma \Z \sigma\text{.}\)</span> An element of <span class="process-math">\(Cnsing(X)\)</span> is called a (singular) <span class="process-math">\(n\)</span>-chain, and written <span class="process-math">\(\sum singular n-simplices \sigma m\sigma \sigma\text{,}\)</span> where each <span class="process-math">\(m\sigma \in \Z\)</span> and all but finitely many <span class="process-math">\(m\sigma\)</span>'s are <span class="process-math">\(0\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-7.52"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-698">Let X be a topological space and let n \geq 1. The n-th singular boundary map is the group homomorphism ∂nsing = ∂nX = ∂n: Cnsing(X) \to Cn-1sing(X) defined by ∂n(∑singular n-simplices \sigma m\sigma \sigma ) := ∑singular n-simplices \sigma m\sigma ∂n(1\sigma ) and ∂n(1\sigma ) := ∑i=0n (-1)i \sigma \circ Fi(n). The 0-th singular boundary map is the group homomorphism ∂0sing = ∂0: C0sing(X) \to 0.</div></article><article class="lemma theorem-like" id="lem-7.55"><h4 class="heading">
+<div class="para" id="p-702">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(n \geq 1\text{.}\)</span> The <span class="process-math">\(n\)</span>-th singular boundary map is the group homomorphism <span class="process-math">\(∂nsing = ∂nX = ∂n: Cnsing(X) \to Cn-1sing(X)\)</span> defined by <span class="process-math">\(∂n(\sum singular n-simplices \sigma m\sigma \sigma ) := \sum singular n-simplices \sigma m\sigma ∂n(1\sigma ) and ∂n(1\sigma ) := \sum i=0n (-1)i \sigma \circ Fi(n)\text{.}\)</span> The <span class="process-math">\(0\)</span>-th singular boundary map is the group homomorphism <span class="process-math">\(∂0sing = ∂0: C0sing(X) \to 0\text{.}\)</span>
+</div></article><article class="lemma theorem-like" id="lem-7.55"><h4 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.4</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-699">If X is a topological space and n \geq 1, then Im ∂n+1sing \sse Ker ∂nsing.</div></article><article class="definition definition-like" id="def-7.56"><h4 class="heading">
+<div class="para" id="p-703">If <span class="process-math">\(X\)</span> is a topological space and <span class="process-math">\(n \geq 1\text{,}\)</span> then <span class="process-math">\(Im ∂n+1sing \sse Ker ∂nsing\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-7.56"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-700">Let X be a topological space and let n \geq 0. The n-th singular homology group of X is the group Hnsing(X) = H_n(X) := Ker ∂nsing / Im ∂n+1sing.</div></article><article class="example example-like" id="example-51"><h4 class="heading">
+<div class="para" id="p-704">Let <span class="process-math">\(X\)</span> be a topological space and let <span class="process-math">\(n \geq 0\text{.}\)</span> The <span class="process-math">\(n\)</span>-th singular homology group of <span class="process-math">\(X\)</span> is the group <span class="process-math">\(Hnsing(X) = H_n(X) := Ker ∂nsing / Im ∂n+1sing\text{.}\)</span>
+</div></article><article class="example example-like" id="example-51"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-701">Examples</div></article><article class="proposition theorem-like" id="prop-7.58"><h4 class="heading">
+<div class="para" id="p-705">Examples</div></article><article class="proposition theorem-like" id="prop-7.58"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.7</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-702">If X is a space with exactly one point, then H_0(X) = \Z and Hn = 0 for all n \geq 1.</div></article><article class="theorem theorem-like" id="thm-7.60"><h4 class="heading">
+<div class="para" id="p-706">If <span class="process-math">\(X\)</span> is a space with exactly one point, then <span class="process-math">\(H_0(X) = \Z\)</span> and <span class="process-math">\(Hn = 0\)</span> for all <span class="process-math">\(n \geq 1\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-7.60"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.8</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-703">If a space X has path components X_\alpha, then Hnsing(X) = ⊕\alpha Hnsing(X_\alpha ) for all n \geq 0.</div></article><article class="theorem theorem-like" id="thm-7.62"><h4 class="heading">
+<div class="para" id="p-707">If a space <span class="process-math">\(X\)</span> has path components <span class="process-math">\(X_\alpha\text{,}\)</span> then <span class="process-math">\(Hnsing(X) = \oplus \alpha Hnsing(X_\alpha )\)</span> for all <span class="process-math">\(n \geq 0\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-7.62"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.9</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-704">If X is a path-connected space, then H0sing(X) \cong \Z .</div></article><section class="paragraphs" id="paragraphs-16"><h4 class="heading"><span class="title">Excursion into homological algebra.</span></h4> <article class="definition definition-like" id="def-7.70"><h5 class="heading">
+<div class="para" id="p-708">If <span class="process-math">\(X\)</span> is a path-connected space, then <span class="process-math">\(H0sing(X) \cong \Z\text{.}\)</span>
+</div></article><section class="paragraphs" id="paragraphs-16"><h4 class="heading"><span class="title">Excursion into homological algebra.</span></h4> <article class="definition definition-like" id="def-7.70"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.10</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-705">A chain complex, denoted C•, is a sequence ⋯ \to Cn+1 \to Cn \to Cn-1 \to ⋯ C0 \to 0 with group homomorphisms ∂nC = ∂n: Cn \to Cn-1 and ∂0C = ∂0: C0 \to 0 satisfying Im ∂n+1 \sse Ker ∂n for all n. An element of Ker ∂n is called an n-cycle and an element of Im ∂n+1 is an n-boundary. For n \geq 0, the n-th homology group of C• is H_n(C•) := Ker ∂nC / Im ∂n+1C.</div></article> <article class="definition definition-like" id="def-7.72"><h5 class="heading">
+<div class="para" id="p-709">A chain complex, denoted <span class="process-math">\(C•\text{,}\)</span> is a sequence <span class="process-math">\(\cdots \to Cn+1 \to Cn \to Cn-1 \to \cdots C0 \to 0\)</span> with group homomorphisms <span class="process-math">\(∂nC = ∂n: Cn \to Cn-1\)</span> and <span class="process-math">\(∂0C = ∂0: C0 \to 0\)</span> satisfying <span class="process-math">\(Im ∂n+1 \sse Ker ∂n\)</span> for all <span class="process-math">\(n\text{.}\)</span> An element of <span class="process-math">\(Ker ∂n\)</span> is called an <span class="process-math">\(n\)</span>-cycle and an element of <span class="process-math">\(Im ∂n+1\)</span> is an <span class="process-math">\(n\)</span>-boundary. For <span class="process-math">\(n \geq 0\text{,}\)</span> the <span class="process-math">\(n\)</span>-th homology group of <span class="process-math">\(C• is H_n(C•) := Ker ∂nC / Im ∂n+1C\text{.}\)</span>
+</div></article> <article class="definition definition-like" id="def-7.72"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.11</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-706">A chain map from a chain complex C• to a chain complex D•, written f♯:C• \to D•, is a collection of group homomorphisms fn♯: Cn \to Dn for all n \geq 0 satisfying ∂nD \circ fn♯ = fn-1♯ \circ ∂nC for all n.</div></article> <article class="definition definition-like" id="def-7.73"><h5 class="heading">
+<div class="para" id="p-710">A chain map from a chain complex <span class="process-math">\(C•\)</span> to a chain complex <span class="process-math">\(D•\text{,}\)</span> written <span class="process-math">\(f♯:C• \to D•\text{,}\)</span> is a collection of group homomorphisms <span class="process-math">\(fn♯: Cn \to Dn\)</span> for all <span class="process-math">\(n \geq 0\)</span> satisfying <span class="process-math">\(∂nD \circ fn♯ = fn-1♯ \circ ∂nC\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></article> <article class="definition definition-like" id="def-7.73"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.12</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-707">Let f♯:C• \to D• be a chain map. The n-th homology homomorphism induced by f♯ is the function fn∗: H_n(C•) \to H_n(D•) defined by fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D.</div></article> <article class="lemma theorem-like" id="lem-7.74"><h5 class="heading">
+<div class="para" id="p-711">Let <span class="process-math">\(f♯:C• \to D•\)</span> be a chain map. The <span class="process-math">\(n\)</span>-th homology homomorphism induced by <span class="process-math">\(f♯\)</span> is the function <span class="process-math">\(fn∗: H_n(C•) \to H_n(D•)\)</span> defined by <span class="process-math">\(fn∗(γ + Im ∂n+1C) := fn♯(γ) + Im ∂n+1D\text{.}\)</span>
+</div></article> <article class="lemma theorem-like" id="lem-7.74"><h5 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.13</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-708">If f♯:C• \to D• is a chain map, then the n-th homology homomorphism fn∗ induced by f♯ is a well-defined group homomorphism.</div></article> <article class="definition definition-like" id="def-7.77"><h5 class="heading">
+<div class="para" id="p-712">If <span class="process-math">\(f♯:C• \to D•\)</span> is a chain map, then the <span class="process-math">\(n\)</span>-th homology homomorphism <span class="process-math">\(fn∗\)</span> induced by <span class="process-math">\(f♯\)</span> is a well-defined group homomorphism.</div></article> <article class="definition definition-like" id="def-7.77"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.14</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-709">Two chain maps f♯,g♯: C• \to D• are chain homotopic, written f♯ \simeq g♯, if there is a collection of group homomorphisms hn: Cn \to Dn+1 satisfying gn - fn = ∂n+1D \circ hn + hn-1 \circ ∂nC for all n. The collection of functions\{hn\} is called a chain homotopy from f♯ to g♯.</div></article> <article class="proposition theorem-like" id="prop-7.78"><h5 class="heading">
+<div class="para" id="p-713">Two chain maps <span class="process-math">\(f♯,g♯: C• \to D•\)</span> are chain homotopic, written <span class="process-math">\(f♯ \simeq g♯\text{,}\)</span> if there is a collection of group homomorphisms <span class="process-math">\(hn: Cn \to Dn+1 \)</span>satisfying <span class="process-math">\(gn - fn = ∂n+1D \circ hn + hn-1 \circ ∂nC\)</span> for all <span class="process-math">\(n\text{.}\)</span> The collection of functions <span class="process-math">\(\{hn\}\)</span> is called a chain homotopy from <span class="process-math">\(f♯\)</span> to <span class="process-math">\(g♯\text{.}\)</span>
+</div></article> <article class="proposition theorem-like" id="prop-7.78"><h5 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.15</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-710">If f♯,g♯: C• \to D• are chain homotopic chain maps, then fn∗ = gn∗ for all n.</div></article> <article class="definition definition-like" id="def-7.80"><h5 class="heading">
+<div class="para" id="p-714">If <span class="process-math">\(f♯,g♯: C• \to D•\)</span> are chain homotopic chain maps, then <span class="process-math">\(fn∗ = gn∗\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></article> <article class="definition definition-like" id="def-7.80"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.16</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-711">A chain map f♯: C• \to D• is a chain homotopy equivalence if there is a chain map g♯: D• \to C• such that f♯ \circ g♯ \simeq 1D• and g♯ \circ f♯ \simeq 1C•.</div></article> <article class="proposition theorem-like" id="prop-7.82"><h5 class="heading">
+<div class="para" id="p-715">A chain map <span class="process-math">\(f♯: C• \to D•\)</span> is a chain homotopy equivalence if there is a chain map <span class="process-math">\(g♯: D• \to C•\)</span> such that <span class="process-math">\(f♯ \circ g♯ \simeq 1D•\)</span> and <span class="process-math">\(g♯ \circ f♯ \simeq 1C•\text{.}\)</span>
+</div></article> <article class="proposition theorem-like" id="prop-7.82"><h5 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.17</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-712">If f♯: C• \to D• is a chain homotopy equivalence, then fn∗: H_n(C•) \to H_n(D•) is an isomorphism for all n.</div></article></section><article class="theorem theorem-like" id="thm-7.90"><h4 class="heading">
+<div class="para" id="p-716">If <span class="process-math">\(f♯: C• \to D•\)</span> is a chain homotopy equivalence, then <span class="process-math">\(fn∗: H_n(C•) \to H_n(D•)\)</span> is an isomorphism for all <span class="process-math">\(n\text{.}\)</span>
+</div></article></section><article class="theorem theorem-like" id="thm-7.90"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.18</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-713">If X is a \delta -complex, then Hn\delta (X) \cong Hnsing(X) for all n \geq 0.</div></article><article class="corollary theorem-like" id="cor-7.91"><h4 class="heading">
+<div class="para" id="p-717">If <span class="process-math">\(X\)</span> is a <span class="process-math">\(\delta\)</span> -complex, then <span class="process-math">\(Hn\delta (X) \cong Hnsing(X)\)</span> for all <span class="process-math">\(n \geq 0\text{.}\)</span>
+</div></article><article class="corollary theorem-like" id="cor-7.91"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">7.2.19</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-714">If X is a topological space with two \delta -complex structures X' and X'', then Hn\delta (X') \cong Hn\delta (X'') for all n \geq 0.</div></article><article class="definition definition-like" id="def-7.95"><h4 class="heading">
+<div class="para" id="p-718">If <span class="process-math">\(X\)</span> is a topological space with two <span class="process-math">\(\delta\)</span> -complex structures <span class="process-math">\(X'\)</span> and <span class="process-math">\(X''\text{,}\)</span> then <span class="process-math">\(Hn\delta (X') \cong Hn\delta (X'')\)</span> for all <span class="process-math">\(n \geq 0\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-7.95"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.20</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-715">Let X and Y be topological spaces and let f:X \to Y be a continuous function, and let n \geq 0. The n-th homology homomorphism induced by f is the homology homomorphism fn∗: H_n(X) \to H_n(Y) induced by the (induced) chain map f♯: C•sing(X) \to C•sing(Y) defined by fn♯(∑singular n-simplices \sigma of X m\sigma \sigma ) := ∑singular n-simplices \sigma of X m\sigma f \circ \sigma .</div></article><article class="lemma theorem-like" id="lem-7.96"><h4 class="heading">
+<div class="para" id="p-719">Let <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> be topological spaces and let <span class="process-math">\(f:X \to Y\)</span> be a continuous function, and let <span class="process-math">\(n \geq 0\text{.}\)</span> The <span class="process-math">\(n\)</span>-th homology homomorphism induced by <span class="process-math">\(f\)</span> is the homology homomorphism <span class="process-math">\(fn∗: H_n(X) \to H_n(Y)\)</span> induced by the (induced) chain map <span class="process-math">\(f♯: C•sing(X) \to C•sing(Y)\)</span> defined by <span class="process-math">\(fn♯(\sum singular n-simplices \sigma of X m\sigma \sigma ) := \sum singular n-simplices \sigma\)</span> of <span class="process-math">\(X m\sigma f \circ \sigma\text{.}\)</span>
+</div></article><article class="lemma theorem-like" id="lem-7.96"><h4 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.21</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-716">If X and Y are topological spaces and f:X \to Y is a continuous function, then the induced chain map f♯ is a well-defined chain map and hence the induced homology homomorphisms are well-defined homomorphisms.</div></article><article class="proposition theorem-like" id="prop-7.97"><h4 class="heading">
+<div class="para" id="p-720">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are topological spaces and <span class="process-math">\(f:X \to Y\)</span> is a continuous function, then the induced chain map <span class="process-math">\(f♯\)</span> is a well-defined chain map and hence the induced homology homomorphisms are well-defined homomorphisms.</div></article><article class="proposition theorem-like" id="prop-7.97"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.22</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="p-717"><ol class="decimal">
-<li id="li-252"><div class="para" id="p-718">If f: X \to Y and g: Y \to Z are continuous then (g \circ f)n∗ = gn∗ \circ fn∗ for all n.</div></li>
-<li id="li-253"><div class="para" id="p-719">(1X)n∗ = 1H_n(X) for all n.</div></li>
-<li id="li-254"><div class="para" id="p-720">If f and g are homotopic maps, then fn∗ = gn∗ for all n.</div></li>
+<div class="para logical" id="p-721"><ol class="decimal">
+<li id="li-255"><div class="para" id="p-722">If <span class="process-math">\(f: X \to Y\)</span> and <span class="process-math">\(g: Y \to Z\)</span> are continuous then <span class="process-math">\((g \circ f)n∗ = gn∗ \circ fn∗\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></li>
+<li id="li-256"><div class="para" id="p-723">
+<span class="process-math">\((1X)n∗ = 1H_n(X)\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></li>
+<li id="li-257"><div class="para" id="p-724">If <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> are homotopic maps, then <span class="process-math">\(fn∗ = gn∗\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></li>
 </ol></div></article><article class="theorem theorem-like" id="thm-7.99"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.23</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-721">If X and Y are homotopy equivalent spaces (that is, X \simeq Y), then H_n(X) \cong H_n(Y) for all n.</div></article><article class="example example-like" id="example-52"><h4 class="heading">
+<div class="para" id="p-725">If <span class="process-math">\(X\)</span> and <span class="process-math">\(Y\)</span> are homotopy equivalent spaces (that is, <span class="process-math">\(X \simeq Y\)</span>), then <span class="process-math">\(H_n(X) \cong H_n(Y)\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+</div></article><article class="example example-like" id="example-52"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.24</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-722">Examples</div></article><article class="corollary theorem-like" id="cor-7.100"><h4 class="heading">
+<div class="para" id="p-726">Examples</div></article><article class="corollary theorem-like" id="cor-7.100"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">7.2.25</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-723">If X is a contractible space, then H_0(X) \cong \Z and H_n(X) = 0 for all n \geq 1.</div></article></section><section class="subsection" id="subsec-decomp"><h3 class="heading hide-type">
+<div class="para" id="p-727">If <span class="process-math">\(X\)</span> is a contractible space, then <span class="process-math">\(H_0(X) \cong \Z\)</span> and <span class="process-math">\(H_n(X) = 0\)</span> for all <span class="process-math">\(n \geq 1\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-decomp"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">7.2.2</span> <span class="title">Decomposing Spaces and Homology Groups</span>
 </h3>
-<div class="para" id="p-724">Motivation: Want an SVK theorem for homology</div>
+<div class="para" id="p-728">Motivation: Want an SVK theorem for homology</div>
 <section class="paragraphs" id="paragraphs-17"><h4 class="heading"><span class="title">Another excursion into homological algebra:.</span></h4> <article class="definition definition-like" id="def-7.105"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.26</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-725">A sequence of φ:A \to B, θ:B \to C of groups and homomorphisms is exact at B if Im φ = Ker θ. A sequence ⋯ Dn+1 \to Dn \to ⋯ is exact if it is exact at every group.</div></article> <article class="lemma theorem-like" id="lem-7.106"><h5 class="heading">
+<div class="para" id="p-729">A sequence of <span class="process-math">\(φ:A \to B\text{,}\)</span> <span class="process-math">\(\theta :B \to C\)</span> of groups and homomorphisms is exact at <span class="process-math">\(B\)</span> if <span class="process-math">\(Im φ = Ker \theta \text{.}\)</span> A sequence <span class="process-math">\(\cdots Dn+1 \to Dn \to \cdots \)</span> is exact if it is exact at every group.</div></article> <article class="lemma theorem-like" id="lem-7.106"><h5 class="heading">
 <span class="type">Lemma</span><span class="space"> </span><span class="codenumber">7.2.27</span><span class="period">.</span>
 </h5>
-<div class="para logical" id="p-726"><ol class="decimal">
-<li id="li-255"><div class="para" id="p-727">A sequence φ:A \to B, θ:B \to 0 is exact if and only if φ is onto.</div></li>
-<li id="li-256"><div class="para" id="p-728">A sequence φ:0 \to B, θ:B \to C is exact if and only if θ is one-to-one.</div></li>
-<li id="li-257"><div class="para" id="p-729">If A \to B \to C \to D \to E is an exact sequence with homomorphisms φ:A \to B and ψ:D \to E satisfying Im φ = B and Ker ψ = 0, then C = 0.</div></li>
+<div class="para logical" id="p-730"><ol class="decimal">
+<li id="li-258"><div class="para" id="p-731">A sequence <span class="process-math">\(φ:A \to B\text{,}\)</span> <span class="process-math">\(\theta :B \to 0\)</span> is exact if and only if <span class="process-math">\(φ\)</span> is onto.</div></li>
+<li id="li-259"><div class="para" id="p-732">A sequence <span class="process-math">\(φ:0 \to B, \theta :B \to C\)</span> is exact if and only if <span class="process-math">\(\theta \)</span> is one-to-one.</div></li>
+<li id="li-260"><div class="para" id="p-733">If <span class="process-math">\(A \to B \to C \to D \to E\)</span> is an exact sequence with homomorphisms <span class="process-math">\(φ:A \to B\)</span> and <span class="process-math">\(ψ:D \to E\)</span> satisfying <span class="process-math">\(Im φ = B\)</span> and <span class="process-math">\(Ker ψ = 0\text{,}\)</span> then <span class="process-math">\(C = 0\text{.}\)</span>
+</div></li>
 </ol></div></article></section><article class="theorem theorem-like" id="thm-7.111"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.28</span><span class="period">.</span><span class="space"> </span><span class="title">MV = Mayer-Vietoris Theorem.</span>
 </h4>
-<div class="para" id="p-730">Suppose that X is a topological space with subspaces A,B such that X = Int(A) \cup Int(B). Then there is an exact sequence ⋯ \to H_n(A \cap B) \to H_n(A) ⊕ H_n(B) \to H_n(X) \to Hn-1(A \cap B) \to ⋯ \to H_0(X) \to 0, such that each homorphism φn: H_n(A \cap B) \to H_n(A) ⊕ H_n(B) is given by φn := (iAB n∗,-iBA n∗) and each homomorphism ψn: H_n(A) ⊕ H_n(B) \to H_n(X) is given by ψn := jA n∗ + jB n∗, where iAB: A \cap B \to A, iBA: A \cap B \to B, jA: A \to X, and jB: B \to X are inclusion maps.</div></article><article class="example example-like" id="example-53"><h4 class="heading">
+<div class="para" id="p-734">Suppose that <span class="process-math">\(X\)</span> is a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> Then there is an exact sequence <span class="process-math">\(\cdots \to H_n(A \cap B) \to H_n(A) \oplus H_n(B) \to H_n(X) \to Hn-1(A \cap B) \to \cdots \to H_0(X) \to 0\text{,}\)</span> such that each homorphism <span class="process-math">\(φn: H_n(A \cap B) \to H_n(A) \oplus H_n(B)\)</span> is given by <span class="process-math">\(φn := (iAB n∗,-iBA n∗)\)</span> and each homomorphism <span class="process-math">\(ψn: H_n(A) \oplus H_n(B) \to H_n(X)\)</span> is given by <span class="process-math">\(ψn := jA n∗ + jB n∗\text{,}\)</span> where <span class="process-math">\(iAB: A \cap B \to A\text{,}\)</span> <span class="process-math">\(iBA: A \cap B \to B\text{,}\)</span> <span class="process-math">\(jA: A \to X\text{,}\)</span> and <span class="process-math">\(jB: B \to X\)</span> are inclusion maps.</div></article><article class="example example-like" id="example-53"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">7.2.29</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-731">Examples</div></article><article class="proposition theorem-like" id="prop-7.115"><h4 class="heading">
+<div class="para" id="p-735">Examples</div></article><article class="proposition theorem-like" id="prop-7.115"><h4 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.30</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-732">H_i(Sn) \cong \Z for i = 0,n, and H_i(Sn) = 0 for all i \ne 0,n.</div></article><section class="paragraphs" id="paragraphs-18"><h4 class="heading"><span class="title">Yet another excursion into homological algebra.</span></h4> <article class="definition definition-like" id="def-7.120"><h5 class="heading">
+<div class="para" id="p-736">
+<span class="process-math">\(H_i(Sn) \cong \Z\)</span> for <span class="process-math">\(i = 0,n\text{,}\)</span> and <span class="process-math">\(H_i(Sn) = 0\)</span> for all <span class="process-math">\(i \ne 0,n\text{.}\)</span>
+</div></article><section class="paragraphs" id="paragraphs-18"><h4 class="heading"><span class="title">Yet another excursion into homological algebra.</span></h4> <article class="definition definition-like" id="def-7.120"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.31</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-733">A short exact sequence of chain complexes is a sequence 0• \to A• \to B• \to C• \to 0• of chain complexes and chain maps such that for all n \geq 0 the sequence 0 \to An \to Bn \to Cn \to 0 of groups and homomorphisms is exact.</div></article> <article class="theorem theorem-like" id="thm-7.122"><h5 class="heading">
+<div class="para" id="p-737">A short exact sequence of chain complexes is a sequence <span class="process-math">\(0• \to A• \to B• \to C• \to 0•\)</span> of chain complexes and chain maps such that for all <span class="process-math">\(n \geq 0\)</span> the sequence <span class="process-math">\(0 \to An \to Bn \to Cn \to 0\)</span> of groups and homomorphisms is exact.</div></article> <article class="theorem theorem-like" id="thm-7.122"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.32</span><span class="period">.</span><span class="space"> </span><span class="title">Zig-zag Lemma.</span>
 </h5>
-<div class="para" id="p-734">If 0• \to A•, i♯:A• \to B•, j♯:B• \to C•, C• \to 0 is a short exact sequence of chain complexes, then there is a (long) exact sequence ⋯ H_n(A) \to H_n(B) \to H_n(C) \to Hn-1(A) \to ⋯, with homomorphisms in∗:H_n(A) \to H_n(B) and jn∗:H_n(B) \to H_n(C).</div></article></section><section class="paragraphs" id="paragraphs-19"><h4 class="heading"><span class="title">Proof of the MV Theorem.</span></h4> <article class="definition definition-like" id="def-7.125"><h5 class="heading">
+<div class="para" id="p-738">If <span class="process-math">\(0_• \to A_•, i♯:A_• \to B_•, j♯:B_• \to C_•, C_• \to 0\)</span> is a short exact sequence of chain complexes, then there is a (long) exact sequence <span class="process-math">\(\cdots H_n(A) \to H_n(B) \to H_n(C) \to H_{n-1}(A) \to \cdots ,\)</span> with homomorphisms <span class="process-math">\(in∗:H_n(A) \to H_n(B)\)</span> and <span class="process-math">\(jn∗:H_n(B) \to H_n(C)\text{.}\)</span>
+</div></article></section><section class="paragraphs" id="paragraphs-19"><h4 class="heading"><span class="title">Proof of the MV Theorem.</span></h4> <article class="definition definition-like" id="def-7.125"><h5 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">7.2.33</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-735">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> The chain complex <span class="process-math">\(C•(A+B)\)</span> is defined by: <span class="process-math">\(Cn(A+B) := {∑ m\sigma \sigma + ∑ kττ | \text{ each }\sigma ,τ \text{ is a singular} n-\text{ simplex of }X, \text{ each }\sigma (\delta n) \sse A \text{ and }τ(\delta n) \sse B, \text{ and each }m\sigma , kτ \in \Z }\)</span> and <span class="process-math">\(∂nA+B := ∂nX|Cn(A+B)Cn-1(A+B)\text{.}\)</span>
+<div class="para" id="p-739">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> The chain complex <span class="process-math">\(C_•(A+B)\)</span> is defined by: <span class="process-math">\(C_n(A+B) := {\sum m\sigma \sigma + \sum kττ | \text{ each }\sigma ,τ \text{ is a singular} n-\text{ simplex of }X, \text{ each }\sigma (\delta n) \sse A \text{ and }τ(\delta n) \sse B, \text{ and each }m\sigma , kτ \in \Z }\)</span> and <span class="process-math">\(∂nA+B := ∂nX|Cn(A+B)Cn-1(A+B)\text{.}\)</span>
 </div></article> <article class="proposition theorem-like" id="prop-7.127"><h5 class="heading">
 <span class="type">Proposition</span><span class="space"> </span><span class="codenumber">7.2.34</span><span class="period">.</span>
 </h5>
-<div class="para" id="p-736">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> The sequence <span class="process-math">\(0• \to C•(A \cap B) \to C•(A) ⊕ C•(B) \to C•(A+B) \to 0•\text{,}\)</span> with homomorphisms <span class="process-math">\(φ̃n: Cn(A \cap B) \to Cn(A) ⊕ Cn(B)\)</span> given by <span class="process-math">\(φ̃n := (iAB n♯,-iBA n♯) and ψ̃n: Cn(A) ⊕ Cn(B) \to Cn(A+B)\)</span> given by <span class="process-math">\(ψ̃n := jA n♯ + jB n♯\text{,}\)</span> is exact.</div></article> <article class="theorem theorem-like" id="thm-7.130"><h5 class="heading">
+<div class="para" id="p-740">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> The sequence <span class="process-math">\(0_• \to C_•(A \cap B) \to C_•(A) \oplus C_•(B) \to C_•(A+B) \to 0•\text{,}\)</span> with homomorphisms <span class="process-math">\(φ̃_n: C_n(A \cap B) \to C_n(A) \oplus C_n(B)\)</span> given by <span class="process-math">\(φ̃_n := (i_{AB} n♯,-i_{BA} n♯) and ψ̃_n: C_n(A) \oplus C_n(B) \to C_n(A+B)\)</span> given by <span class="process-math">\(ψ̃_n := jA n♯ + jB n♯\text{,}\)</span> is exact.</div></article> <article class="theorem theorem-like" id="thm-7.130"><h5 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">7.2.35</span><span class="period">.</span><span class="space"> </span><span class="title">Small Chains Theorem.</span>
 </h5>
-<div class="para" id="p-737">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> Then <span class="process-math">\(H_n(X) \cong H_n(A+B)\)</span> for all <span class="process-math">\(n\text{.}\)</span>
+<div class="para" id="p-741">Let <span class="process-math">\(X\)</span> be a topological space with subspaces <span class="process-math">\(A,B\)</span> such that <span class="process-math">\(X = Int(A) \cup Int(B)\text{.}\)</span> Then <span class="process-math">\(H_n(X) \cong H_n(A+B)\)</span> for all <span class="process-math">\(n\text{.}\)</span>
 </div></article></section></section></section></div>
 <div class="ptx-content-footer">
 <a class="previous-button button" href="sec-simplicial.html" title="Previous"><span class="icon">&lt;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon">^</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon">&gt;</span></a>

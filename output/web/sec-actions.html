@@ -551,7 +551,7 @@ window.MathJax = {
 <li>
 <div class="toc-item"><a href="ch-fundamental.html" class="internal"><span class="codenumber">5</span> <span class="title">Fundamental Groups</span></a></div>
 <ul class="structural">
-<li><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi _1\)</span></span></a></div></li>
+<li><div class="toc-item"><a href="sec-pi1.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Definition of <span class="process-math">\(\pi_1\)</span></span></a></div></li>
 <li>
 <div class="toc-item"><a href="sec-group-homs.html" class="internal"><span class="codenumber">5.2</span> <span class="title">Group homomorphisms</span></a></div>
 <ul class="structural">
@@ -652,39 +652,46 @@ window.MathJax = {
 <article class="definition definition-like" id="def-6.40"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-639">Given a group G and a topological space Y, an action of G on Y (or "action of G on Y by homeomorphisms") is a homomorphism ρ:G \to Homeo(Y), where Homeo(Y) is the group of homeomorphisms :Y \to Y with group operation given by composition. For each g \in G and y \in Y, denote g · y := (ρ(g))(y).</div></article><article class="definition definition-like" id="def-6.42"><h4 class="heading">
+<div class="para" id="p-639">Given a group <span class="process-math">\(G\)</span> and a topological space <span class="process-math">\(Y\text{,}\)</span> an action of <span class="process-math">\(G\)</span> on <span class="process-math">\(Y\)</span> (or "action of <span class="process-math">\(G\)</span> on <span class="process-math">\(Y\)</span> by homeomorphisms") is a homomorphism <span class="process-math">\(ρ:G \to Homeo(Y)\text{,}\)</span> where <span class="process-math">\(Homeo(Y)\)</span> is the group of homeomorphisms <span class="process-math">\(:Y \to Y\)</span> with group operation given by composition. For each <span class="process-math">\(g \in G\)</span> and <span class="process-math">\(y \in Y\text{,}\)</span> denote <span class="process-math">\(g · y := (ρ(g))(y)\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-6.42"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-640">Given an action of a group G on a space Y, let \sim G be the equivalence relation on Y defined by [y \sim G y' iff there is a g \in G with g · y = y'] for all y,y' \in Y. For each y \in Y, the equivalence class [y] = [y]G = G · y is called the orbit of y. The quotient space Y/\sim is called the orbit space of the group action and denoted Y/G.</div></article><article class="definition definition-like" id="def-6.44"><h4 class="heading">
+<div class="para" id="p-640">Given an action of a group <span class="process-math">\(G\)</span> on a space <span class="process-math">\(Y\text{,}\)</span> let <span class="process-math">\(\sim G\)</span> be the equivalence relation on <span class="process-math">\(Y\)</span> defined by <span class="process-math">\(y \sim G y'\)</span> iff there is a <span class="process-math">\(g \in G\)</span> with <span class="process-math">\(g · y = y'\)</span> for all <span class="process-math">\(y,y' \in Y\text{.}\)</span> For each <span class="process-math">\(y \in Y\text{,}\)</span> the equivalence class <span class="process-math">\([y] = [y]G = G · y\)</span> is called the orbit of <span class="process-math">\(y\text{.}\)</span> The quotient space <span class="process-math">\(Y/\sim\)</span> is called the orbit space of the group action and denoted <span class="process-math">\(Y/G\text{.}\)</span>
+</div></article><article class="definition definition-like" id="def-6.44"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-641">A covering space action of a group G on a space Y is an action satisfying: For each y \in Y there is an open set Uy in Y containing y such that whenever g,g' \in G and (g · Uy) \cap (g' · Uy) \ne \es then g = g'.</div></article><article class="theorem theorem-like" id="thm-6.45"><h4 class="heading">
+<div class="para" id="p-641">A covering space action of a group <span class="process-math">\(G\)</span> on a space <span class="process-math">\(Y\)</span> is an action satisfying: For each <span class="process-math">\(y \in Y\)</span> there is an open set <span class="process-math">\(Uy\)</span> in <span class="process-math">\(Y\)</span> containing <span class="process-math">\(y\)</span> such that whenever <span class="process-math">\(g,g' \in G\)</span> and <span class="process-math">\((g · Uy) \cap (g' · Uy) \ne \es\)</span> then <span class="process-math">\(g = g'\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-6.45"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-642">
-<div class="para">If G has a covering space action on Y, then:</div>
+<div class="para">If <span class="process-math">\(G\)</span> has a covering space action on <span class="process-math">\(Y\text{,}\)</span> then:</div>
 <ol class="decimal">
-<li id="li-235"><div class="para" id="p-643">The quotient p:Y \to Y/G is a covering space.</div></li>
-<li id="li-236"><div class="para" id="p-644">If Y is PC and LPC and y_0 \in Y, then p∗(\pi_1(Y,y_0)) ⊴ \pi_1(Y/G,[y_0]) and G \cong \pi_1(Y/G,[y_0]) / p∗(\pi_1(Y,y_0)).</div></li>
+<li id="li-235"><div class="para" id="p-643">The quotient <span class="process-math">\(p:Y \to Y/G\)</span> is a covering space.</div></li>
+<li id="li-236"><div class="para" id="p-644">If <span class="process-math">\(Y\)</span> is PC and LPC and <span class="process-math">\(y_0 \in Y\text{,}\)</span> then <span class="process-math">\(p∗(\pi_1(Y,y_0)) ⊴ \pi_1(Y/G,[y_0])\)</span> and <span class="process-math">\(G \cong \pi_1(Y/G,[y_0]) / p∗(\pi_1(Y,y_0))\text{.}\)</span>
+</div></li>
 </ol>
 </div></article><article class="corollary theorem-like" id="cor-6.46"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-645">If Y is an SC CW complex and G acts on Y with a covering space action, then \pi_1(Y/G) \cong G.</div></article></section><section class="subsection" id="subsec-building-cs"><h3 class="heading hide-type">
+<div class="para" id="p-645">If <span class="process-math">\(Y\)</span> is an SC CW complex and <span class="process-math">\(G\)</span> acts on <span class="process-math">\(Y\)</span> with a covering space action, then <span class="process-math">\(\pi_1(Y/G) \cong G\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-building-cs"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.2</span> <span class="title">Building SC covering spaces from group presentations</span>
 </h3>
 <article class="definition definition-like" id="def-6.50"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-646">Let \langle A | R \rangle be a presentation of a group G. The Cayley complex of this presentation is the CW complex X̃ constructed by: X̃(0) = G. The set of edges is in bijection with G \times A; for each g \in G and a \in A, the attaching map of the edge eg,a is φg,a(-1) = g and φg,a(1) = ga. The set of faces is in bijection with G \times R; for each g \in G and r \in R, the attaching map φg,r of the face fg,r satisfies φg,r \circ ω := edge path in X̃(1) starting at g labeled by r. The 1-skeleton X̃(1) is the Cayley graph of G with respect to A.</div></article><article class="theorem theorem-like" id="thm-6.52"><h4 class="heading">
+<div class="para" id="p-646">Let <span class="process-math">\(\langle A | R \rangle\)</span> be a presentation of a group <span class="process-math">\(G\text{.}\)</span> The Cayley complex of this presentation is the CW complex <span class="process-math">\(X̃\)</span> constructed by: <span class="process-math">\(X̃(0) = G\text{.}\)</span> The set of edges is in bijection with <span class="process-math">\(G \times A\text{;}\)</span> for each <span class="process-math">\(g \in G\)</span> and <span class="process-math">\(a \in A\text{,}\)</span> the attaching map of the edge eg, <span class="process-math">\(a\)</span> is <span class="process-math">\(φg,a(-1) = g\)</span> and <span class="process-math">\(φg,a(1) = ga\text{.}\)</span> The set of faces is in bijection with <span class="process-math">\(G \times R\text{;}\)</span> for each <span class="process-math">\(g \in G\)</span> and <span class="process-math">\(r \in R\text{,}\)</span> the attaching map <span class="process-math">\(φg,r\)</span> of the face <span class="process-math">\(fg,r\)</span> satisfies <span class="process-math">\(φg,r \circ ω := \text{ edge path in }X̃(1)\)</span> starting at <span class="process-math">\(g\)</span> labeled by <span class="process-math">\(r\text{.}\)</span> The <span class="process-math">\(1\)</span>-skeleton <span class="process-math">\(X̃(1)\)</span> is the Cayley graph of <span class="process-math">\(G\)</span> with respect to <span class="process-math">\(A\text{.}\)</span>
+</div></article><article class="theorem theorem-like" id="thm-6.52"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.7</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-647">
-<div class="para">Let \langle A | R \rangle be a presentation of a group G, let X̃ be the Cayley complex, and let X be the presentation complex. Then</div>
+<div class="para">Let <span class="process-math">\(\langle A | R \rangle\)</span> be a presentation of a group <span class="process-math">\(G\text{,}\)</span> let <span class="process-math">\(X̃\)</span> be the Cayley complex, and let <span class="process-math">\(X\)</span> be the presentation complex. Then</div>
 <ol class="decimal">
-<li id="li-237"><div class="para" id="p-648">the action of G on X̃, given by g · h := (gh), g · eh,a := e(gh),a, and g · fh,r := f(gh),r for all h \in G, a\in A, and r \in R, is a covering space action;</div></li>
-<li id="li-238"><div class="para" id="p-649">X̃ is a SC CW complex (and hence PC, LPC, and SLSC), and hence \pi_1(X̃/G) \cong G; and</div></li>
-<li id="li-239"><div class="para" id="p-650">X̃/G \cong X.</div></li>
+<li id="li-237"><div class="para" id="p-648">the action of <span class="process-math">\(G\)</span> on <span class="process-math">\(X̃\text{,}\)</span> given by <span class="process-math">\(g · h := (gh), g · eh,a := e(gh),a\text{,}\)</span> and <span class="process-math">\(g · fh,r := f(gh),r\)</span> for all <span class="process-math">\(h \in G\text{,}\)</span> <span class="process-math">\(a\in A\text{,}\)</span> and <span class="process-math">\(r \in R\text{,}\)</span> is a covering space action;</div></li>
+<li id="li-238"><div class="para" id="p-649">
+<span class="process-math">\(X̃\)</span> is a SC CW complex (and hence PC, LPC, and SLSC), and hence <span class="process-math">\(\pi_1(X̃/G) \cong G\text{;}\)</span> and</div></li>
+<li id="li-239"><div class="para" id="p-650"><span class="process-math">\(X̃/G \cong X\text{.}\)</span></div></li>
 </ol>
 </div></article><article class="example example-like" id="example-48"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.8</span><span class="period">.</span>
@@ -696,10 +703,11 @@ window.MathJax = {
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.9</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-652">
-<div class="para">Let X be a PC, LPC, SLSC space and x_0 \in X. Then:</div>
+<div class="para">Let <span class="process-math">\(X\)</span> be a PC, LPC, SLSC space and <span class="process-math">\(x_0 \in X\text{.}\)</span> Then:</div>
 <ol class="decimal">
-<li id="li-240"><div class="para" id="p-653">(SC Covering Space Thm): There is a SC covering space p:(X̃,x̃_0) \to (X,x_0), and there is covering space group action of G := \pi_1(X,x_0) on X̃ that induces p; hence (X̃/G,[x̃_0]) \cong (X,x_0). Moreover, if X is a CW complex, then X̃ is a CW complex, and for each open n-cell \sigma of X there are |G| open n-cells of X̃ mapping via p to \sigma such that the action of each g \in G on X̃ permutes these n-cells.</div></li>
-<li id="li-241"><div class="para" id="p-654">(Covering Space Existence Thm): For each subgroup H &lt; \pi_1(X,x_0), there is a covering space rH: (X̃/H,[x̃_0]H) \to (X,x_0) such that rH \circ qH = p, where qH: X̃ \to X̃/H is the quotient map, and H = rH∗(\pi_1(X̃/H,[x̃_0]H)).</div></li>
+<li id="li-240"><div class="para" id="p-653">(SC Covering Space Thm): There is a SC covering space <span class="process-math">\(p:(X̃,x̃_0) \to (X,x_0)\text{,}\)</span> and there is covering space group action of <span class="process-math">\(G := \pi_1(X,x_0)\)</span> on <span class="process-math">\(X̃\)</span> that induces <span class="process-math">\(p\text{;}\)</span> hence <span class="process-math">\((X̃/G,[x̃_0]) \cong (X,x_0)\text{.}\)</span> Moreover, if <span class="process-math">\(X\)</span> is a CW complex, then <span class="process-math">\(X̃\)</span> is a CW complex, and for each open <span class="process-math">\(n\)</span>-cell \sigma of <span class="process-math">\(X\)</span> there are <span class="process-math">\(|G|\)</span> open <span class="process-math">\(n\)</span>-cells of <span class="process-math">\(X̃\)</span> mapping via <span class="process-math">\(p\)</span> to <span class="process-math">\(\sigma\)</span> such that the action of each <span class="process-math">\(g \in G\)</span> on <span class="process-math">\(X̃\)</span> permutes these <span class="process-math">\(n\)</span>-cells.</div></li>
+<li id="li-241"><div class="para" id="p-654">(Covering Space Existence Thm): For each subgroup <span class="process-math">\(H &lt; \pi_1(X,x_0)\text{,}\)</span> there is a covering space <span class="process-math">\(rH: (X̃/H,[x̃_0]H) \to (X,x_0)\)</span> such that <span class="process-math">\(rH \circ qH = p\text{,}\)</span> where <span class="process-math">\(qH: X̃ \to X̃/H\)</span> is the quotient map, and <span class="process-math">\(H = rH∗(\pi_1(X̃/H,[x̃_0]H))\text{.}\)</span>
+</div></li>
 </ol>
 </div></article><article class="example example-like" id="example-49"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.10</span><span class="period">.</span>
@@ -707,17 +715,21 @@ window.MathJax = {
 <div class="para" id="p-655">Examples</div></article><article class="corollary theorem-like" id="cor-6.67"><h4 class="heading">
 <span class="type">Corollary</span><span class="space"> </span><span class="codenumber">6.2.11</span><span class="period">.</span>
 </h4>
-<div class="para" id="p-656">If (X,x_0) is a PC, LPC, SLSC space or PC CW complex, H &lt; \pi_1(X,x_0), and rH:(X̃/H,[x̃_0]H) \to (X,x_0) is the covering space of Thm 6.60(b), then the number of sheets of this covering space is the index of H in \pi_1(X,x_0).</div></article></section><section class="subsection" id="subsec-build-pres"><h3 class="heading hide-type">
+<div class="para" id="p-656">If <span class="process-math">\((X,x_0)\)</span> is a PC, LPC, SLSC space or PC CW complex, <span class="process-math">\(H &lt; \pi_1(X,x_0)\text{,}\)</span> and <span class="process-math">\(rH:(X̃/H,[x̃_0]H) \to (X,x_0)\)</span> is the covering space of Thm 6.60(b), then the number of sheets of this covering space is the index of <span class="process-math">\(H\)</span> in <span class="process-math">\(\pi_1(X,x_0)\text{.}\)</span>
+</div></article></section><section class="subsection" id="subsec-build-pres"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.4</span> <span class="title">Building covering spaces for subgroups from group presentations</span>
 </h3>
 <article class="theorem theorem-like" id="thm-6.70"><h4 class="heading">
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.12</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-657">
-<div class="para">Let \langle A | R \rangle be a presentation of a group G and let X be the presentation complex with vertex x_0. Let H &lt; G.</div>
+<div class="para">Let <span class="process-math">\(\langle A | R \rangle\)</span> be a presentation of a group <span class="process-math">\(G\)</span> and let <span class="process-math">\(X\)</span> be the presentation complex with vertex <span class="process-math">\(x_0\text{.}\)</span> Let <span class="process-math">\(H &lt; G\text{.}\)</span>
+</div>
 <ol class="decimal">
-<li id="li-242"><div class="para" id="p-658">(Top-down Method): Let X̃ be the Cayley complex of the presentation with quotient map p:X̃ \to X. Then H has a covering space action on X̃, with quotient map qH:X̃ \to X̃/H, and the covering space rH:X̃/H \to X defined by rH([s]H) := p(s) for all [s]H \in X̃/H satisfies Im rH∗ = H.</div></li>
-<li id="li-243"><div class="para" id="p-659">(Bottom-up Method): Let Z be the CW complex constructed by: Z(0) := H\G (the set of right cosets of H in G). The set of edges of Z is in bijection with H\G \times A; for each Hg \in H\G and a \in A, the attaching map of the edge eHg,a is φHg,a(-1) = Hg and φHg,a(1) = Hga. The set of faces of Z is in bijection with H\G \times R; for each Hg \in H\G and r \in R, the attaching map φHg,r of the face fHg,r satisfies φHg,r \circ ω := edge path in Z(1) starting at Hg labeled by r. Then r:Z \to X such that r(Hg) = x_0, r(eHg,a) = the edge of X corresponding to a, and r(fHg,r) = the face of X corresponding to r (for all Hg, a, and r) is a covering space and Im r∗ = H.</div></li>
+<li id="li-242"><div class="para" id="p-658">(Top-down Method): Let <span class="process-math">\(X̃\)</span> be the Cayley complex of the presentation with quotient map <span class="process-math">\(p:X̃ \to X\text{.}\)</span> Then <span class="process-math">\(H\)</span> has a covering space action on <span class="process-math">\(X̃\text{,}\)</span> with quotient map <span class="process-math">\(qH:X̃ \to X̃/H\text{,}\)</span> and the covering space <span class="process-math">\(rH:X̃/H \to X\)</span> defined by <span class="process-math">\(rH([s]H) := p(s)\)</span> for all <span class="process-math">\([s]H \in X̃/H\)</span> satisfies <span class="process-math">\(Im rH∗ = H\text{.}\)</span>
+</div></li>
+<li id="li-243"><div class="para" id="p-659">(Bottom-up Method): Let <span class="process-math">\(Z\)</span> be the CW complex constructed by: <span class="process-math">\(Z(0) := H\G\)</span> (the set of right cosets of <span class="process-math">\(H\)</span> in <span class="process-math">\(G\)</span>). The set of edges of <span class="process-math">\(Z\)</span> is in bijection with <span class="process-math">\(H\G \times A\text{;}\)</span> for each <span class="process-math">\(Hg \in H\G\)</span> and <span class="process-math">\(a \in A\text{,}\)</span> the attaching map of the edge <span class="process-math">\(eHg\text{,}\)</span><span class="process-math">\(a\)</span> is <span class="process-math">\(φHg,a(-1) = Hg and φHg,a(1) = Hga\text{.}\)</span> The set of faces of <span class="process-math">\(Z\)</span> is in bijection with <span class="process-math">\(H\G \times R\text{;}\)</span> for each <span class="process-math">\(Hg \in H\G\)</span> and <span class="process-math">\(r \in R\text{,}\)</span> the attaching map <span class="process-math">\(φHg,r\)</span> of the face <span class="process-math">\(fHg,r\)</span> satisfies <span class="process-math">\(φHg,r \circ ω :=\)</span> edge path in <span class="process-math">\(Z(1)\)</span> starting at <span class="process-math">\(Hg\)</span> labeled by <span class="process-math">\(r\text{.}\)</span> Then <span class="process-math">\(r:Z \to X\)</span> such that <span class="process-math">\(r(Hg) = x_0, r(eHg,a) = \)</span>the edge of <span class="process-math">\(X\)</span> corresponding to <span class="process-math">\(a\text{,}\)</span> and <span class="process-math">\(r(fHg,r) =\)</span> the face of <span class="process-math">\(X\)</span> corresponding to <span class="process-math">\(r\)</span> (for all <span class="process-math">\(Hg, a\text{,}\)</span> and <span class="process-math">\(r\)</span>) is a covering space and <span class="process-math">\(Im r∗ = H\text{.}\)</span>
+</div></li>
 </ol>
 </div></article></section><section class="subsection" id="subsec-apps"><h3 class="heading hide-type">
 <span class="type">Subsection</span> <span class="codenumber">6.2.5</span> <span class="title">Applications to group theory</span>
@@ -729,10 +741,11 @@ window.MathJax = {
 <span class="type">Theorem</span><span class="space"> </span><span class="codenumber">6.2.14</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="p-661">
-<div class="para">Let H be a finite index subgroup of a group G.</div>
+<div class="para">Let <span class="process-math">\(H\)</span> be a finite index subgroup of a group <span class="process-math">\(G\text{.}\)</span>
+</div>
 <ol class="decimal">
-<li id="li-244"><div class="para" id="p-662">If G is a finitely generated group, then H is also finitely generated.</div></li>
-<li id="li-245"><div class="para" id="p-663">If G is a finitely presented group, then H is also finitely presented.</div></li>
+<li id="li-244"><div class="para" id="p-662">If <span class="process-math">\(G\)</span> is a finitely generated group, then <span class="process-math">\(H\)</span> is also finitely generated.</div></li>
+<li id="li-245"><div class="para" id="p-663">If <span class="process-math">\(G\)</span> is a finitely presented group, then <span class="process-math">\(H\)</span> is also finitely presented.</div></li>
 </ol>
 </div></article></section></section></div>
 <div class="ptx-content-footer">
